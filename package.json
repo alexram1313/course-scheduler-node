@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alexram1313/course-scheduler-node/issues"
   },
-  "homepage": "https://github.com/alexram1313/course-scheduler-node#readme"
+  "homepage": "https://github.com/alexram1313/course-scheduler-node#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
