@@ -26,6 +26,15 @@ app.get('/about', function(req, res) {
   });
 });
 
+app.get('/help', function(req, res) {
+  var title = "Help";
+  var content = "<p>Instructions to come.</p>";
+  res.render('main', {
+      title:title,
+      content:content
+  });
+});
+
 
 
 var server = app.listen(process.env.PORT || 8080, function () {
