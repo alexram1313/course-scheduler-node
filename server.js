@@ -3,7 +3,7 @@ var app = express();
 // var routes = require('./routes');
 
 app.set('view engine', 'ejs');
-app.set('views', __dirname + 'template');
+app.set('views', 'templates');
 
 app.use(express.static('public'));
 
