@@ -20,7 +20,6 @@ process.on('uncaughtException', function(err) {
 app.get('/', function(req, res){
   var content = "<p>ZotScheduler is coming soon...</p>";
   res.render('main', {
-    debug:true,
     "title":'',
     "content":content
   });
@@ -30,7 +29,6 @@ app.get('/about', function(req, res) {
   var title = "About";
   var content = "<p>ZotScheduler is a tool that generates class schedules for students. Eventually, this about page will be more interesting. Developed by David Legg and Alex I. Ramirez.</p>";
   res.render('main', {
-    debug:true,
     "title":title,
     "content":content
   });
@@ -40,7 +38,6 @@ app.get('/help', function(req, res) {
   var title = "Help";
   var content = "<p>Instructions to come.</p>";
   res.render('main', {
-    debug:true,
     "title":title,
     "content":content
   });
