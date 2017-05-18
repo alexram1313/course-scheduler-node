@@ -1,9 +1,11 @@
 <html>
 
 <head>
-    <title><% if (typeof( global.title) !== 'undefined') { %>
-                <%= "lol" %>
-            <% } %> ZotScheduler
+    <title>
+        <% if (title) {%>
+            <%= title+' - ' %>
+        <% } %>
+        ZotScheduler
     </title>
     <meta name="theme-color" content="#ffd200">
     <meta name="viewport" content="width=device-width">
