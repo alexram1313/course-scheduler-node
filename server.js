@@ -5,7 +5,7 @@ var app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'templates');
 
-app.use(express.static('public'));
+app.use('/public', express.static('public'));
 
 process.on('uncaughtException', function(err) {
   console.log("Error: " + err);
