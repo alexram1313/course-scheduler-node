@@ -4,6 +4,7 @@ var app = express();
 
 app.set('view engine', 'ejs');
 
+app.use(express.static('public'));
 
 process.on('uncaughtException', function(err) {
   console.log("Error: " + err);
