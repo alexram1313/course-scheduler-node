@@ -14,7 +14,10 @@ process.on('uncaughtException', function(err) {
 // app.use('/', routes);
 
 app.get('/', function(req, res){
-  res.send("derp");
+  var content = "<p>ZotScheduler is coming soon...</p>";
+  res.render('main', {
+      content:content
+  });
 });
 
 app.get('/about', function(req, res) {
