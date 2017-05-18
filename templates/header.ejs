@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title><% if (locals.title) {%>
+    <title><% if (typeof(title) != "undefined") {%>
                 <%= title + " - " %>
             <% } %> ZotScheduler</title>
     <meta name="theme-color" content="#ffd200">
