@@ -3,6 +3,7 @@ var app = express();
 // var routes = require('./routes');
 
 app.set('view engine', 'ejs');
+app.set('views', __dirname + 'template');
 
 app.use(express.static('public'));
 
@@ -19,10 +20,10 @@ app.get('/', function(req, res){
 app.get('/about', function(req, res) {
   var title = "About";
   var content = "<p>ZotScheduler is a tool that generates class schedules for students. Eventually, this about page will be more interesting. Developed by David Legg and Alex I. Ramirez.</p>";
-    res.render('/templates/main', {
+  res.render('main', {
       title:title,
       content:content
-    });
+  });
 });
 
 
