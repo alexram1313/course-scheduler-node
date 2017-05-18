@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 app.get('/about', function(req, res) {
   var title = "About";
   var content = "<p>ZotScheduler is a tool that generates class schedules for students. Eventually, this about page will be more interesting. Developed by David Legg and Alex I. Ramirez.</p>";
-    res.render('templates/main', {
+    res.render('/templates/main', {
       title:title,
       content:content
     });
