@@ -1,6 +1,10 @@
 <% include header %>
 <div id="container">
-    <%- content %>
+    <% if (title) { %>
+        <%- content %>
+    <% } else { %>
+        <% include schedpage %>
+    <% } %>
 </div>
 
 <% include footer %>

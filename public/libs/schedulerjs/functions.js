@@ -74,8 +74,7 @@ function populateCourses() {
                                $("#course").html("<option>Loading</option>");
                                $.ajax({
                                       type: "GET",
-                                      url: "scheduler/ui/coursesretrieval.php",
-                                      data:{_action:'coursebydept', _param:$("#dept").val(), _yt:$("#term").val()},
+                                      url: "/retrieval/courselistdrop/"+$("#term").val()+"/"+$("#dept").val(),
                                       success: function(data){
                                       $("#course").html(data);
                                       $("#course").prop('disabled', false);

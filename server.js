@@ -1,6 +1,10 @@
 var express = require('express');
 var app = express();
+var fs  = require('fs');
+var moment = require('moment');
 // var routes = require('./routes');
+
+var retrieval = require('./util/retrieval');
 
 app.set('view engine', 'ejs');
 app.set('views', 'templates');
@@ -13,15 +17,25 @@ process.on('uncaughtException', function(err) {
 
 // app.use('/', routes);
 
-
+/*
+fs.readFile('coursecache.json', 'utf8', function (err, data) {
+    if (err) throw err;
+    var courses = JSON.parse(data);
+    
+  });
+*/
+//Time: moment(courses.updatetime)
 
 //Pages
 
 app.get('/', function(req, res){
-  var content = "<p>ZotScheduler is coming soon...</p>";
-  res.render('main', {
-    "title":'',
-    "content":content
+  retrieval.getSOCDropDowns(function(data){
+    res.render('main', {
+      "title":'',
+      "content":'',
+      "termdropdown":data.yearTerm,
+      "deptdropdown":data.dept
+    });
   });
 });
 
@@ -43,6 +57,13 @@ app.get('/help', function(req, res) {
   });
 });
 
+
+//Controller API Commands
+app.get('/retrieval/courselistdrop/:term/:dept', function(req, res){
+  retrieval.getCourseListingDropDown(req.params.term, req.params.dept, function(data){
+    res.send(data.data);
+  });
+});
 
 
 var server = app.listen(process.env.PORT || 8080, function () {
