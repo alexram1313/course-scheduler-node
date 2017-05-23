@@ -46,7 +46,7 @@ module.exports = {
 
                     var key = term+'-'+dept+'-'+course_num+'-'+school_code;
                     var value = dept+' '+course_num+': '+course_name+
-                        ((single)?'': '('+school_name+')');
+                        ((single)?'': ' ('+school_name+')');
 
                     output += '<option value="'+key+ '">' + value+"</option>"
 
