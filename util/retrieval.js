@@ -44,7 +44,7 @@ module.exports = {
                     var course_name = $(this).attr('course_title');
 
 
-                    var key = year_term+'-'+dept+'-'+course_num+'-'+school_code;
+                    var key = term+'-'+dept+'-'+course_num+'-'+school_code;
                     var value = dept+' '+course_num+': '+course_name+
                         ((single)?'': '('+school_name+')');
 
