@@ -23,7 +23,8 @@ module.exports = {
     },
 
     getCourseListingDropDown: function(term, dept, callback){
-        url = 'https://www.reg.uci.edu/perl/WebSoc?Submit=Display+XML+Results&YearTerm='+term+'&Dept='+dept;
+        url = 'https://www.reg.uci.edu/perl/WebSoc?Submit=Display+XML+Results&YearTerm='+
+            term+'&Dept='+encodeURIComponent(dept);
 
 
         request(url, function(error, response, html){
