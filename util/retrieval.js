@@ -48,8 +48,8 @@ module.exports = {
                          dup_codes[course_num+'-'+school_code] + 1 || 0;
 
                     var key = term+'-'+dept+'-'+course_num+'-'+school_code+
-                        ((dup_codes[course_num+'-'+school_code])?
-                            '-'+dup_codes[course_num+'-'+school_code]:'');
+                            '-'+dup_codes[course_num+'-'+school_code];
+                    
                     var value = dept+' '+course_num+': '+course_name+
                         ((single)?'': ' ('+school_name+')');
 
