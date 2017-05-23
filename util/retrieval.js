@@ -34,6 +34,7 @@ module.exports = {
                 var output='';
 
                 var single = $('school').length == 1;
+                var dup_codes = {};
 
                 $('course').each(function(i, el){
                     var school =  $(this).parent().parent();
@@ -43,8 +44,12 @@ module.exports = {
                     var course_num =  $(this).attr('course_number');
                     var course_name = $(this).attr('course_title');
 
+                    dup_codes[course_num+'-'+school_code] =
+                         dup_codes[course_num+'-'+school_code] + 1 || 0;
 
-                    var key = term+'-'+dept+'-'+course_num+'-'+school_code;
+                    var key = term+'-'+dept+'-'+course_num+'-'+school_code+
+                        ((dup_codes[course_num+'-'+school_code])?
+                            '-'+dup_codes[course_num+'-'+school_code]:'');
                     var value = dept+' '+course_num+': '+course_name+
                         ((single)?'': ' ('+school_name+')');
 
