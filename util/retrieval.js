@@ -33,6 +33,8 @@ module.exports = {
 
                 var output='';
 
+                var single = $('school').length == 1;
+
                 $('course').each(function(i, el){
                     var school =  $(this).parent().parent();
                     var school_code = school.attr('school_code');
@@ -42,8 +44,9 @@ module.exports = {
                     var course_name = $(this).attr('course_title');
 
 
-                    var key = school_code+'-'+dept+'-'+course_num;
-                    var value = dept+' '+course_num+': '+course_name+' ('+school_name+')';
+                    var key = year_term+'-'+dept+'-'+course_num+'-'+school_code;
+                    var value = dept+' '+course_num+': '+course_name+
+                        ((single)?'': '('+school_name+')');
 
                     output += "<option value="+key+ ">" + value+"</option>"
 
