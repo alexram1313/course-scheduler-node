@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/alexram1313/course-scheduler-node#readme",
   "dependencies": {
+    "async": "^2.4.1",
     "cheerio": "^0.22.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
