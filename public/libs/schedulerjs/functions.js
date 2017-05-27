@@ -74,7 +74,8 @@ function populateCourses() {
             $("#course").html("<option>Loading</option>");
             $.ajax({
                 type: "GET",
-                url: "/retrieval/courselistdrop/" + $("#term").val() + "/" +
+                url: "/webapi/retrieval/courselistdrop/" + 
+                    encodeURIComponent($("#term").val()) + "/" +
                     encodeURIComponent($("#dept").val()),
                 success: function (data) {
                     $("#course").html(data);

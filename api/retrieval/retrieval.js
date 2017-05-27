@@ -107,8 +107,8 @@ module.exports = {
                                             th: (days.indexOf("Th") !== -1),
                                             f: (days.indexOf("F") !== -1)
                                         },
-                                        '',
-                                        '',
+                                        '', //TODO Start Time
+                                        '', //TODO End Time
                                         ((section.find('sec_backward_ptr').text() != '00000') ? [section.find('sec_backward_ptr').text()] : [])
                                     );
                                     course_object.sections.push(section_object);

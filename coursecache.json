@@ -1,5 +1,1386 @@
 {
   "updatetime": "2017-05-27T21:50:25-07:00",
   "courses": {
+    "2017-92": {
+      "AC ENG": {
+        "20A-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:20A-60-0",
+          "name": "AC ENG 20A: ACADEMIC WRITING",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20000",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20001",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20002",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20003",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20004",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20005",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20006",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20007",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20008",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20009",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20010",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20011",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20012",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20013",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20014",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20015",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20016",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20017",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20018",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20019",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20020",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20021",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20022",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20023",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20024",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20025",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20026",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20027",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20035",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20000"
+              ]
+            }
+          ]
+        },
+        "20B-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:20B-60-0",
+          "name": "AC ENG 20B: ACADEMIC WRITING",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20036",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20037",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20038",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20039",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20040",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20041",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20042",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20043",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20044",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20045",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20046",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20047",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20048",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20049",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20050",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20051",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20052",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20053",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20054",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20055",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20056",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20057",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20058",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20059",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20060",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20061",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20062",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20063",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20064",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20065",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20066",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20067",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20068",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20069",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20070",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20071",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20072",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20073",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20036"
+              ]
+            }
+          ]
+        },
+        "20C-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:20C-60-0",
+          "name": "AC ENG 20C: ACADEMIC WRITING",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20074",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20075",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20076",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20077",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20078",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20079",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20080",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20081",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20082",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20083",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20084",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20085",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20086",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20087",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20088",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20089",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20090",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20091",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20092",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20093",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20094",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20095",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20096",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20097",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20098",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20099",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20100",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20101",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20102",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20103",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20104",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20108",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20074"
+              ]
+            }
+          ]
+        },
+        "20D-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:20D-60-0",
+          "name": "AC ENG 20D: ACADEMIC WRITING",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20111",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20109"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20114",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20109"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20115",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20109"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20116",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20109"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20117",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20109"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20118",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20109"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20121",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20109"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20125",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20109"
+              ]
+            }
+          ]
+        },
+        "22A-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:22A-60-0",
+          "name": "AC ENG 22A: READING&VOCABULARY",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20126",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20128",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20126"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20130",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20126"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20132",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20126"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20134",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20126"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20136",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20126"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20138",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20126"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20140",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20126"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20142",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20126"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20144",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20126"
+              ]
+            }
+          ]
+        },
+        "23A-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:23A-60-0",
+          "name": "AC ENG 23A: ESL BASIC PRONUN I",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20146",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20148",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20146"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20150",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20146"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20152",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20146"
+              ]
+            }
+          ]
+        },
+        "23B-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:23B-60-0",
+          "name": "AC ENG 23B: ESL INTERM CONV II",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20155",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            }
+          ]
+        },
+        "23C-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:23C-60-0",
+          "name": "AC ENG 23C: ESL ADV COMM III",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20160",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            }
+          ]
+        },
+        "28-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:28-60-0",
+          "name": "AC ENG 28: GRAMMAR",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20170",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20172",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20170"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20174",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20170"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20176",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20170"
+              ]
+            }
+          ]
+        },
+        "29-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:29-60-0",
+          "name": "AC ENG 29: SPEC TOPIC: CONVERS",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20180",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20181",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20180"
+              ]
+            }
+          ]
+        },
+        "139W-60-0": {
+          "type": "course",
+          "code": "2017-92:AC ENG:139W-60-0",
+          "name": "AC ENG 139W: ADV ACADMIC WRITING",
+          "sections": [
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20190",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": []
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20192",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20190"
+              ]
+            },
+            {
+              "type": "section",
+              "secType": "",
+              "code": "20196",
+              "startTime": "",
+              "endTime": "",
+              "coreqs": [
+                "20190"
+              ]
+            }
+          ]
+        }
+      }
+    }
   }
 }

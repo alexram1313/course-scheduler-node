@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 var fs  = require('fs');
 var moment = require('moment');
-// var routes = require('./routes');
 
+var webapi = require('./webapi');
 var retrieval = require('./api/retrieval/retrieval');
 
 app.set('view engine', 'ejs');
@@ -15,9 +15,6 @@ process.on('uncaughtException', function(err) {
   console.log("Error: " + err);
 });
 
-// app.use('/', routes);
-
-
 //Pages
 
 app.get('/', function(req, res){
@@ -26,7 +23,8 @@ app.get('/', function(req, res){
       "title":'',
       "content":'',
       "termdropdown":data.yearTerm,
-      "deptdropdown":data.dept
+      "deptdropdown":data.dept,
+      "addedCourses":webapi.utils.listAddedCourses()
     });
   });
 });
@@ -50,14 +48,12 @@ app.get('/help', function(req, res) {
 });
 
 
-//Controller API Commands
-app.get('/retrieval/courselistdrop/:term/:dept', function(req, res){
-  retrieval.getCourseListingByYearTermDept(req.params.term, req.params.dept, function(data){
-    res.send(data.data);
-  });
-});
+//Web API Controller Commands
+app.use('/webapi', webapi.router);
 
+//TODO External API Commands
 
+//Start Server
 var server = app.listen(process.env.PORT || 8080, function () {
    var host = server.address().address
    var port = server.address().port
