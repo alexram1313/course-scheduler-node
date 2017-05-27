@@ -17,14 +17,6 @@ process.on('uncaughtException', function(err) {
 
 // app.use('/', routes);
 
-/*
-fs.readFile('coursecache.json', 'utf8', function (err, data) {
-    if (err) throw err;
-    var courses = JSON.parse(data);
-    
-  });
-*/
-//Time: moment(courses.updatetime)
 
 //Pages
 

@@ -17,8 +17,6 @@ module.exports = {
                 var $ = cheerio.load(html);
 
                 $("option").filter(":contains('Include All Departments')").remove();
-                // console.log($('select[name="Dept"]').html());
-
                 callback(
                     {
                         "yearTerm": $('select[name="YearTerm"]').html(),
