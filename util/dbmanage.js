@@ -54,7 +54,7 @@ module.exports = {
             callback(false);
         } else {
             try {
-                console.log(db.has('courses.' + term + '.' + dept).value())
+                // console.log(db.has('courses.' + term + '.' + dept).value())
                 if (db.has('courses.' + term + '.' + dept).value()) {
                     result = db.get('courses.' + term + '.' + dept).value();
                 }

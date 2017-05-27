@@ -94,8 +94,7 @@ function populateAddedCourses(str) {
             $("#addConfirm").html("Adding...");
             $.ajax({
                 type: "GET",
-                url: "scheduler/ui/coursesretrieval.php",
-                data: { _action: 'addcourse', _param: str },
+                url: "/webapi/population/add/"+encodeURIComponent(str),
                 success: function (data) {
                     console.log(data);
                     $("#addedCourses").html(data);
@@ -112,8 +111,7 @@ function delPopCourses(str) {
             hideAdded();
             $.ajax({
                 type: "GET",
-                url: "scheduler/ui/coursesretrieval.php",
-                data: { _action: 'delcourse', _param: str },
+                url: "/webapi/population/del/"+encodeURIComponent(str),
                 success: function (data) {
                     console.log(data);
                     $("#addedCourses").html(data);

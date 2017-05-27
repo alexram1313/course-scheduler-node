@@ -159,5 +159,69 @@ module.exports = {
         });
 
 
+    },
+    
+    getSingleCourseByCode:function(course_code, callback){
+        db.courseInCache(course_code, function(result){
+            if (!result){
+                var tokens = course_code.split(':');
+                var yearTerm = tokens[0];
+                var dept     = tokens[1];
+                
+                var moretokens = tokens[2].split('-');
+                var number   = moretokens[0];
+                var school   = moretokens[1];
+                var index    = moretokens[2];
+
+                var url = 'https://www.reg.uci.edu/perl/WebSoc?Submit=Display+XML+Results&YearTerm=' +
+                    encodeURIComponent(yearTerm) + '&Dept=' + encodeURIComponent(dept) +
+                    '&CourseNum=' + encodeURIComponent(number);
+
+                request(url, function(err, response, html){
+                    if (!err) {
+
+                        var $ = cheerio.load(html);
+
+                        var courseXML = $('school[school_code='+school+']').find('course[course_number='+number+']').eq(index);
+
+                        var course_object = courseModel.createCourse(course_code,
+                             courseXML.attr('course_title'), []);
+                        var sec_length = courseXML.find('section').length;
+
+                        if (sec_length == 0) callback(false);
+
+                        courseXML.find('section').each(function (i_s, el_s) {
+                                async.setImmediate(function (section, i, el, len) {
+                                    // console.log(section.find('course_code').text());
+                                    var days = section.find('sec_days').text();
+                                    var section_object = sectionModel.createSection(
+                                        section.find('secType').text(),
+                                        section.find('course_code').text(),
+                                        {
+                                            m: (days.indexOf("M") !== -1),
+                                            tu: (days.indexOf("Tu") !== -1),
+                                            w: (days.indexOf("W") !== -1),
+                                            th: (days.indexOf("Th") !== -1),
+                                            f: (days.indexOf("F") !== -1)
+                                        },
+                                        '', //TODO Start Time
+                                        '', //TODO End Time
+                                        ((section.find('sec_backward_ptr').text() != '00000') ? [section.find('sec_backward_ptr').text()] : [])
+                                    );
+                                    course_object.sections.push(section_object);
+                                    if (course_object.sections.length == len) {
+                                        callback(course_object);
+                                    }
+                                }, $(this), i_s, el_s, sec_length);
+                            });
+                    }
+                });
+
+                
+            }
+            else {
+                callback(result);
+            }
+        })
     }
 }
