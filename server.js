@@ -4,7 +4,7 @@ var fs  = require('fs');
 var moment = require('moment');
 // var routes = require('./routes');
 
-var retrieval = require('./util/retrieval');
+var retrieval = require('./api/retrieval/retrieval');
 
 app.set('view engine', 'ejs');
 app.set('views', 'templates');
@@ -21,7 +21,7 @@ process.on('uncaughtException', function(err) {
 //Pages
 
 app.get('/', function(req, res){
-  retrieval.getSOCDropDowns(function(data){
+  retrieval.getSOCYearTermDept(function(data){
     res.render('main', {
       "title":'',
       "content":'',
@@ -52,7 +52,7 @@ app.get('/help', function(req, res) {
 
 //Controller API Commands
 app.get('/retrieval/courselistdrop/:term/:dept', function(req, res){
-  retrieval.getCourseListingDropDown(req.params.term, req.params.dept, function(data){
+  retrieval.getCourseListingByYearTermDept(req.params.term, req.params.dept, function(data){
     res.send(data.data);
   });
 });

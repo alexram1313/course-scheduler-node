@@ -2,14 +2,14 @@ var request = require('request');
 var cheerio = require('cheerio');
 var async = require('async');
 
-var sorter = require('./sort');
+var sorter = require('../../util/sort');
 var courseModel = require('../models/course');
 var sectionModel = require('../models/section');
-var db = require('./dbmanage')
+var db = require('../../util/dbmanage')
 
 
 module.exports = {
-    getSOCDropDowns: function (callback) {
+    getSOCYearTermDept: function (callback, asHTMLOptions = true) {
         url = 'https://www.reg.uci.edu/perl/WebSoc';
 
         request(url, function (error, response, html) {
@@ -17,20 +17,48 @@ module.exports = {
                 var $ = cheerio.load(html);
 
                 $("option").filter(":contains('Include All Departments')").remove();
-                callback(
-                    {
-                        "yearTerm": $('select[name="YearTerm"]').html(),
-                        "dept": $('select[name="Dept"]').html()
-                    }
-                );
+                
+                if (asHTMLOptions) {
+                    callback(
+                        {
+                            "yearTerm": $('select[name="YearTerm"]').html(),
+                            "dept": $('select[name="Dept"]').html()
+                        }
+                    );
+                }
+                else {
+                    var yearTerms = [];
+                    var depts     = [];
+
+                    $('select[name="YearTerm"]').find('option').each(function(i, el){
+                        yearTerms.push({
+                            id: $(this).attr('value'),
+                            name: $(this).text()
+                        })
+                    });
+                    $('select[name="Dept"]').find('option').each(function(i, el){
+                        depts.push({
+                            id: $(this).attr('value'),
+                            name: $(this).text()
+                        })
+                    });
+                    callback(
+                        {
+                            "yearTerm": yearTerms,
+                            "dept": depts
+                        }
+                    );
+                    
+                }
             }
         })
     },
-
-    getCourseListingDropDown: function (term, dept, callback) {
+    
+    getCourseListingByYearTermDept: function (term, dept, callback, asHTMLOptions=true) {
         //Check if department is in cache
         db.deptInCache(term, dept, function (result) {
             //If not in cache
+            var output = (asHTMLOptions)?'':[];
             if (!result) {
                 url = 'https://www.reg.uci.edu/perl/WebSoc?Submit=Display+XML+Results&YearTerm=' +
                     term + '&Dept=' + encodeURIComponent(dept);
@@ -38,11 +66,7 @@ module.exports = {
                 request(url, function (error, response, html) {
                     if (!error) {
 
-                        // addCourseToCache({code:'2017-92-AC ENG-20A-60-0'}, function(){});
-
                         var $ = cheerio.load(html);
-
-                        var output = '';
 
                         var single = $('school').length == 1;
                         var dup_codes = {};
@@ -89,13 +113,15 @@ module.exports = {
                                     );
                                     course_object.sections.push(section_object);
                                     if (course_object.sections.length == len) {
-                                        addCourseToCache(course_object, function () { });
+                                        db.addCourseToCache(course_object, function () { });
                                     }
                                 }, $(this), i_s, el_s, sec_length);
                             });
 
-                            output += '<option value="' + key + '">' + value + "</option>"
-                            // console.log(key);
+                            if (asHTMLOptions)
+                                output += '<option value="' + key + '">' + value + "</option>"
+                            else
+                                output.push({id: key, name:value})
 
                         });
 
@@ -113,12 +139,16 @@ module.exports = {
                 var keyOrder = sorter.sortCourseKeys(result);
                 var lenKeys = keyOrder.length;
 
-                //iterate through keys to create <select> options
-                var output = '';
-                for (var i = 0; i < lenKeys; ++i) {
-                    output += '<option value="' + result[keyOrder[i]].code + '">' +
-                        result[keyOrder[i]].name + "</option>";
-                }
+                if (asHTMLOptions)
+                    //iterate through keys to create <select> options
+                    for (var i = 0; i < lenKeys; ++i) {
+                        output += '<option value="' + result[keyOrder[i]].code + '">' +
+                            result[keyOrder[i]].name + "</option>";
+                    }
+                else
+                    for (var i = 0; i < lenKeys; ++i) {
+                        output.push({id:result[keyOrder[i]].code, name:result[keyOrder[i]].name});
+                    }
                 //Callback with options
                 callback(
                     {
