@@ -6,8 +6,10 @@ var moment = require('moment');
 var cookieParser = require('cookie-parser');
 
 var webapi = require('./webapi');
+var api    = require('./api');
 var retrieval = require('./api/retrieval/retrieval');
 
+//Housekeeping
 app.set('view engine', 'ejs');
 app.set('views', 'templates');
 
@@ -19,7 +21,6 @@ process.on('uncaughtException', function (err) {
 });
 
 //Pages
-
 app.get('/', function (req, res) {
   retrieval.getSOCYearTermDept(function (data) {
     var cookies = req.cookies;
@@ -71,7 +72,8 @@ app.get('/help', function (req, res) {
 //Web API Controller Commands
 app.use('/webapi', webapi.router);
 
-//TODO External API Commands
+//External API Commands
+app.use('/api', api);
 
 //Start Server
 var server = app.listen(process.env.PORT || 8080, function () {
