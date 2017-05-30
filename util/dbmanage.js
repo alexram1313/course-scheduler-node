@@ -7,12 +7,13 @@ var db = low('./coursecache.json', {
 
 db.defaults({
     updatetime: moment().add(1, 'day').format(),
+    depts:{},
     courses: {}
 }).write()
 
 function resetCache(now) {
     now.add(1, 'day');
-    db.set('updatetime', now.format()).set('courses', {}).write();
+    db.set('updatetime', now.format()).set('depts',{}).set('courses', {}).write();
 }
 
 module.exports = {
@@ -26,15 +27,9 @@ module.exports = {
             resetCache(now);
             callback(false);
         } else {
-            var tokens = course_code.split(':');
-
             try {
-                var term = tokens[0];
-                var dept = tokens[1];
-                var num = tokens[2];
-
-                if (db.has('courses.' + term + '.' + dept + '.' + num))
-                    result = db.get('courses.' + term + '.' + dept + '.' + num).value();
+                if (db.has('courses.' + course_code))
+                    result = db.get('courses.' + course_code).value();
 
                 callback(result);
 
@@ -55,8 +50,15 @@ module.exports = {
         } else {
             try {
                 // console.log(db.has('courses.' + term + '.' + dept).value())
-                if (db.has('courses.' + term + '.' + dept).value()) {
-                    result = db.get('courses.' + term + '.' + dept).value();
+                if (db.has('depts.' + term + ':' + dept).value()) {
+                    result = {};
+                    courseList = db.get('depts.' + term + ':' + dept).value()
+                    courseLen  = courseLen.length;
+
+                    for (var i = 0; i<courseLen; ++i){
+                        var code = term + ':' + dept+':'+courseList[i];
+                        result[code] = db.get('courses.'+code);
+                    }
                 }
                 callback(result);
 
@@ -70,18 +72,27 @@ module.exports = {
         var code = course.code;
 
         try {
-            var tokens = code.split(':');
-            var term = tokens[0];
-            var dept = tokens[1];
-            var num = tokens[2];
-
-            db.set('courses.' + term + '.' + dept + '.' + num, course).write();
+            db.set('courses.' + code, course).write();
             callback("OK");
 
         } catch (err) {
             callback(err);
         }
 
+    },
+    addDeptToCache: function(term, dept, courses, callback){
+        var deptPtrs = [];
+
+        var deptCode = term+":"+dept;
+
+        var courseLen = courses.length;
+        for (var i = 0; i<courseLen; ++i){
+            deptPtrs.push(courses[i].code.split(':')[2]);
+            module.exports.addCourseToCache(courses[i], function(derp){});
+        }
+
+        db.set('depts.'+deptCode, deptPtrs).write();
+        callback("OK");
     }
 
 }

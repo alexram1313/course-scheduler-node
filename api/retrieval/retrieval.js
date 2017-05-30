@@ -7,6 +7,74 @@ var courseModel = require('../models/course');
 var sectionModel = require('../models/section');
 var db = require('../../util/dbmanage')
 
+function courseTimes(listedTimes){
+    listedTimes = listedTimes.trim();
+    if ((listedTimes === 'TBA') || (listedTimes==='')){
+        return {start:'', end:''};
+    }
+    var times = listedTimes.split('-');
+    var start = times[0];
+    var end   = times[1];
+
+    var endLen = end.length;
+    if (end.charAt(endLen - 1) == 'p'){
+        end = end.substr(0, endLen-1);
+
+        var endComp = end.split(':');
+        var endHour = parseInt(endComp[0]);
+        
+        if (endHour < 12) endHour += 12;
+
+        var startComp = start.split(':');
+        var startHour = parseInt(startComp[0]);
+
+        if (endHour-startHour >= 12) startHour += 12;
+
+        return {
+            start: startHour+":"+startComp[1],
+            end:   endHour+":"+endComp[1]
+        };
+
+    }
+    else {
+        return {start:start, end:end};
+    }
+}
+
+function generateCourse(courseXML, id, name, callback){
+    var course_object = courseModel.createCourse(id, name, []);
+    var sec_length = courseXML.find('section').length;
+
+    if (sec_length == 0) callback(false);
+
+    var $ = cheerio.load(courseXML);
+
+    courseXML.find('section').each(function (i_s, el_s) {
+            async.setImmediate(function (section, i, el, len) {
+                // console.log(section.find('course_code').text());
+                var days = section.find('sec_days').text();
+                var times = courseTimes(section.find('sec_time').text());
+                var section_object = sectionModel.createSection(
+                    section.find('secType').text(),
+                    section.find('course_code').text(),
+                    {
+                        m: (days.indexOf("M") !== -1),
+                        tu: (days.indexOf("Tu") !== -1),
+                        w: (days.indexOf("W") !== -1),
+                        th: (days.indexOf("Th") !== -1),
+                        f: (days.indexOf("F") !== -1)
+                    },
+                    times.start, 
+                    times.end,
+                    ((section.find('sec_backward_ptr').text() != '00000') ? [section.find('sec_backward_ptr').text()] : [])
+                );
+                course_object.sections.push(section_object);
+                if (course_object.sections.length == len) {
+                    callback(course_object);
+                }
+            }, $(this), i_s, el_s, sec_length);
+    });
+}
 
 module.exports = {
     getSOCYearTermDept: function (callback, asHTMLOptions = true) {
@@ -71,6 +139,8 @@ module.exports = {
                         var single = $('school').length == 1;
                         var dup_codes = {};
 
+                        var courses = [];
+
                         $('course').each(function (i, el) {
                             var school = $(this).parent().parent();
                             var school_code = school.attr('school_code');
@@ -88,35 +158,15 @@ module.exports = {
                             var value = dept + ' ' + course_num + ': ' + course_name +
                                 ((single) ? '' : ' (' + school_name + ')');
 
-                            var course_object = courseModel.createCourse(key, value, []);
+                            
+                            generateCourse($(this), key,  value, function(course_object){
+                                // db.addCourseToCache(course_object, function () { });
+                                courses.push(course_object);
+                            })
 
-                            var sec_length = $(this).find('section').length;
-
-                            //Create courses and insert into cache here async
-                            $(this).find('section').each(function (i_s, el_s) {
-                                async.setImmediate(function (section, i, el, len) {
-                                    // console.log(section.find('course_code').text());
-                                    var days = section.find('sec_days').text();
-                                    var section_object = sectionModel.createSection(
-                                        section.find('secType').text(),
-                                        section.find('course_code').text(),
-                                        {
-                                            m: (days.indexOf("M") !== -1),
-                                            tu: (days.indexOf("Tu") !== -1),
-                                            w: (days.indexOf("W") !== -1),
-                                            th: (days.indexOf("Th") !== -1),
-                                            f: (days.indexOf("F") !== -1)
-                                        },
-                                        '', //TODO Start Time
-                                        '', //TODO End Time
-                                        ((section.find('sec_backward_ptr').text() != '00000') ? [section.find('sec_backward_ptr').text()] : [])
-                                    );
-                                    course_object.sections.push(section_object);
-                                    if (course_object.sections.length == len) {
-                                        db.addCourseToCache(course_object, function () { });
-                                    }
-                                }, $(this), i_s, el_s, sec_length);
-                            });
+                            async.setImmediate(function(term, dept,courses){
+                                db.addDeptToCache(term, dept, courses, function(derp){});
+                            }, term, dept, courses);
 
                             if (asHTMLOptions)
                                 output += '<option value="' + key + '">' + value + "</option>"
@@ -184,36 +234,8 @@ module.exports = {
 
                         var courseXML = $('school[school_code='+school+']').find('course[course_number='+number+']').eq(index);
 
-                        var course_object = courseModel.createCourse(course_code,
-                             courseXML.attr('course_title'), []);
-                        var sec_length = courseXML.find('section').length;
-
-                        if (sec_length == 0) callback(false);
-
-                        courseXML.find('section').each(function (i_s, el_s) {
-                                async.setImmediate(function (section, i, el, len) {
-                                    // console.log(section.find('course_code').text());
-                                    var days = section.find('sec_days').text();
-                                    var section_object = sectionModel.createSection(
-                                        section.find('secType').text(),
-                                        section.find('course_code').text(),
-                                        {
-                                            m: (days.indexOf("M") !== -1),
-                                            tu: (days.indexOf("Tu") !== -1),
-                                            w: (days.indexOf("W") !== -1),
-                                            th: (days.indexOf("Th") !== -1),
-                                            f: (days.indexOf("F") !== -1)
-                                        },
-                                        '', //TODO Start Time
-                                        '', //TODO End Time
-                                        ((section.find('sec_backward_ptr').text() != '00000') ? [section.find('sec_backward_ptr').text()] : [])
-                                    );
-                                    course_object.sections.push(section_object);
-                                    if (course_object.sections.length == len) {
-                                        callback(course_object);
-                                    }
-                                }, $(this), i_s, el_s, sec_length);
-                            });
+                        generateCourse(courseXML, course_code, courseXML.attr('course_title'), callback);
+                        
                     }
                 });
 
