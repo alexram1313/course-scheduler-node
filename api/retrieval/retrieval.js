@@ -42,17 +42,14 @@ function courseTimes(listedTimes){
 }
 
 
-function generateCourse(courseXML, id, name, callback){
+function generateCourse($, courseXML, id, name, callback){
     var course_object = courseModel.createCourse(id, name, []);
     var sec_length = courseXML.find('section').length;
 
     if (sec_length == 0) callback(false);
-
-    var $ = cheerio.load(courseXML);
-
+    
     courseXML.find('section').each(function (i_s, el_s) {
             async.setImmediate(function (section, i, el, len) {
-                // console.log(section.find('course_code').text());
                 var type = section.find('sec_type').text();
                 var times = courseTimes(section.find('sec_time').text());
                 var section_object = sectionModel.createSection(
@@ -61,7 +58,8 @@ function generateCourse(courseXML, id, name, callback){
                     section.find('sec_days').text(),
                     times.start, 
                     times.end,
-                    ((section.find('sec_backward_ptr').text() != '00000') ? [section.find('sec_backward_ptr').text()] : [])
+                    ((section.find('sec_backward_ptr').text() != '00000') ? 
+                        [section.find('sec_backward_ptr').text()] : [])
                 );
                 course_object.sections.push(section_object);
                 if (course_object.sections.length == len) {
@@ -154,8 +152,7 @@ module.exports = {
                                 ((single) ? '' : ' (' + school_name + ')');
 
                             
-                            generateCourse($(this), key,  value, function(course_object){
-                                // db.addCourseToCache(course_object, function () { });
+                            generateCourse($, $(this), key,  value, function(course_object){
                                 courses.push(course_object);
                             })
 
@@ -229,7 +226,7 @@ module.exports = {
 
                         var courseXML = $('school[school_code='+school+']').find('course[course_number='+number+']').eq(index);
 
-                        generateCourse(courseXML, course_code, courseXML.attr('course_title'), callback);
+                        generateCourse($, courseXML, course_code, courseXML.attr('course_title'), callback);
                         
                     }
                 });
