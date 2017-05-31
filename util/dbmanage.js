@@ -57,7 +57,7 @@ module.exports = {
 
                     for (var i = 0; i<courseLen; ++i){
                         var code = term + ':' + dept+':'+courseList[i];
-                        result[code] = db.get('courses.'+code);
+                        result[code] = db.get('courses.'+code).value();
                     }
                 }
                 callback(result);
