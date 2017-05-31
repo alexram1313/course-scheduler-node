@@ -53,7 +53,7 @@ module.exports = {
                 if (db.has('depts.' + term + ':' + dept).value()) {
                     result = {};
                     courseList = db.get('depts.' + term + ':' + dept).value()
-                    courseLen  = courseLen.length;
+                    courseLen  = courseList.length;
 
                     for (var i = 0; i<courseLen; ++i){
                         var code = term + ':' + dept+':'+courseList[i];
