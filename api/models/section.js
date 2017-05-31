@@ -11,6 +11,7 @@ module.exports = {
             "type": 'section',
             "secType": secType,
             "code": code,
+            "days":days,
             "startTime": startTime,
             "endTime": endTime,
             "coreqs": coreqs
