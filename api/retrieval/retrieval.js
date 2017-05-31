@@ -41,6 +41,7 @@ function courseTimes(listedTimes){
     }
 }
 
+
 function generateCourse(courseXML, id, name, callback){
     var course_object = courseModel.createCourse(id, name, []);
     var sec_length = courseXML.find('section').length;
@@ -52,18 +53,12 @@ function generateCourse(courseXML, id, name, callback){
     courseXML.find('section').each(function (i_s, el_s) {
             async.setImmediate(function (section, i, el, len) {
                 // console.log(section.find('course_code').text());
-                var days = section.find('sec_days').text();
+                var type = section.find('sec_type').text();
                 var times = courseTimes(section.find('sec_time').text());
                 var section_object = sectionModel.createSection(
-                    section.find('secType').text(),
+                    type,
                     section.find('course_code').text(),
-                    {
-                        m: (days.indexOf("M") !== -1),
-                        tu: (days.indexOf("Tu") !== -1),
-                        w: (days.indexOf("W") !== -1),
-                        th: (days.indexOf("Th") !== -1),
-                        f: (days.indexOf("F") !== -1)
-                    },
+                    section.find('sec_days').text(),
                     times.start, 
                     times.end,
                     ((section.find('sec_backward_ptr').text() != '00000') ? [section.find('sec_backward_ptr').text()] : [])
