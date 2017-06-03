@@ -15,10 +15,8 @@ function courseTimes(listedTimes){
     }
     var times = listedTimes.split('-');
     var start = times[0];
-    var end   = times[1].trim();
+    var end   = times[1];
 
-    
-    var endLen = end.length;
     var suffix_ind = end.indexOf('p');
 
     if (suffix_ind > -1){
@@ -46,7 +44,7 @@ function courseTimes(listedTimes){
             return {start:start, end:end.substr(0, am_index)};
         }
         else{
-            return {start:start, end:end}
+            return {start:start, end:end.trim()}
         }
     }
 }
