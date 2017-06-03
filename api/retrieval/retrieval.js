@@ -1,6 +1,7 @@
 var request = require('request');
 var cheerio = require('cheerio');
 var async = require('async');
+var moment = require('moment');
 
 var sorter = require('../../util/sort');
 var courseModel = require('../models/course');
@@ -14,11 +15,14 @@ function courseTimes(listedTimes){
     }
     var times = listedTimes.split('-');
     var start = times[0];
-    var end   = times[1];
+    var end   = times[1].trim();
 
+    
     var endLen = end.length;
-    if (end.charAt(endLen - 1) == 'p'){
-        end = end.substr(0, endLen-1);
+    var suffix_ind = end.indexOf('p');
+
+    if (suffix_ind > -1){
+        end = end.substr(0, suffix_ind);
 
         var endComp = end.split(':');
         var endHour = parseInt(endComp[0]);
@@ -37,7 +41,13 @@ function courseTimes(listedTimes){
 
     }
     else {
-        return {start:start, end:end};
+        var am_index = end.indexOf('a')
+        if (am_index >= 0){
+            return {start:start, end:end.substr(0, am_index)};
+        }
+        else{
+            return {start:start, end:end}
+        }
     }
 }
 
@@ -61,6 +71,23 @@ function generateCourse($, courseXML, id, name, callback){
                     ((section.find('sec_backward_ptr').text() != '00000') ? 
                         [section.find('sec_backward_ptr').text()] : [])
                 );
+
+                if (section.find('sec_final').length > 0){
+                    var finalTimes = courseTimes(section.find('sec_final_time').text() || "TBA");
+                    var year = id.split('-')[0];
+
+                    var sec_final_date = section.find('sec_final_date').text();
+
+                    if (sec_final_date != "TBA")
+                        var sec_final_date = moment(sec_final_date+ ' ' + year,
+                                            'MMM D YYYY').format();
+                    section_object.final = {
+                        date: sec_final_date,
+                        start: finalTimes.start,
+                        end: finalTimes.end
+                    };
+                }
+                
                 course_object.sections.push(section_object);
                 if (course_object.sections.length == len) {
                     callback(course_object);
@@ -121,7 +148,7 @@ module.exports = {
             //If not in cache
             var output = (asHTMLOptions)?'':[];
             if (!result) {
-                url = 'https://www.reg.uci.edu/perl/WebSoc?Submit=Display+XML+Results&YearTerm=' +
+                url = 'https://www.reg.uci.edu/perl/WebSoc?Submit=Display+XML+Results&ShowFinals=1&YearTerm=' +
                     term + '&Dept=' + encodeURIComponent(dept);
 
                 request(url, function (error, response, html) {
@@ -215,7 +242,7 @@ module.exports = {
                 var school   = moretokens[1];
                 var index    = moretokens[2];
 
-                var url = 'https://www.reg.uci.edu/perl/WebSoc?Submit=Display+XML+Results&YearTerm=' +
+                var url = 'https://www.reg.uci.edu/perl/WebSoc?Submit=Display+XML+Results&ShowFinals=1&YearTerm=' +
                     encodeURIComponent(yearTerm) + '&Dept=' + encodeURIComponent(dept) +
                     '&CourseNum=' + encodeURIComponent(number);
 
