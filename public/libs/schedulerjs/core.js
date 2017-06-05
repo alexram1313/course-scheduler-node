@@ -5,8 +5,6 @@ schedWeb.controller('mainController', function ($scope, $http){
     $scope.coursesLoading = true;
     $scope.newAdded       = true;
     
-    $scope.delCourseHTML = '{{course.name}}' + ' <a ng-click="delCourses(' + '{{$index}}' + ')"; href="javascript:void(0)">[X]</a>';
-
     function setCourseLoadingStatus(status){
         $scope.coursesLoading = status;
     }
