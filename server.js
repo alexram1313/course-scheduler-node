@@ -5,9 +5,8 @@ var moment = require('moment');
 
 var cookieParser = require('cookie-parser');
 
-var webapi = require('./webapi');
+var webapi = require('./webapi').router;
 var api    = require('./api');
-var retrieval = require('./api/retrieval/retrieval');
 
 //Housekeeping
 app.set('view engine', 'ejs');
@@ -22,32 +21,10 @@ process.on('uncaughtException', function (err) {
 
 //Pages
 app.get('/', function (req, res) {
-  retrieval.getSOCYearTermDept(function (data) {
-    var cookies = req.cookies;
-    if (Object.prototype.hasOwnProperty.call(cookies, 'addedCourses')) {
-      webapi.utils.listAddedCourses(cookies.addedCourses, function (result) {
-        res.cookie('addedCourses', result.valid).render('main', {
+  res.render('main', {
           "title": '',
-          "content": '',
-          "termdropdown": data.yearTerm,
-          "deptdropdown": data.dept,
-          "addedCourses": result.display
-        });
-      });
-    }
-    else {
-      addedCourses = [];
-      webapi.utils.listAddedCourses(addedCourses, function (result) {
-        res.cookie('addedCourses', result.valid).render('main', {
-          "title": '',
-          "content": '',
-          "termdropdown": data.yearTerm,
-          "deptdropdown": data.dept,
-          "addedCourses": result.display
-        });
-      });
-    }
-  });
+          "content": ''
+    });
 });
 
 app.get('/about', function (req, res) {
@@ -70,7 +47,7 @@ app.get('/help', function (req, res) {
 
 
 //Web API Controller Commands
-app.use('/webapi', webapi.router);
+app.use('/webapi', webapi);
 
 //External API Commands
 app.use('/api', api);

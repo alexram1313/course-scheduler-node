@@ -4,35 +4,46 @@ const router = app.Router({ mergeParams: true });
 const retrieval = require('../api/retrieval/retrieval');
 
 //Web API Controller
-
-router.get('/retrieval/courselistdrop/:term/:dept', function (req, res) {
-    retrieval.getCourseListingByYearTermDept(req.params.term, req.params.dept, function (data) {
-        res.send(data.data);
-    });
+router.get('/population', function(req, res){
+    var cookies = req.cookies;
+    if (Object.prototype.hasOwnProperty.call(cookies, 'addedCourses')) {
+        functions.listAddedCourses(cookies.addedCourses, function(result){
+                res.cookie('addedCourses', result.valid).
+                    json(result.display);
+        });
+    } else {
+        addedCourses = [];
+        functions.listAddedCourses(addedCourses, function(result){
+            res.cookie('addedCourses', addedCourses).
+                json(result.display);
+        });
+    }
 });
 
-router.get('/population/add/:code', function (req, res) {
+
+router.post('/population/:code', function (req, res) {
     // console.log(req.cookies);
     var cookies = req.cookies;
     if (Object.prototype.hasOwnProperty.call(cookies, 'addedCourses')) {
+        // console.log(cookies.addedCourses);
         if (cookies.addedCourses.indexOf(req.params.code) === -1)
             cookies.addedCourses.push(req.params.code);
 
         functions.listAddedCourses(cookies.addedCourses, function(result){
                 res.cookie('addedCourses', result.valid).
-                    send(result.display);
+                    json(result.display);
             });
     }
     else {
-        addedCourses = [];
+        addedCourses = [req.params.code];
         functions.listAddedCourses(addedCourses, function(result){
             res.cookie('addedCourses', addedCourses).
-                send(result.display);
+                json(result.display);
         });
     }
 });
 
-router.get('/population/del/:index', function (req, res) {
+router.delete('/population/:index', function (req, res) {
     // console.log(req.cookies);
     var cookies = req.cookies;
     if (Object.prototype.hasOwnProperty.call(cookies, 'addedCourses')) {
@@ -43,7 +54,7 @@ router.get('/population/del/:index', function (req, res) {
 
             functions.listAddedCourses(cookies.addedCourses, function(result){
                 res.cookie('addedCourses', result.valid).
-                    send(result.display);
+                    json(result.display);
             });
 
             
@@ -51,7 +62,7 @@ router.get('/population/del/:index', function (req, res) {
         else
         {
             functions.listAddedCourses(cookies.addedCourses, function(result){
-                res.send(result.display);
+                json(result.display);
             });
         }
     }
@@ -70,6 +81,7 @@ functions = {
     listAddedCourses: function (addedCourses, callback = null) {
         var len = addedCourses.length;
         var correct = [];
+        var display = [];
 
         var output = '';
 
@@ -81,26 +93,18 @@ functions = {
                     correct.push(addedCourses[i])
                     var code = result.code;
                     var name = result.name;
-                    var temp = i - skips;
-                    output += '<li id="' + result.code + '" style="color:#0039ad;">' + result.name +' <a onclick="delPopCourses(' + temp + ');" href="javascript:void(0)">[X]</a></li>';
-                }
-                else
-                {
-                    skips += 1;
+
+                    display.push({id:code, name:name});
                 }
             })
         };
 
         if(!(typeof (callback) === 'function' && callback({
-            display: (correct.length>0)?
-                output+'<script>$("#genSched").prop("disabled", false);</script>':
-                "<p>Select some courses first. Then they'll appear here.</p><script>$('#genSched').prop('disabled', true);</script>",
+            display:display,
             valid: correct
-        }))){
-
-        return (correct.length>0)?
-                output+'<script>$("#genSched").prop("disabled", false);</script>':
-                "<p>Select some courses first. Then they'll appear here.</p><script>$('#genSched').prop('disabled', true);</script>";
+        })))
+        {
+            return display;
         }
     }
 }

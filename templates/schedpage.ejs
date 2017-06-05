@@ -17,7 +17,7 @@
     ?>
 -->
 <span>No need to fiddle around with WebSOC. Let us make your schedule for you.</span>
-<div class="columns box">
+<div class="columns box schedpage" ng-controller="mainController">
     <div id="home-top-left" class="left">
         <div class="box">
             <h2>Select your courses</h2>
@@ -26,8 +26,12 @@
                 <tr>
                     <td class="courses_1">Term:</td>
                     <td class="courses_2">
-                        <select name="YearTerm" id="term" onChange="populateCourses();" class="class_select">
-                            <%- termdropdown %>
+                        <select name="YearTerm" id="term" class="class_select"
+                                ng-model="yearTerm" ng-change="populateCourses()"
+                                ng-options="yt.name for yt in yearTerms track by yt.id">
+                            <option>
+                                Loading...
+                            </option>
                         </select>
                     </td>
                 </tr>
@@ -35,13 +39,13 @@
                 <tr>
                     <td class="courses_1">Department:</td>
                     <td class="courses_2">
-                        <select name="Dept" id="dept" onChange="populateCourses();" class="class_select">
-                            <%- deptdropdown %>
+                        <select name="Dept" id="dept" class="class_select"
+                                ng-model="dept" ng-change="populateCourses()"
+                                ng-options="dept.name for dept in depts track by dept.id">
+                            <option>
+                                Loading...
+                            </option>
                         </select>
-                        <script>
-                            var sel = document.getElementById('dept');
-                            populateCourses(sel.value);
-                        </script>
                     </td>
                 </tr>
                 
@@ -50,16 +54,22 @@
                         Course:
                     </td>
                     <td class="courses_2">
-                        <select name="Course" id="course" onChange="hideAdded();" class="class_select">
+                        <select name="Course" id="course" ng-change="hideAddedMsg(true)" class="class_select"
+                                ng-model="selectedCourse"
+                                ng-options="course.name for course in currentCourseList track by course.id">
+                            <option>
+                                Loading...
+                            </option>
                         </select>
                     </td>
                 </tr>
                 
                 <tr>
-                <td class="courses_1"  id="addConfirm" style="color:#0039ad;">
+                    <td class="courses_1" id="addConfirm" style="color:#0039ad;">
+                        <span ng-hide="newAdded">Added</span>
                     </td>
                     <td class="courses_2" style="text-align:right">
-                        <button type="button" onClick="populateAddedCourses(document.getElementById('course').value)">Select Course</button>
+                        <button type="button" ng-disabled="coursesLoading" ng-click="addCourse()">Select Course</button>
                     </td>
                 </tr>
             </table>
@@ -138,7 +148,7 @@
                     <td class="courses_1">
                     </td>
                     <td class="courses_2" style="text-align:right">
-                        <button disabled id="genSched" type="button" onClick="generateSchedules();" >Schedule classes</button>
+                        <button id="genSched" ng-disabled="addedCourses.length == 0" type="button" onClick="generateSchedules();" >Schedule classes</button>
                     </td>
                 </tr>
             </table>
@@ -150,15 +160,10 @@
         <div class="box">
             <h2>Added Courses</h2>
             <ul id="addedCourses">
-                <%- addedCourses %>
-                <!--
-                <?php
-                    echo listAddedCourses($first);
-                    $first = false;
-                    ?>
-                -->
-                
-                
+                <span ng-hide="addedCourses.length">Select some courses first. Then they'll appear here.</span>
+                <li style="color:#0039ad;" ng-repeat="course in addedCourses" >
+                    <span ng-bind="course.name"></span><a ng-click="delCourse($index)" href="javascript:void(0)" ng-bind="'[X]'"></a>
+                </li>
             </ul>
         </div>
     </div>

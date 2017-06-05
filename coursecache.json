@@ -1,5 +1,4924 @@
 {
-  "updatetime": "2017-06-04T01:43:21-07:00",
-  "depts": { },
-  "courses": { }
+  "updatetime": "2017-06-05T02:34:01-07:00",
+  "depts": {
+    "2017-92:AC ENG": [
+      "20A-60-0",
+      "20B-60-0",
+      "20C-60-0",
+      "20D-60-0",
+      "22A-60-0",
+      "23A-60-0",
+      "23B-60-0",
+      "23C-60-0",
+      "28-60-0",
+      "29-60-0",
+      "139W-60-0"
+    ],
+    "2017-92:ANTHRO": [
+      "2A-65-0",
+      "2B-65-0",
+      "2C-65-0",
+      "10A-65-0",
+      "20A-65-0",
+      "30B-65-0",
+      "41A-65-0",
+      "125C-65-0",
+      "129-65-0",
+      "136A-65-0",
+      "139-65-0",
+      "139-65-1",
+      "139-65-2",
+      "163A-65-0",
+      "169-65-0",
+      "169-65-1",
+      "169-65-2",
+      "169-65-3",
+      "180AW-65-0",
+      "190-65-0",
+      "H190A-65-0",
+      "197-65-0",
+      "198-65-0",
+      "199-65-0",
+      "202A-65-0",
+      "204A-65-0",
+      "211A-65-0",
+      "245A-65-0",
+      "289-65-0",
+      "289-65-1",
+      "290-65-0",
+      "299-65-0"
+    ]
+  },
+  "courses": {
+    "2017-92:AC ENG:20A-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:20A-60-0",
+      "name": "AC ENG 20A: ACADEMIC WRITING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20000",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20001",
+          "days": "MWF",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20002",
+          "days": "MWF",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20003",
+          "days": "MWF",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20004",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20005",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20006",
+          "days": "MWF",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20007",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20008",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20009",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20010",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20011",
+          "days": "MWF",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20012",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20013",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20014",
+          "days": "MWF",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20015",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20016",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20017",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20018",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20019",
+          "days": "MWF",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20020",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20021",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20022",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20023",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20024",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20025",
+          "days": "MWF",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20026",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20027",
+          "days": "MWF",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "20000"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "20035",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "20000"
+          ]
+        }
+      ]
+    },
+    "2017-92:AC ENG:20B-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:20B-60-0",
+      "name": "AC ENG 20B: ACADEMIC WRITING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20036",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20037",
+          "days": "MWF",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20038",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20039",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20040",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20041",
+          "days": "MWF",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20042",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20043",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20044",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20045",
+          "days": "MWF",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20046",
+          "days": "MWF",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20047",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20048",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20049",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20050",
+          "days": "MWF",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20051",
+          "days": "MWF",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20052",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20053",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20054",
+          "days": "MWF",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20055",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20056",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20057",
+          "days": "MWF",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20058",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20059",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20060",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20061",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20062",
+          "days": "MWF",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20063",
+          "days": "MWF",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20064",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20065",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20066",
+          "days": "MWF",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20067",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20068",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20069",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20070",
+          "days": "MWF",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20071",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20072",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20036"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "20073",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "20036"
+          ]
+        }
+      ]
+    },
+    "2017-92:AC ENG:20C-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:20C-60-0",
+      "name": "AC ENG 20C: ACADEMIC WRITING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20074",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20075",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20076",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20077",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20078",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20079",
+          "days": "MWF",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20080",
+          "days": "MWF",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20081",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20082",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20083",
+          "days": "MWF",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20084",
+          "days": "MWF",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20085",
+          "days": "MWF",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20086",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20087",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20088",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20089",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20090",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20091",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20092",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20093",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20094",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20095",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20096",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20097",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20098",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20099",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20100",
+          "days": "MWF",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20101",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20102",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20103",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20104",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20074"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "20108",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "20074"
+          ]
+        }
+      ]
+    },
+    "2017-92:AC ENG:20D-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:20D-60-0",
+      "name": "AC ENG 20D: ACADEMIC WRITING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20111",
+          "days": "MWF",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "20109"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20114",
+          "days": "MWF",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "20109"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20115",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [
+            "20109"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20116",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20109"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20117",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "20109"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20118",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [
+            "20109"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20121",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [
+            "20109"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "20125",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "20109"
+          ]
+        }
+      ]
+    },
+    "2017-92:AC ENG:22A-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:22A-60-0",
+      "name": "AC ENG 22A: READING&VOCABULARY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20126",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20128",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [
+            "20126"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20130",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "20126"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20132",
+          "days": "MWF",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "20126"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20134",
+          "days": "MWF",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "20126"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20136",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "20126"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20138",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [
+            "20126"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20140",
+          "days": "MWF",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "20126"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20142",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [
+            "20126"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20144",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20126"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:AC ENG:23A-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:23A-60-0",
+      "name": "AC ENG 23A: ESL BASIC PRONUN I",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20146",
+          "days": "MWF",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20148",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "20146"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20150",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [
+            "20146"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20152",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "20146"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:AC ENG:23B-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:23B-60-0",
+      "name": "AC ENG 23B: ESL INTERM CONV II",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20155",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:AC ENG:23C-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:23C-60-0",
+      "name": "AC ENG 23C: ESL ADV COMM III",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20160",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:AC ENG:28-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:28-60-0",
+      "name": "AC ENG 28: GRAMMAR",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20170",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20172",
+          "days": "MWF",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "20170"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20174",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [
+            "20170"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20176",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20170"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:AC ENG:29-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:29-60-0",
+      "name": "AC ENG 29: SPEC TOPIC: CONVERS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20180",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "20181",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [
+            "20180"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:AC ENG:139W-60-0": {
+      "type": "course",
+      "code": "2017-92:AC ENG:139W-60-0",
+      "name": "AC ENG 139W: ADV ACADMIC WRITING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "20190",
+          "days": "MWF",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "20192",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [
+            "20190"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "20196",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [
+            "20190"
+          ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:2A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:2A-65-0",
+      "name": "ANTHRO 2A: INTR SOCIOCULT ANTH",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60000",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-15T00:00:00-08:00",
+            "start": "10:30",
+            "end": "12:30"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60001",
+          "days": "Tu",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60002",
+          "days": "Th",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60003",
+          "days": "M",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60004",
+          "days": "M",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60005",
+          "days": "M",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60006",
+          "days": "Th",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60007",
+          "days": "W",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60008",
+          "days": "W",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60009",
+          "days": "W",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60010",
+          "days": "W",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60011",
+          "days": "Tu",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60012",
+          "days": "Th",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60013",
+          "days": "F",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60014",
+          "days": "F",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60015",
+          "days": "Th",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60020",
+          "days": "Tu",
+          "startTime": "19:00",
+          "endTime": "21:50",
+          "coreqs": [
+            "60000"
+          ],
+          "final": {
+            "date": "2017-12-12T00:00:00-08:00",
+            "start": "19:00",
+            "end": "21:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60021",
+          "days": "M",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60022",
+          "days": "M",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60023",
+          "days": "W",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60024",
+          "days": "Tu",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60025",
+          "days": "Tu",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60026",
+          "days": "Tu",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60027",
+          "days": "Tu",
+          "startTime": "18:00",
+          "endTime": "18:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60028",
+          "days": "Tu",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60029",
+          "days": "Tu",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60030",
+          "days": "W",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60031",
+          "days": "Th",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60032",
+          "days": "Th",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60033",
+          "days": "W",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60034",
+          "days": "M",
+          "startTime": "18:00",
+          "endTime": "18:50",
+          "coreqs": [
+            "60000"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60035",
+          "days": "M",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60000"
+          ]
+        }
+      ]
+    },
+    "2017-92:ANTHRO:2B-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:2B-65-0",
+      "name": "ANTHRO 2B: INTRO TO BIO ANTHRO",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60040",
+          "days": "MWF",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-13T00:00:00-08:00",
+            "start": "13:30",
+            "end": "15:30"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60041",
+          "days": "M",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": []
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60042",
+          "days": "F",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": []
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60043",
+          "days": "Tu",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": []
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60044",
+          "days": "Tu",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": []
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60045",
+          "days": "F",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": []
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60046",
+          "days": "Th",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": []
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60047",
+          "days": "W",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": []
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60048",
+          "days": "W",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": []
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60049",
+          "days": "W",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": []
+        }
+      ]
+    },
+    "2017-92:ANTHRO:2C-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:2C-65-0",
+      "name": "ANTHRO 2C: INTRO ARCHAEOLOGY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60060",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-14T00:00:00-08:00",
+            "start": "8:00",
+            "end": "10:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60061",
+          "days": "Th",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60060"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60062",
+          "days": "Tu",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60060"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60063",
+          "days": "W",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60060"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60064",
+          "days": "W",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "60060"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60065",
+          "days": "Th",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "60060"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60066",
+          "days": "W",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "60060"
+          ]
+        }
+      ]
+    },
+    "2017-92:ANTHRO:10A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:10A-65-0",
+      "name": "ANTHRO 10A: PROBABILITY & STATS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60080",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-12T00:00:00-08:00",
+            "start": "10:30",
+            "end": "12:30"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "60081",
+          "days": "Tu",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "60080"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "60082",
+          "days": "Tu",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "60080"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "60083",
+          "days": "Tu",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "60080"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "60084",
+          "days": "W",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "60080"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "60085",
+          "days": "W",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "60080"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "60086",
+          "days": "W",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "60080"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "60087",
+          "days": "F",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "60080"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "code": "60088",
+          "days": "F",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "60080"
+          ]
+        }
+      ]
+    },
+    "2017-92:ANTHRO:20A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:20A-65-0",
+      "name": "ANTHRO 20A: PEOPLE,CULT&ENV SUS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60100",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-12T00:00:00-08:00",
+            "start": "10:30",
+            "end": "12:30"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:30B-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:30B-65-0",
+      "name": "ANTHRO 30B: ETHNOG&ANTH METHODS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60103",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-14T00:00:00-08:00",
+            "start": "13:30",
+            "end": "15:30"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:41A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:41A-65-0",
+      "name": "ANTHRO 41A: GLOBAL CULTURES&SOC",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60105",
+          "days": "Th",
+          "startTime": "19:00",
+          "endTime": "21:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-14T00:00:00-08:00",
+            "start": "19:00",
+            "end": "21:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60106",
+          "days": "Tu",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60107",
+          "days": "Tu",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60108",
+          "days": "Tu",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60109",
+          "days": "Tu",
+          "startTime": "18:00",
+          "endTime": "18:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60110",
+          "days": "W",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60111",
+          "days": "W",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60112",
+          "days": "W",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60113",
+          "days": "W",
+          "startTime": "18:00",
+          "endTime": "18:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60114",
+          "days": "Th",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60115",
+          "days": "Th",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60116",
+          "days": "Th",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60117",
+          "days": "M",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60118",
+          "days": "Th",
+          "startTime": "18:00",
+          "endTime": "18:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60119",
+          "days": "Th",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "60105"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60120",
+          "days": "Th",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "60105"
+          ]
+        }
+      ]
+    },
+    "2017-92:ANTHRO:125C-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:125C-65-0",
+      "name": "ANTHRO 125C: ENVIRONMENTAL ANTHR",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60130",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-14T00:00:00-08:00",
+            "start": "13:30",
+            "end": "15:30"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:129-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:129-65-0",
+      "name": "ANTHRO 129: CONSPIRACY THEORIES",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60150",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-12T00:00:00-08:00",
+            "start": "16:00",
+            "end": "18:00"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:136A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:136A-65-0",
+      "name": "ANTHRO 136A: NATIONS/ETHNICITIES",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60220",
+          "days": "W",
+          "startTime": "19:00",
+          "endTime": "21:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-13T00:00:00-08:00",
+            "start": "19:00",
+            "end": "21:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60221",
+          "days": "M",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "60220"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60222",
+          "days": "M",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "60220"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60223",
+          "days": "W",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "60220"
+          ]
+        }
+      ]
+    },
+    "2017-92:ANTHRO:139-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:139-65-0",
+      "name": "ANTHRO 139: DISEASE HLTH&INEQUL",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60225",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-14T00:00:00-08:00",
+            "start": "13:30",
+            "end": "15:30"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:139-65-1": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:139-65-1",
+      "name": "ANTHRO 139: PRISONS & PUBLIC ED",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60229",
+          "days": "Tu",
+          "startTime": "19:00",
+          "endTime": "21:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-12T00:00:00-08:00",
+            "start": "19:00",
+            "end": "21:00"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:139-65-2": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:139-65-2",
+      "name": "ANTHRO 139: ETHNOGPHY SCI&TECH",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60230",
+          "days": "TuTh",
+          "startTime": "19:00",
+          "endTime": "20:20",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-12T00:00:00-08:00",
+            "start": "19:00",
+            "end": "21:00"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:163A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:163A-65-0",
+      "name": "ANTHRO 163A: PEOPLES OF PACIFIC",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60240",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-14T00:00:00-08:00",
+            "start": "8:00",
+            "end": "10:00"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:169-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:169-65-0",
+      "name": "ANTHRO 169: SE AS&SE AS MIGRNTS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60320",
+          "days": "M",
+          "startTime": "19:00",
+          "endTime": "21:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-11T00:00:00-08:00",
+            "start": "19:00",
+            "end": "21:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60321",
+          "days": "Tu",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "60320"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60322",
+          "days": "M",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "60320"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60323",
+          "days": "W",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "60320"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60324",
+          "days": "Tu",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60320"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60325",
+          "days": "M",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "60320"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "code": "60326",
+          "days": "W",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "60320"
+          ]
+        }
+      ]
+    },
+    "2017-92:ANTHRO:169-65-1": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:169-65-1",
+      "name": "ANTHRO 169: GOLD BARBARUS RELIC",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60330",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-11T00:00:00-08:00",
+            "start": "10:30",
+            "end": "12:30"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:169-65-2": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:169-65-2",
+      "name": "ANTHRO 169: W.E.B. DUBOIS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60335",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-12T00:00:00-08:00",
+            "start": "16:00",
+            "end": "18:00"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:169-65-3": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:169-65-3",
+      "name": "ANTHRO 169: UFOS IN AMERICA",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "code": "60440",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-14T00:00:00-08:00",
+            "start": "13:30",
+            "end": "15:30"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:180AW-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:180AW-65-0",
+      "name": "ANTHRO 180AW: ANTHRO MAJOR SEM",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "60450",
+          "days": "M",
+          "startTime": "19:00",
+          "endTime": "21:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-11T00:00:00-08:00",
+            "start": "19:00",
+            "end": "21:00"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:190-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:190-65-0",
+      "name": "ANTHRO 190: SENIOR THESIS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60500",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60502",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60504",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60506",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60508",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:H190A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:H190A-65-0",
+      "name": "ANTHRO H190A: HONORS RES WORKSHOP",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60509",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60510",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60511",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60512",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60513",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60514",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60515",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60516",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60517",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60518",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60519",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60521",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60523",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60525",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60526",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60527",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60529",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60531",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60533",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60537",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60538",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:197-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:197-65-0",
+      "name": "ANTHRO 197: FIELD STUDY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Fld",
+          "code": "60570",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Fld",
+          "code": "60572",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:198-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:198-65-0",
+      "name": "ANTHRO 198: DIRECTED GRP STUDY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60580",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60582",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60584",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60586",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:199-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:199-65-0",
+      "name": "ANTHRO 199: INDIVIDUAL STUDY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60600",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60602",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60604",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60608",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60610",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60612",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60613",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60614",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60615",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60616",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60618",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60620",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60622",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60624",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60625",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60627",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60628",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60629",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60630",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60632",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60637",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:202A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:202A-65-0",
+      "name": "ANTHRO 202A: PROSEMINAR IN ANTHR",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "60700",
+          "days": "W",
+          "startTime": "9:00",
+          "endTime": "11:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:204A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:204A-65-0",
+      "name": "ANTHRO 204A: PROSEM MED SCI TECH",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "60715",
+          "days": "W",
+          "startTime": "12:00",
+          "endTime": "14:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:211A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:211A-65-0",
+      "name": "ANTHRO 211A: STATS & RES DESIGN",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "60717",
+          "days": "W",
+          "startTime": "15:00",
+          "endTime": "17:50",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:245A-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:245A-65-0",
+      "name": "ANTHRO 245A: POLITICAL ANTHRO",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "60735",
+          "days": "M",
+          "startTime": "15:00",
+          "endTime": "17:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-11T00:00:00-08:00",
+            "start": "16:00",
+            "end": "18:00"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:289-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:289-65-0",
+      "name": "ANTHRO 289: THEORIZING AFRICA",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "60745",
+          "days": "Tu",
+          "startTime": "9:00",
+          "endTime": "11:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-14T00:00:00-08:00",
+            "start": "8:00",
+            "end": "10:00"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:289-65-1": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:289-65-1",
+      "name": "ANTHRO 289: PRISONS IN THE U.S.",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "code": "60750",
+          "days": "Tu",
+          "startTime": "12:00",
+          "endTime": "14:50",
+          "coreqs": [],
+          "final": {
+            "date": "2017-12-15T00:00:00-08:00",
+            "start": "10:30",
+            "end": "12:30"
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:290-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:290-65-0",
+      "name": "ANTHRO 290: DISSERTATION RESRCH",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60800",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60802",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60804",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60808",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60810",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60811",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60813",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60814",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60815",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60816",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60818",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60819",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60820",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60821",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60822",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60823",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60826",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60828",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60830",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "code": "60832",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:ANTHRO:299-65-0": {
+      "type": "course",
+      "code": "2017-92:ANTHRO:299-65-0",
+      "name": "ANTHRO 299: INDEPENDENT STUDY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60900",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60902",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60904",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60905",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60906",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60907",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60908",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60909",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60914",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60916",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60918",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60919",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60922",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60923",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60924",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60925",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60926",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60928",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60930",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "code": "60932",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    }
+  }
 }
