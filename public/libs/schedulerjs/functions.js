@@ -15,68 +15,6 @@ var keepSessionAlive = function () {
 
 keepSessionAlive();
 
-function hideAdded() {
-
-    $("#addConfirm").html("");
-}
-
-function populateCourses() {
-    jQuery(function ($) {
-        $(document).ready(function () {
-            hideAdded();
-            $("#course").prop('disabled', true);
-            $("#course").html("<option>Loading</option>");
-            $.ajax({
-                type: "GET",
-                url: "/webapi/retrieval/courselistdrop/" + 
-                    encodeURIComponent($("#term").val()) + "/" +
-                    encodeURIComponent($("#dept").val()),
-                success: function (data) {
-                    $("#course").html(data);
-                    $("#course").prop('disabled', false);
-
-                }
-            });
-        });
-    });
-}
-
-function populateAddedCourses(str) {
-    jQuery(function ($) {
-        $(document).ready(function () {
-            $("#addedCourses").html("Loading...");
-            $("#addConfirm").html("Adding...");
-            $.ajax({
-                type: "GET",
-                url: "/webapi/population/add/"+encodeURIComponent(str),
-                success: function (data) {
-                    console.log(data);
-                    $("#addedCourses").html(data);
-                    $("#addConfirm").html("Added");
-                }
-            });
-        });
-    });
-}
-
-function delPopCourses(str) {
-    jQuery(function ($) {
-        $(document).ready(function () {
-            hideAdded();
-            $.ajax({
-                type: "GET",
-                url: "/webapi/population/del/"+encodeURIComponent(str),
-                success: function (data) {
-                    console.log(data);
-                    $("#addedCourses").html(data);
-
-                }
-
-            });
-        });
-    });
-}
-
 function getSchedText(calChoice, prevNext) {
     var div = "";
 
