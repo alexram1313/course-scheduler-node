@@ -1,4 +1,5 @@
 var express = require('express');
+var engine = require('ejs-locals');
 var app = express();
 var fs = require('fs');
 var moment = require('moment');
@@ -9,8 +10,11 @@ var webapi = require('./webapi').router;
 var api    = require('./api');
 
 //Housekeeping
+app.engine('ejs', engine);
+app.set('views',__dirname + '/templates');
 app.set('view engine', 'ejs');
 app.set('views', 'templates');
+app.set('view options', { layout:'templates/layout.ejs' });
 
 app.use(cookieParser());
 app.use('/public', express.static('public'));
@@ -21,16 +25,15 @@ process.on('uncaughtException', function (err) {
 
 //Pages
 app.get('/', function (req, res) {
-  res.render('main', {
+  res.render('schedpage', {
           "title": '',
-          "content": ''
     });
 });
 
 app.get('/about', function (req, res) {
   var title = "About";
   var content = "<p>ZotScheduler is a tool that generates class schedules for students. Eventually, this about page will be more interesting. Developed by David Legg and Alex I. Ramirez.</p>";
-  res.render('main', {
+  res.render('stdpage', {
     "title": title,
     "content": content
   });
@@ -39,7 +42,7 @@ app.get('/about', function (req, res) {
 app.get('/help', function (req, res) {
   var title = "Help";
   var content = "<p>Instructions to come.</p>";
-  res.render('main', {
+  res.render('stdpage', {
     "title": title,
     "content": content
   });
