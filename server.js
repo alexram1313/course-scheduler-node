@@ -32,7 +32,7 @@ app.get('/', function (req, res) {
 
 app.get('/about', function (req, res) {
   var title = "About";
-  var content = "<p>Born out of a poor anteater's frustration with scheduling courses, David Legg, along with his partner in crime Alex I. Ramirez, have developed ZotScheduler - Course Scheduler.</p><p>ZotScheduler is a tool that, based on what you want, gives you the possible class combinations you'll like with having to deal with clunky WebSOC.</p>";
+  var content = "<p>Born out of a poor anteater's frustration with scheduling courses, David Legg, along with his partner in crime Alex I. Ramirez, have developed ZotScheduler - Course Scheduler.</p><p>ZotScheduler is a tool that, based on what you want, gives you the possible class combinations you'll like without having to deal with clunky WebSOC.</p>";
   res.render('stdpage', {
     "title": title,
     "content": content
