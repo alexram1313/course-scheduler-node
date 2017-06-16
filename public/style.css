@@ -238,3 +238,9 @@ background-color:#1b3d6d;
   background: #bb0000;
   color: white;
 }
+
+/* About Bios */
+
+.bio ul li{
+	list-style-type: none;
+}
