@@ -22,7 +22,11 @@ process.on('uncaughtException', function (err) {
   console.log("Error: " + err);
 });
 
-//Pages
+
+
+
+
+//Real Pages
 app.get('/', function (req, res) {
   res.render('pages/schedpage', {
           "title": '',
@@ -50,6 +54,39 @@ app.use('/webapi', webapi);
 
 //External API Commands
 app.use('/api', api);
+
+
+//Errors
+app.use(function(req, res, next){
+  res.status(404);
+
+  res.format({
+    html: function () {
+      res.render('pages/stdpage',{
+        'title':"Error 404",
+        'content':'Whoops! Page not found. Sorry about that.'
+      });
+    },
+    json: function () {
+      res.json({ error: 'Not found' })
+    },
+    default: function () {
+      res.type('txt').send('Not found')
+    }
+  })
+});
+
+
+app.use(function(err, req, res, next){
+  // we may use properties of the error object
+  // here and next(err) appropriately, or if
+  // we possibly recovered from the error, simply next().
+  res.status(err.status || 500);
+  res.render('pages/stdpage',{
+        'title':"Error "+err,
+        'content':'An error occurred. Check the URL or click around.'
+      });
+});
 
 //Start Server
 var server = app.listen(process.env.PORT || 8080, function () {
