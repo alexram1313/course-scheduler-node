@@ -1,0 +1,28 @@
+{
+  "name": "course-scheduler-node",
+  "version": "1.0.0",
+  "description": "Automated university course scheduler written for Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexram1313/course-scheduler-node.git"
+  },
+  "author": "alexram1313; DavidLegg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexram1313/course-scheduler-node/issues"
+  },
+  "homepage": "https://github.com/alexram1313/course-scheduler-node#readme",
+  "dependencies": {
+    "async": "^2.4.1",
+    "cheerio": "^0.22.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "lowdb": "^0.16.2",
+    "moment": "^2.18.1",
+    "request": "^2.81.0"
+  }
+}

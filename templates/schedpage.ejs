@@ -1,0 +1,348 @@
+<% layout('layout') %>
+
+
+<span>No need to fiddle around with WebSOC. Let us make your schedule for you.</span>
+<div class="columns box schedpage" ng-controller="mainController">
+    <div id="home-top-left" class="left">
+        <div class="box">
+            <h2>Select your courses</h2>
+            
+            <table class="course_choice">
+                <tr>
+                    <td class="courses_1">Term:</td>
+                    <td class="courses_2">
+                        <select name="YearTerm" id="term" class="class_select"
+                                ng-model="yearTerm" ng-change="populateCourses()"
+                                ng-options="yt.name for yt in yearTerms track by yt.id">
+                            <option>
+                                Loading...
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="courses_1">Department:</td>
+                    <td class="courses_2">
+                        <select name="Dept" id="dept" class="class_select"
+                                ng-model="dept" ng-change="populateCourses()"
+                                ng-options="dept.name for dept in depts track by dept.id">
+                            <option>
+                                Loading...
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="courses_1">
+                        Course:
+                    </td>
+                    <td class="courses_2">
+                        <select name="Course" id="course" ng-change="hideAddedMsg(true)" class="class_select"
+                                ng-model="selectedCourse"
+                                ng-options="course.name for course in currentCourseList track by course.id">
+                            <option>
+                                Loading...
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="courses_1" id="addConfirm" style="color:#0039ad;">
+                        <span ng-hide="newAdded">Added</span>
+                    </td>
+                    <td class="courses_2" style="text-align:right">
+                        <button type="button" ng-disabled="coursesLoading" ng-click="addCourse()">Select Course</button>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="box">
+            <h2>Select your preferences</h2>
+            
+            <table class="course_choice">
+                <tr>
+                    <td class="courses_1">
+                        
+                    </td>
+                    <td class="courses_2" >
+                        <span style="font-size:0.8em;">A higher rating means you want more of that category.</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="courses_1">
+                        Mornings:
+                    </td>
+                    <td class="courses_2" >
+                        <input id="mornings" type="range" class="class_select pref_select" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="courses_1">
+                            Evenings:
+                    </td>
+                    <td class="courses_2" >
+                        <input id="evenings" type="range" class="class_select pref_select" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="courses_1">
+                        Mondays:
+                    </td>
+                    <td class="courses_2" >
+                        <input id="mondays" type="range" class="class_select pref_select" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="courses_1">
+                        Fridays:
+                    </td>
+                    <td class="courses_2" >
+                        <input id="fridays" type="range" class="class_select pref_select" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="courses_1">
+                        Balanced Days:
+                    </td>
+                    <td class="courses_2" >
+                        <input id="balance" type="range" class="class_select pref_select" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="courses_1">
+                            Gaps:
+                    </td>
+                    <td class="courses_2" >
+                        <input id="gaps" type="range" class="class_select pref_select" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="courses_1">
+                            Openings:
+                    </td>
+                    <td class="courses_2" >
+                        <input id="openings" type="range" class="class_select pref_select" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="courses_1">
+                    </td>
+                    <td class="courses_2" style="text-align:right">
+                        <button id="genSched" ng-disabled="addedCourses.length == 0" type="button" onClick="generateSchedules();" >Schedule classes</button>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        
+    </div>
+    <div id="home-top-right" class="right">
+        <div class="box">
+            <h2>Added Courses</h2>
+            <ul id="addedCourses">
+                <span ng-hide="addedCourses.length">Select some courses first. Then they'll appear here.</span>
+                <li style="color:#0039ad;" ng-repeat="course in addedCourses" >
+                    <span ng-bind="course.name"></span><a ng-click="delCourse($index)" href="javascript:void(0)" ng-bind="'[X]'"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+<div class="columns box" id="schedules">
+    <h2>Compare possible schedules</h2>
+    <p style="text-align:center;"><a href="javascript:void(0)" onClick="window.open('http://webreg1.reg.uci.edu:8889/cgi-bin/wramia?page=startUp&call=', 'WebReg UCI', 'width=700,height=400,scrollbars=yes'); ">Like what you see? Click here to go to WebReg.</a></p>
+    <div id="home-left" class="left box">
+        <!—- Calendar —>
+        <script src='/public/libs/fullcalendar/lib/moment.min.js'></script>
+        <script src='/public/libs/fullcalendar/fullcalendar.js'></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                                
+                                // page is now ready, initialize the calendar...
+                                
+                                $('#calendar').fullCalendar({
+                                                            // put your options and callbacks here
+                                                            weekends: false,
+                                                            defaultView: "agendaWeek",
+                                                            slotDuration:"00:30:00",
+                                                            minTime:"08:00:00",
+                                                            defaultDate:"2017-01-02",
+                                                            timezone:"America/Los_Angeles",
+                                                            allDaySlot:false,
+                                                            height:700,
+                                                            contentHeight:800,
+                                                            columnFormat:'ddd',
+                                                            header: {
+                                                            left:"title",
+                                                            center:"",
+                                                            right:"prev,next"
+                                                            },
+                                                            titleFormat:"[Schedule #1]",
+                                                            eventOverlap:false,
+                                                            loading: function(isLoading, view){
+                                                            alert('loading');
+                                                            if (isLoading){
+                                                            $(".fc-prev-button").prop("disabled", true);
+                                                            $(".fc-prev-button").addClass("fc-state-disabled");
+                                                            $(".fc-next-button").prop("disabled", true);
+                                                            $(".fc-next-button").addClass("fc-state-disabled");
+                                                            }
+                                                            else
+                                                            {
+                                                            $(".fc-prev-button").removeClass("fc-state-disabled");
+                                                            $(".fc-prev-button").prop("disabled", false);
+                                                            $(".fc-next-button").removeClass("fc-state-disabled");
+                                                            $(".fc-next-button").prop("disabled", false);
+                                                            }
+                                                            
+                                                            }
+                                                            
+                                                            });
+                                
+                                $('.fc-prev-button').click(function(){
+                                                            console.log("Clickable", clickable);
+                                                            if (schedMax >0){
+                                                            if (clickable){
+                                                            clickable = false;
+                                                            $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').prop("disabled", true);
+                                                            $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
+                                                            $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
+                                                            $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
+                                                            $.when(
+                                                                getSchedText(0,-1),
+                                                                console.log("when")
+                                                                ).then(
+                                                                        getSchedule(0,0),console.log("then")
+                                                                        );
+                                                            }
+                                                            }
+                                                            });
+                                
+                                $('.fc-next-button').click(function(){
+                                                            console.log("Clickable", clickable);
+                                                            if (schedMax > 0){
+                                                            if (clickable){
+                                                            clickable = false;
+                                                            $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').prop("disabled", true);
+                                                            $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
+                                                            $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
+                                                            $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
+                                                            $.when(getSchedText(0,1)
+                                                                ).then(
+                                                                        getSchedule(0,0)
+                                                                        );
+                                                            
+                                                            
+                                                            }
+                                                            }
+                                                            });
+                                });
+                                
+            </script>
+        
+        
+        <div id="calendar"></div>
+        <!—- End Calendar —>
+        
+    </div>
+    <div id="home-right" class="right box">
+        <!—- Calendar —>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                                
+                                // page is now ready, initialize the calendar...
+                                
+                                $('#calendar-right').fullCalendar({
+                                                                // put your options and callbacks here
+                                                                weekends: false,
+                                                                defaultView: "agendaWeek",
+                                                                slotDuration:"00:30:00",
+                                                                minTime:"08:00:00",
+                                                                defaultDate:"2017-01-02",
+                                                                timezone:"America/Los_Angeles",
+                                                                allDaySlot:false,
+                                                                height:700,
+                                                                contentHeight:800,
+                                                                columnFormat:'ddd',
+                                                                header: {
+                                                                left:"title",
+                                                                center:"",
+                                                                right:"prev,next"
+                                                                },
+                                                                titleFormat:"[Schedule #2]",
+                                                                eventOverlap:false,
+                                                                loading: function(isLoading, view){
+                                                                alert('loading');
+                                                                if (isLoading){
+                                                                $(".fc-prev-button").prop("disabled", true);
+                                                                $(".fc-prev-button").addClass("fc-state-disabled");
+                                                                $(".fc-next-button").prop("disabled", true);
+                                                                $(".fc-next-button").addClass("fc-state-disabled");
+                                                                }
+                                                                else
+                                                                {
+                                                                $(".fc-prev-button").removeClass("fc-state-disabled");
+                                                                $(".fc-prev-button").prop("disabled", false);
+                                                                $(".fc-next-button").removeClass("fc-state-disabled");
+                                                                $(".fc-next-button").prop("disabled", false);
+                                                                }
+                                                                
+                                                                }
+                                                                
+                                                                });
+                                
+                                $('.fc-prev-button').click(function(){
+                                                            console.log("Clickable", clickable);
+                                                            if (schedMax >0){
+                                                            if (clickable){
+                                                            clickable = false;
+                                                            $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').prop("disabled", true);
+                                                            $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
+                                                            $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
+                                                            $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
+                                                            $.when(
+                                                                getSchedText(1,-1),
+                                                                console.log("when")
+                                                                ).then(
+                                                                        getSchedule(1,0),console.log("then")
+                                                                        );
+                                                            }
+                                                            }
+                                                            });
+                                
+                                $('.fc-next-button').click(function(){
+                                                            console.log("Clickable", clickable);
+                                                            if (schedMax > 0){
+                                                            if (clickable){
+                                                            clickable = false;
+                                                            $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').prop("disabled", true);
+                                                            $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
+                                                            $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
+                                                            $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
+                                                            $.when(getSchedText(1,1)
+                                                                ).then(
+                                                                        getSchedule(1,0)
+                                                                        );
+                                                            
+                                                            
+                                                            }
+                                                            }
+                                                            });
+                                });
+                                
+            </script>
+        
+        
+        <div id="calendar-right"></div>
+        <!—- End Calendar —>
+        
+    </div>
+    
+</div>
