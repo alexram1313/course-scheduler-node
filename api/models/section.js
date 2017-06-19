@@ -1,6 +1,6 @@
 //secType = lec, dis, lab, tap, sem, etc.
 //code    = e.g., 36040
-//days    = {m = bool, tu = bool, w = bool, th = bool, f = bool}
+//days    = 'MTuWThF
 //times   : use iso 8601 strings
 //coreqs  = e.g., [36040, 30403,...]
 
