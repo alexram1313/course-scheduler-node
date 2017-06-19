@@ -18,11 +18,15 @@ router.get('/', function(req, res){
             if (course){
                 courses.push(course);
             }
+            else {
+                --coursesLen;
+            }
+            if (courses.length == coursesLen){
+                var sched = schedule.genScheds(courses);
+                res.status(200).json({data:sched});
+            }
         });
-        if (courses.length == coursesLen){
-            var sched = schedule.genScheds(courses);
-            res.status(200).json({data:sched});
-        }
+        
     }, this);
 })
 
