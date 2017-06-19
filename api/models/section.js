@@ -6,10 +6,11 @@
 
 module.exports = {
 
-    createSection: function (secType, code, days, startTime, endTime, coreqs){
+    createSection: function (secType, name, code, days, startTime, endTime, coreqs){
         return {
             "type": 'section',
             "secType": secType,
+            "courseName":name,
             "code": code,
             "days":days,
             "startTime": startTime,

@@ -100,6 +100,6 @@ module.exports = {
 	genScheds:function(courses){
 		var data = conflicts.buildConflictMatrix(courses);
 		var schedules = test_schedules(data.matrix, data.list.length, data.roots, data.forest);
-		return schedules; 
+		return decode(schedules, data.list, data.n); 
 	}
 };
