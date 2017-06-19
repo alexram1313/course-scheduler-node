@@ -56,8 +56,8 @@ function buildConflictMatrix(courses) {
 			// since coreqs might appear out-of-order, need to squirrel these away up front
 			codeLookup[s.code] = {'index': i++, 'section':s};
 			// while I'm at it, might as well pre-compute types and count them
-			if (!typeLookup.hasOwnProperty(s.type)) {
-				typeLookup[s.type] = ntypes++;
+			if (!typeLookup.hasOwnProperty(s.secType)) {
+				typeLookup[s.secType] = ntypes++;
 			}
 		});
 	});
@@ -91,7 +91,7 @@ function buildConflictMatrix(courses) {
 		offset = 0;
 		c.sections.forEach(function(s){
 			// a section conflicts with every other section of the same type for this course
-			typeIndex = typeLookup[s.type];
+			typeIndex = typeLookup[s.secType];
 			A[i + offset] |= sectionsByType[typeIndex];
 			sectionsByType[typeIndex] |= (1 << (i + offset));
 			++offset;
@@ -111,16 +111,16 @@ function buildConflictMatrix(courses) {
 				var jco = codeLookup[coreq];
 				// a section conflicts with all sections that are the same type
 				// as a co-required section, but aren't that section.
-				A[i] |= (sectionsByType[typeLookup[jco.section.type]] & ~(1 << jco.index));
+				A[i] |= (sectionsByType[typeLookup[jco.section.secType]] & ~(1 << jco.index));
 				// Additionally, we add s as a child of its coreq in our forest:
 				coreqForest[jco.index].push(i);
 			});
 
 			if (s.coreqs.length == 0) {
-				if (!coreqRootsTemp.hasOwnProperty(s.type)) {
-					coreqRootsTemp[s.type] = new Array();
+				if (!coreqRootsTemp.hasOwnProperty(s.secType)) {
+					coreqRootsTemp[s.secType] = new Array();
 				}
-				coreqRootsTemp[s.type].push(i);
+				coreqRootsTemp[s.secType].push(i);
 			}
 
 			// finally, scan the row and fill in any time conflicts that arise
