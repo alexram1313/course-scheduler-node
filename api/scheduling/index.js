@@ -16,13 +16,15 @@ router.get('/', function(req, res){
 
     courseSelection.forEach(function(element) {
         retrieval.getSingleCourseByCode(element, function(course){
+            var currLen = 0;
             if (course){
                 courses.push(course);
+                ++currLen;
             }
             else {
                 --coursesLen;
             }
-            if (courses.length == coursesLen){
+            if (currLen == coursesLen){
                 var sched = schedule.genScheds(courses);
                 res.status(200).json({data:sched});
             }
