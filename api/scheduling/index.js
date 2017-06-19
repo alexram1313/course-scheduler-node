@@ -4,6 +4,7 @@ const router = app.Router({ mergeParams: true });
 var retrieval = require('../retrieval/retrieval');
 var schedule  = require('./algorithms-courseformat/courseMatrixUsage')
 
+// .../api/scheduling?courses=['course1','course2',...,'courseN']
 router.get('/', function(req, res){
     if (!req.query.hasOwnProperty('courses')){
         res.status(400).json({message:"Make sure to include an courses GET parameter as JSON array"});
