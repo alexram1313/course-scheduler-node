@@ -61,7 +61,8 @@ function generateCourse($, courseXML, id, name, callback){
                 var type = section.find('sec_type').text();
                 var times = courseTimes(section.find('sec_time').text());
                 var section_object = sectionModel.createSection(
-                    type,
+                    type, 
+                    name,
                     section.find('course_code').text(),
                     section.find('sec_days').text(),
                     times.start, 
