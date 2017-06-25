@@ -8,11 +8,14 @@ function dayConflict(d1, d2){
 	if ((d1 === '') || (d2 === '')) return false;
 
 	//MTuWThF Check
-	if ((d1.indexOf('M') != 1) && (d2.indexOf('M') != 1)) return true;
-	if ((d1.indexOf('Tu') != 1) && (d2.indexOf('Tu') != 1)) return true;
-	if ((d1.indexOf('W') != 1) && (d2.indexOf('W') != 1)) return true;
-	if ((d1.indexOf('Th') != 1) && (d2.indexOf('Th') != 1)) return true;
-	if ((d1.indexOf('F') != 1) && (d2.indexOf('F') != 1)) return true;
+	// if ((d1.indexOf('M') != 1) && (d2.indexOf('M') != 1)) return true;
+	// if ((d1.indexOf('Tu') != 1) && (d2.indexOf('Tu') != 1)) return true;
+	// if ((d1.indexOf('W') != 1) && (d2.indexOf('W') != 1)) return true;
+	// if ((d1.indexOf('Th') != 1) && (d2.indexOf('Th') != 1)) return true;
+	// if ((d1.indexOf('F') != 1) && (d2.indexOf('F') != 1)) return true;
+	for (day in ['M','Tu','W','Th','F']) {
+		if ((d1.indexOf(day) != 1) && (d2.indexOf(day) != 1)) return true;
+	}
 
 	//No Conflict
 	return false;
@@ -113,7 +116,10 @@ function buildConflictMatrix(courses) {
 				// as a co-required section, but aren't that section.
 				A[i] |= (sectionsByType[typeLookup[jco.section.secType]] & ~(1 << jco.index));
 				// Additionally, we add s as a child of its coreq in our forest:
-				coreqForest[jco.index].push(i);
+				if (!coreqForest[jco.index].hasOwnProperty(s.type)) {
+					coreqForest[jco.index][s.type] = new Array();
+				}
+				coreqForest[jco.index][s.type].push(i);
 			});
 
 			if (s.coreqs.length == 0) {
@@ -148,6 +154,17 @@ function buildConflictMatrix(courses) {
 			A[y] |= (A[x] & (1 << y)) >>> (y - x);
 			A[x] |= (A[y] & (1 << x)) <<  (y - x);
 		}
+	}
+
+	// Collect all the corequirements, and drop the different type names.
+	var coreqArr;
+	for (var j = coreqForest.length - 1; j >= 0; --j) {
+		coreqArr = [];
+		for (var typeName in coreqForest[j]) {
+			if (!coreqForest[j].hasOwnProperty(typeName)) continue;
+			coreqArr.push(coreqForest[j][typeName]);
+		}
+		coreqForest[j] = coreqArr;
 	}
 
 	// Phew.
