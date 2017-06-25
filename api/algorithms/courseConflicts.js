@@ -78,11 +78,11 @@ function buildConflictMatrix(courses) {
 	});
 
 	var sectionList = new Array(nSec);
-	var coreqRootsTemp = {};
-	var coreqRoots     = new Array();
-	var coreqForest    = new Array(nSec);
+	var coreqRootsTemp  = {};
+	var coreqRoots      = new Array();
+	var coreqForest     = new Array(nSec);
 	for (var i = 0; i < nSec; ++i) {
-		coreqForest[i] = new Array();
+		coreqForest[i] = {};
 	}
 
 	// This sets up A with n 32-bit slots.
@@ -127,8 +127,11 @@ function buildConflictMatrix(courses) {
 				// a section conflicts with all sections that are the same type
 				// as a co-required section, but aren't that section.
 				A[i] |= (sectionsByType[typeLookup[jco.section.type]] & ~(1 << jco.index));
-				// Additionally, we add s as a child of its coreq in our forest:
-				coreqForest[jco.index].push(i);
+				// Additionally, we add s as a child of its coreq, designated by its type, in our forest:
+				if (!coreqForest[jco.index].hasOwnProperty(s.type)) {
+					coreqForest[jco.index][s.type] = new Array();
+				}
+				coreqForest[jco.index][s.type].push(i);
 			});
 
 			if (s.coreqs.length == 0) {
@@ -165,11 +168,22 @@ function buildConflictMatrix(courses) {
 		}
 	}
 
+	// Collect all the corequirements, and drop the different type names.
+	var coreqArr;
+	for (var j = coreqForest.length - 1; j >= 0; --j) {
+		coreqArr = [];
+		for (var typeName in coreqForest[j]) {
+			if (!coreqForest[j].hasOwnProperty(typeName)) continue;
+			coreqArr.push(coreqForest[j][typeName]);
+		}
+		coreqForest[j] = coreqArr;
+	}
+
 	// Phew.
 	return {
 		'matrix': A,
 		'list'  : sectionList,
-		'n'     : i,
+		'n'     : nSec,
 		'roots' : coreqRoots,
 		'forest': coreqForest
 	};
@@ -180,4 +194,6 @@ module.exports = {
 	'buildConflictMatrix': buildConflictMatrix
 };
 
-// console.log(buildConflictMatrix(courses));
+// var output = buildConflictMatrix(courses);
+// console.log(output);
+// console.log(JSON.stringify(output));
