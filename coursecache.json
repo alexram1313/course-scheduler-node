@@ -13,6 +13,11 @@
       "28-60-0",
       "29-60-0",
       "139W-60-0"
+    ],
+    "2017-92:PM&R": [
+      "670A-88-0",
+      "693K-88-0",
+      "699K1-88-0"
     ]
   },
   "courses": {
@@ -2289,6 +2294,72 @@
           "coreqs": [
             "20190"
           ],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:PM&R:670A-88-0": {
+      "type": "course",
+      "code": "2017-92:PM&R:670A-88-0",
+      "name": "PM&R 670A: PM&R ELECTIVE",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Fld",
+          "courseName": "PM&R 670A: PM&R ELECTIVE",
+          "code": "97628",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:PM&R:693K-88-0": {
+      "type": "course",
+      "code": "2017-92:PM&R:693K-88-0",
+      "name": "PM&R 693K: EXTRAMURAL/PM&R",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Fld",
+          "courseName": "PM&R 693K: EXTRAMURAL/PM&R",
+          "code": "97636",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": "TBA",
+            "start": "",
+            "end": ""
+          }
+        }
+      ]
+    },
+    "2017-92:PM&R:699K1-88-0": {
+      "type": "course",
+      "code": "2017-92:PM&R:699K1-88-0",
+      "name": "PM&R 699K1: REHAB RESEARCH ELEC",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "PM&R 699K1: REHAB RESEARCH ELEC",
+          "code": "97640",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
           "final": {
             "date": "TBA",
             "start": "",

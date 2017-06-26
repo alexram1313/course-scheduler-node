@@ -78,9 +78,7 @@ app.use(function(req, res, next){
 
 
 app.use(function(err, req, res, next){
-  // we may use properties of the error object
-  // here and next(err) appropriately, or if
-  // we possibly recovered from the error, simply next().
+  console.log(err);
   res.status(err.status || 500);
   res.render('pages/stdpage',{
         'title':"Error "+err,
