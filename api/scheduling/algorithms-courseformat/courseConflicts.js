@@ -1,13 +1,6 @@
 var moment = require('moment');
 
 function dayConflict(d1, d2){
-	//TBA Check
-	//All set times in WebSOC will have days and time
-	//so we only need this check once.
-	//For now, allow the course to be scheduled.
-	if ((d1 === '') || (d2 === '')) return false;
-
-
 	//MTuWThF Check
 	for (var day of ['M','Tu','W','Th','F']) {
 		if ((d1.indexOf(day) != -1) && (d2.indexOf(day) != -1)) return true;
