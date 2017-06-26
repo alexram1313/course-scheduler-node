@@ -84,14 +84,14 @@ function test_schedules(conflictMatrix, dimension, roots, forest) {
 		}
 	}
 
-	root_schedules = roots.map(function(root_course){
+	var root_schedules = roots.map(function(root_course){
 		// generate all consistent schedules for each root_course
 		return root_course.reduce(function(acc,root_section){
 			return acc.concat(add_section(0,root_section));
 		}, []);
 	});
 	console.log('root_schedules:', root_schedules); //TEMP
-	return all_consistent(0,root_schedules);
+	return blend_options(0,root_schedules);
 }
 
 function decode(scheduleBuf, section_list, dimension) {
@@ -117,6 +117,11 @@ module.exports = {
 	genScheds:function(courses){
 		var data = conflicts.buildConflictMatrix(courses);
 		var schedules = test_schedules(data.matrix, data.list.length, data.roots, data.forest);
-		return decode(schedules, data.list, data.n); 
+		var decodedSchedules = [];
+		schedules.forEach(function (sched){
+			var decoded = decode(sched, data.list, data.n);
+			decodedSchedules.push(decoded);
+		});
+		return decodedSchedules;
 	}
 };

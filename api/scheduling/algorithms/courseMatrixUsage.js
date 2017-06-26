@@ -112,3 +112,7 @@ console.log('data.roots:', data.roots); //TEMP
 console.log('data.forest:', data.forest); //TEMP
 var schedules = test_schedules(data.matrix, data.list.length, data.roots, data.forest);
 console.log('schedules:', schedules); //TEMP
+schedules.forEach(function (sched){
+	var decoded = decode(sched, data.list, data.n);
+	console.log('decoded:', decoded);
+});

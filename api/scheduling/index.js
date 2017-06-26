@@ -13,10 +13,11 @@ router.get('/', function(req, res){
     var courseSelection = JSON.parse(req.query.courses);
     var coursesLen = courseSelection.length;
     var courses = [];
+    var currLen = 0;
 
     courseSelection.forEach(function(element) {
         retrieval.getSingleCourseByCode(element, function(course){
-            var currLen = 0;
+            
             if (course){
                 courses.push(course);
                 ++currLen;

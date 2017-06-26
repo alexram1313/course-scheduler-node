@@ -6,25 +6,25 @@ courses = [
 	{
 		'name': 'math',
 		'sections': [
-			{'type':'lec', 'code':10000, 'time':1, 'coreqs':[]},
-			{'type':'dis', 'code':10005, 'time':2, 'coreqs':[10000]},
-			{'type':'dis', 'code':10006, 'time':3, 'coreqs':[10000]},
-			{'type':'dis', 'code':10007, 'time':4, 'coreqs':[10000]},
-			{'type':'dis', 'code':10008, 'time':5, 'coreqs':[10000]},
-			{'type':'dis', 'code':10009, 'time':6, 'coreqs':[10000]}
+			{'secType':'lec', 'code':10000, 'time':1, 'coreqs':[]},
+			{'secType':'dis', 'code':10005, 'time':2, 'coreqs':[10000]},
+			{'secType':'dis', 'code':10006, 'time':3, 'coreqs':[10000]},
+			{'secType':'dis', 'code':10007, 'time':4, 'coreqs':[10000]},
+			{'secType':'dis', 'code':10008, 'time':5, 'coreqs':[10000]},
+			{'secType':'dis', 'code':10009, 'time':6, 'coreqs':[10000]}
 		]
 	},
 	{
 		'name': 'math',
 		'sections': [
-			{'type':'lec', 'code':20000, 'time':7, 'coreqs':[]},
-			{'type':'dis', 'code':20001, 'time':3, 'coreqs':[20000]},
-			{'type':'dis', 'code':20002, 'time':4, 'coreqs':[20000]},
-			{'type':'dis', 'code':20003, 'time':8, 'coreqs':[20000]},
-			{'type':'lec', 'code':20005, 'time':9, 'coreqs':[]},
-			{'type':'dis', 'code':20006, 'time':0, 'coreqs':[20005]},
-			{'type':'dis', 'code':20007, 'time':10,'coreqs':[20005]},
-			{'type':'dis', 'code':20008, 'time':6, 'coreqs':[20005]}
+			{'secType':'lec', 'code':20000, 'time':7, 'coreqs':[]},
+			{'secType':'dis', 'code':20001, 'time':3, 'coreqs':[20000]},
+			{'secType':'dis', 'code':20002, 'time':4, 'coreqs':[20000]},
+			{'secType':'dis', 'code':20003, 'time':8, 'coreqs':[20000]},
+			{'secType':'lec', 'code':20005, 'time':9, 'coreqs':[]},
+			{'secType':'dis', 'code':20006, 'time':0, 'coreqs':[20005]},
+			{'secType':'dis', 'code':20007, 'time':10,'coreqs':[20005]},
+			{'secType':'dis', 'code':20008, 'time':6, 'coreqs':[20005]}
 		]
 	}
 ];
@@ -71,8 +71,8 @@ function buildConflictMatrix(courses) {
 			// since coreqs might appear out-of-order, need to squirrel these away up front
 			codeLookup[s.code] = {'index': i++, 'section':s};
 			// while I'm at it, might as well pre-compute types and count them
-			if (!typeLookup.hasOwnProperty(s.type)) {
-				typeLookup[s.type] = ntypes++;
+			if (!typeLookup.hasOwnProperty(s.secType)) {
+				typeLookup[s.secType] = ntypes++;
 			}
 		});
 	});
@@ -106,7 +106,7 @@ function buildConflictMatrix(courses) {
 		offset = 0;
 		c.sections.forEach(function(s){
 			// a section conflicts with every other section of the same type for this course
-			typeIndex = typeLookup[s.type];
+			typeIndex = typeLookup[s.secType];
 			A[i + offset] |= sectionsByType[typeIndex];
 			sectionsByType[typeIndex] |= (1 << (i + offset));
 			++offset;
@@ -114,7 +114,7 @@ function buildConflictMatrix(courses) {
 
 		// process each section
 		c.sections.forEach(function(s){
-			// typeIndex = typeLookup[s.type];
+			// typeIndex = typeLookup[s.secType];
 			// A[i] |= sectionsByType[typeIndex];
 			// sectionsByType[typeIndex] |= (1 << i);
 
@@ -126,19 +126,19 @@ function buildConflictMatrix(courses) {
 				var jco = codeLookup[coreq];
 				// a section conflicts with all sections that are the same type
 				// as a co-required section, but aren't that section.
-				A[i] |= (sectionsByType[typeLookup[jco.section.type]] & ~(1 << jco.index));
+				A[i] |= (sectionsByType[typeLookup[jco.section.secType]] & ~(1 << jco.index));
 				// Additionally, we add s as a child of its coreq, designated by its type, in our forest:
-				if (!coreqForest[jco.index].hasOwnProperty(s.type)) {
-					coreqForest[jco.index][s.type] = new Array();
+				if (!coreqForest[jco.index].hasOwnProperty(s.secType)) {
+					coreqForest[jco.index][s.secType] = new Array();
 				}
-				coreqForest[jco.index][s.type].push(i);
+				coreqForest[jco.index][s.secType].push(i);
 			});
 
 			if (s.coreqs.length == 0) {
-				if (!coreqRootsTemp.hasOwnProperty(s.type)) {
-					coreqRootsTemp[s.type] = new Array();
+				if (!coreqRootsTemp.hasOwnProperty(s.secType)) {
+					coreqRootsTemp[s.secType] = new Array();
 				}
-				coreqRootsTemp[s.type].push(i);
+				coreqRootsTemp[s.secType].push(i);
 			}
 
 			// finally, scan the row and fill in any time conflicts that arise

@@ -1,5 +1,5 @@
 {
-  "updatetime": "2017-06-06T03:45:43-07:00",
+  "updatetime": "2017-06-27T11:43:28-07:00",
   "depts": {
     "2017-92:AC ENG": [
       "20A-60-0",
@@ -24,6 +24,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20000",
           "days": "MWF",
           "startTime": "10:00",
@@ -38,6 +39,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20001",
           "days": "MWF",
           "startTime": "11:00",
@@ -54,6 +56,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20002",
           "days": "MWF",
           "startTime": "15:00",
@@ -70,6 +73,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20003",
           "days": "MWF",
           "startTime": "14:00",
@@ -86,6 +90,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20004",
           "days": "TuTh",
           "startTime": "15:30",
@@ -102,6 +107,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20005",
           "days": "TuTh",
           "startTime": "14:00",
@@ -118,6 +124,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20006",
           "days": "MWF",
           "startTime": "13:00",
@@ -134,6 +141,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20007",
           "days": "TuTh",
           "startTime": "17:00",
@@ -150,6 +158,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20008",
           "days": "TuTh",
           "startTime": "14:00",
@@ -166,6 +175,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20009",
           "days": "MWF",
           "startTime": "16:00",
@@ -182,6 +192,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20010",
           "days": "TuTh",
           "startTime": "14:00",
@@ -198,6 +209,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20011",
           "days": "MWF",
           "startTime": "17:00",
@@ -214,6 +226,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20012",
           "days": "MWF",
           "startTime": "9:00",
@@ -230,6 +243,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20013",
           "days": "TuTh",
           "startTime": "17:00",
@@ -246,6 +260,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20014",
           "days": "MWF",
           "startTime": "12:00",
@@ -262,6 +277,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20015",
           "days": "TuTh",
           "startTime": "11:00",
@@ -278,6 +294,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20016",
           "days": "TuTh",
           "startTime": "15:30",
@@ -294,6 +311,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20017",
           "days": "MWF",
           "startTime": "10:00",
@@ -310,6 +328,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20018",
           "days": "MWF",
           "startTime": "9:00",
@@ -326,6 +345,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20019",
           "days": "MWF",
           "startTime": "13:00",
@@ -342,6 +362,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20020",
           "days": "TuTh",
           "startTime": "11:00",
@@ -358,6 +379,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20021",
           "days": "MWF",
           "startTime": "16:00",
@@ -374,6 +396,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20022",
           "days": "MWF",
           "startTime": "10:00",
@@ -390,6 +413,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20023",
           "days": "TuTh",
           "startTime": "15:30",
@@ -406,6 +430,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20024",
           "days": "TuTh",
           "startTime": "9:30",
@@ -422,6 +447,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20025",
           "days": "MWF",
           "startTime": "11:00",
@@ -438,6 +464,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20026",
           "days": "MWF",
           "startTime": "9:00",
@@ -454,6 +481,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20027",
           "days": "MWF",
           "startTime": "17:00",
@@ -470,6 +498,7 @@
         {
           "type": "section",
           "secType": "Lab",
+          "courseName": "AC ENG 20A: ACADEMIC WRITING",
           "code": "20035",
           "days": "",
           "startTime": "",
@@ -488,6 +517,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20036",
           "days": "MWF",
           "startTime": "16:00",
@@ -502,6 +532,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20037",
           "days": "MWF",
           "startTime": "12:00",
@@ -518,6 +549,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20038",
           "days": "TuTh",
           "startTime": "14:00",
@@ -534,6 +566,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20039",
           "days": "MWF",
           "startTime": "10:00",
@@ -550,6 +583,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20040",
           "days": "",
           "startTime": "",
@@ -566,6 +600,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20041",
           "days": "MWF",
           "startTime": "12:00",
@@ -582,6 +617,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20042",
           "days": "MWF",
           "startTime": "16:00",
@@ -598,6 +634,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20043",
           "days": "TuTh",
           "startTime": "12:30",
@@ -614,6 +651,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20044",
           "days": "TuTh",
           "startTime": "17:00",
@@ -630,6 +668,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20045",
           "days": "MWF",
           "startTime": "15:00",
@@ -646,6 +685,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20046",
           "days": "MWF",
           "startTime": "11:00",
@@ -662,6 +702,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20047",
           "days": "TuTh",
           "startTime": "17:00",
@@ -678,6 +719,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20048",
           "days": "MWF",
           "startTime": "9:00",
@@ -694,6 +736,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20049",
           "days": "MWF",
           "startTime": "16:00",
@@ -710,6 +753,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20050",
           "days": "MWF",
           "startTime": "17:00",
@@ -726,6 +770,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20051",
           "days": "MWF",
           "startTime": "12:00",
@@ -742,6 +787,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20052",
           "days": "TuTh",
           "startTime": "12:30",
@@ -758,6 +804,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20053",
           "days": "TuTh",
           "startTime": "9:30",
@@ -774,6 +821,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20054",
           "days": "MWF",
           "startTime": "14:00",
@@ -790,6 +838,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20055",
           "days": "MWF",
           "startTime": "10:00",
@@ -806,6 +855,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20056",
           "days": "TuTh",
           "startTime": "9:30",
@@ -822,6 +872,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20057",
           "days": "MWF",
           "startTime": "14:00",
@@ -838,6 +889,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20058",
           "days": "MWF",
           "startTime": "16:00",
@@ -854,6 +906,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20059",
           "days": "TuTh",
           "startTime": "14:00",
@@ -870,6 +923,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20060",
           "days": "MWF",
           "startTime": "9:00",
@@ -886,6 +940,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20061",
           "days": "MWF",
           "startTime": "9:00",
@@ -902,6 +957,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20062",
           "days": "MWF",
           "startTime": "13:00",
@@ -918,6 +974,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20063",
           "days": "MWF",
           "startTime": "14:00",
@@ -934,6 +991,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20064",
           "days": "MWF",
           "startTime": "9:00",
@@ -950,6 +1008,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20065",
           "days": "TuTh",
           "startTime": "12:30",
@@ -966,6 +1025,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20066",
           "days": "MWF",
           "startTime": "13:00",
@@ -982,6 +1042,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20067",
           "days": "TuTh",
           "startTime": "15:30",
@@ -998,6 +1059,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20068",
           "days": "TuTh",
           "startTime": "11:00",
@@ -1014,6 +1076,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20069",
           "days": "MWF",
           "startTime": "9:00",
@@ -1030,6 +1093,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20070",
           "days": "MWF",
           "startTime": "14:00",
@@ -1046,6 +1110,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20071",
           "days": "MWF",
           "startTime": "10:00",
@@ -1062,6 +1127,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20072",
           "days": "MWF",
           "startTime": "10:00",
@@ -1078,6 +1144,7 @@
         {
           "type": "section",
           "secType": "Lab",
+          "courseName": "AC ENG 20B: ACADEMIC WRITING",
           "code": "20073",
           "days": "",
           "startTime": "",
@@ -1096,6 +1163,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20074",
           "days": "MWF",
           "startTime": "9:00",
@@ -1110,6 +1178,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20075",
           "days": "MWF",
           "startTime": "9:00",
@@ -1126,6 +1195,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20076",
           "days": "MWF",
           "startTime": "10:00",
@@ -1142,6 +1212,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20077",
           "days": "MWF",
           "startTime": "10:00",
@@ -1158,6 +1229,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20078",
           "days": "MWF",
           "startTime": "10:00",
@@ -1174,6 +1246,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20079",
           "days": "MWF",
           "startTime": "11:00",
@@ -1190,6 +1263,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20080",
           "days": "MWF",
           "startTime": "12:00",
@@ -1206,6 +1280,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20081",
           "days": "TuTh",
           "startTime": "15:30",
@@ -1222,6 +1297,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20082",
           "days": "MWF",
           "startTime": "10:00",
@@ -1238,6 +1314,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20083",
           "days": "MWF",
           "startTime": "13:00",
@@ -1254,6 +1331,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20084",
           "days": "MWF",
           "startTime": "14:00",
@@ -1270,6 +1348,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20085",
           "days": "MWF",
           "startTime": "15:00",
@@ -1286,6 +1365,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20086",
           "days": "MWF",
           "startTime": "10:00",
@@ -1302,6 +1382,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20087",
           "days": "MWF",
           "startTime": "16:00",
@@ -1318,6 +1399,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20088",
           "days": "TuTh",
           "startTime": "9:30",
@@ -1334,6 +1416,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20089",
           "days": "TuTh",
           "startTime": "9:30",
@@ -1350,6 +1433,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20090",
           "days": "TuTh",
           "startTime": "11:00",
@@ -1366,6 +1450,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20091",
           "days": "TuTh",
           "startTime": "11:00",
@@ -1382,6 +1467,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20092",
           "days": "TuTh",
           "startTime": "12:30",
@@ -1398,6 +1484,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20093",
           "days": "TuTh",
           "startTime": "11:00",
@@ -1414,6 +1501,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20094",
           "days": "TuTh",
           "startTime": "14:00",
@@ -1430,6 +1518,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20095",
           "days": "TuTh",
           "startTime": "14:00",
@@ -1446,6 +1535,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20096",
           "days": "TuTh",
           "startTime": "9:30",
@@ -1462,6 +1552,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20097",
           "days": "TuTh",
           "startTime": "17:00",
@@ -1478,6 +1569,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20098",
           "days": "TuTh",
           "startTime": "17:00",
@@ -1494,6 +1586,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20099",
           "days": "TuTh",
           "startTime": "17:00",
@@ -1510,6 +1603,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20100",
           "days": "MWF",
           "startTime": "12:00",
@@ -1526,6 +1620,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20101",
           "days": "TuTh",
           "startTime": "12:30",
@@ -1542,6 +1637,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20102",
           "days": "TuTh",
           "startTime": "15:30",
@@ -1558,6 +1654,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20103",
           "days": "TuTh",
           "startTime": "15:30",
@@ -1574,6 +1671,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20104",
           "days": "TuTh",
           "startTime": "11:00",
@@ -1590,6 +1688,7 @@
         {
           "type": "section",
           "secType": "Lab",
+          "courseName": "AC ENG 20C: ACADEMIC WRITING",
           "code": "20108",
           "days": "",
           "startTime": "",
@@ -1608,6 +1707,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20D: ACADEMIC WRITING",
           "code": "20111",
           "days": "MWF",
           "startTime": "11:00",
@@ -1624,6 +1724,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20D: ACADEMIC WRITING",
           "code": "20114",
           "days": "MWF",
           "startTime": "13:00",
@@ -1640,6 +1741,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20D: ACADEMIC WRITING",
           "code": "20115",
           "days": "TuTh",
           "startTime": "9:30",
@@ -1656,6 +1758,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20D: ACADEMIC WRITING",
           "code": "20116",
           "days": "TuTh",
           "startTime": "11:00",
@@ -1672,6 +1775,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20D: ACADEMIC WRITING",
           "code": "20117",
           "days": "MWF",
           "startTime": "16:00",
@@ -1688,6 +1792,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20D: ACADEMIC WRITING",
           "code": "20118",
           "days": "TuTh",
           "startTime": "12:30",
@@ -1704,6 +1809,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 20D: ACADEMIC WRITING",
           "code": "20121",
           "days": "TuTh",
           "startTime": "17:00",
@@ -1720,6 +1826,7 @@
         {
           "type": "section",
           "secType": "Lab",
+          "courseName": "AC ENG 20D: ACADEMIC WRITING",
           "code": "20125",
           "days": "",
           "startTime": "",
@@ -1738,6 +1845,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20126",
           "days": "TuTh",
           "startTime": "15:30",
@@ -1752,6 +1860,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20128",
           "days": "TuTh",
           "startTime": "15:30",
@@ -1768,6 +1877,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20130",
           "days": "MWF",
           "startTime": "10:00",
@@ -1784,6 +1894,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20132",
           "days": "MWF",
           "startTime": "12:00",
@@ -1800,6 +1911,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20134",
           "days": "MWF",
           "startTime": "14:00",
@@ -1816,6 +1928,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20136",
           "days": "",
           "startTime": "",
@@ -1832,6 +1945,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20138",
           "days": "TuTh",
           "startTime": "12:30",
@@ -1848,6 +1962,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20140",
           "days": "MWF",
           "startTime": "13:00",
@@ -1864,6 +1979,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20142",
           "days": "TuTh",
           "startTime": "14:00",
@@ -1880,6 +1996,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 22A: READING&VOCABULARY",
           "code": "20144",
           "days": "TuTh",
           "startTime": "11:00",
@@ -1903,6 +2020,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 23A: ESL BASIC PRONUN I",
           "code": "20146",
           "days": "MWF",
           "startTime": "12:00",
@@ -1917,6 +2035,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 23A: ESL BASIC PRONUN I",
           "code": "20148",
           "days": "MWF",
           "startTime": "9:00",
@@ -1933,6 +2052,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 23A: ESL BASIC PRONUN I",
           "code": "20150",
           "days": "TuTh",
           "startTime": "15:30",
@@ -1949,6 +2069,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 23A: ESL BASIC PRONUN I",
           "code": "20152",
           "days": "",
           "startTime": "",
@@ -1972,6 +2093,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 23B: ESL INTERM CONV II",
           "code": "20155",
           "days": "TuTh",
           "startTime": "15:30",
@@ -1993,6 +2115,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 23C: ESL ADV COMM III",
           "code": "20160",
           "days": "TuTh",
           "startTime": "14:00",
@@ -2014,6 +2137,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 28: GRAMMAR",
           "code": "20170",
           "days": "MWF",
           "startTime": "9:00",
@@ -2028,6 +2152,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 28: GRAMMAR",
           "code": "20172",
           "days": "MWF",
           "startTime": "15:00",
@@ -2044,6 +2169,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 28: GRAMMAR",
           "code": "20174",
           "days": "TuTh",
           "startTime": "14:00",
@@ -2060,6 +2186,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 28: GRAMMAR",
           "code": "20176",
           "days": "TuTh",
           "startTime": "11:00",
@@ -2083,6 +2210,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 29: SPEC TOPIC: CONVERS",
           "code": "20180",
           "days": "TuTh",
           "startTime": "14:00",
@@ -2097,6 +2225,7 @@
         {
           "type": "section",
           "secType": "Lec",
+          "courseName": "AC ENG 29: SPEC TOPIC: CONVERS",
           "code": "20181",
           "days": "TuTh",
           "startTime": "9:30",
@@ -2120,6 +2249,7 @@
         {
           "type": "section",
           "secType": "Sem",
+          "courseName": "AC ENG 139W: ADV ACADMIC WRITING",
           "code": "20190",
           "days": "MWF",
           "startTime": "11:00",
@@ -2134,6 +2264,7 @@
         {
           "type": "section",
           "secType": "Sem",
+          "courseName": "AC ENG 139W: ADV ACADMIC WRITING",
           "code": "20192",
           "days": "TuTh",
           "startTime": "9:30",
@@ -2150,6 +2281,7 @@
         {
           "type": "section",
           "secType": "Sem",
+          "courseName": "AC ENG 139W: ADV ACADMIC WRITING",
           "code": "20196",
           "days": "TuTh",
           "startTime": "11:00",

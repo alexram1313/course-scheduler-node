@@ -62,11 +62,11 @@ function buildConflictMatrix(courses) {
 	});
 
 	var sectionList = new Array(nSec);
-	var coreqRootsTemp = {};
-	var coreqRoots     = new Array();
-	var coreqForest    = new Array(nSec);
+	var coreqRootsTemp  = {};
+	var coreqRoots      = new Array();
+	var coreqForest     = new Array(nSec);
 	for (var i = 0; i < nSec; ++i) {
-		coreqForest[i] = new Array();
+		coreqForest[i] = {};
 	}
 
 	// This sets up A with n 32-bit slots.
@@ -111,7 +111,7 @@ function buildConflictMatrix(courses) {
 				// a section conflicts with all sections that are the same type
 				// as a co-required section, but aren't that section.
 				A[i] |= (sectionsByType[typeLookup[jco.section.secType]] & ~(1 << jco.index));
-				// Additionally, we add s as a child of its coreq in our forest:
+				// Additionally, we add s as a child of its coreq, designated by its type, in our forest:
 				if (!coreqForest[jco.index].hasOwnProperty(s.secType)) {
 					coreqForest[jco.index][s.secType] = new Array();
 				}
@@ -167,7 +167,7 @@ function buildConflictMatrix(courses) {
 	return {
 		'matrix': A,
 		'list'  : sectionList,
-		'n'     : i,
+		'n'     : nSec,
 		'roots' : coreqRoots,
 		'forest': coreqForest
 	};
