@@ -7,11 +7,11 @@ function dayConflict(d1, d2){
 	//For now, allow the course to be scheduled.
 	if ((d1 === '') || (d2 === '')) return false;
 
-	//MTuWThF Check
-	for (day in ['M','Tu','W','Th','F']) {
-		if ((d1.indexOf(day) != 1) && (d2.indexOf(day) != 1)) return true;
-	}
 
+	//MTuWThF Check
+	for (var day of ['M','Tu','W','Th','F']) {
+		if ((d1.indexOf(day) != -1) && (d2.indexOf(day) != -1)) return true;
+	}
 
 	//No Conflict
 	return false;
@@ -19,23 +19,18 @@ function dayConflict(d1, d2){
 
 function meetTimeConflict(s1Start, s1End, s2Start, s2End){
 	var ref = '2017-01-02 ';
+	format  = "YYYY-MM-DD H:m";
 
-	var start1 = moment(ref+s1Start, "YYYY-MM-DD H:m");
-	var start2 = moment(ref+s2Start, "YYYY-MM-DD H:m");
-	var end2 = moment(ref+s2End, "YYYY-MM-DD H:m");
-	
-	//Check 1
-	if ((start1.diff(start2) > 0) && (start1.diff(end2) < 0)) return true;
-	//Check 2
-	var end1 = moment(ref+s1End, "YYYY-MM-DD H:m");
-	if ((end1.diff(start2) > 0) && (end1.diff(end2) < 0)) return true;
+	var start1 = moment(ref+s1Start, format);
+	var start2 = moment(ref+s2Start, format);
+	var end2 = moment(ref+s2End, format);
+	var end1 = moment(ref+s1End, format);
 
-	//No conflict
-	return false;
+	return ((start1.diff(end2) < 0) && (start2.diff(end1) < 0));
 }
 
 function timeConflict(s1,s2) {
-	return dayConflict(s1.days, s2.days) && 
+	return dayConflict(s1.days, s2.days) &&
 		   meetTimeConflict(s1.startTime, s1.endTime, s2.startTime, s2.endTime);
 }
 
