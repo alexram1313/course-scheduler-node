@@ -104,15 +104,6 @@ function decode(scheduleBuf, section_list, dimension) {
 	return schedule;
 }
 
-
-
-// var data = conflicts.buildConflictMatrix(conflicts.courses);
-// console.log('data.matrix:', data.matrix); //TEMP
-// console.log('data.roots:', data.roots); //TEMP
-// console.log('data.forest:', data.forest); //TEMP
-// var schedules = test_schedules(data.matrix, data.list.length, data.roots, data.forest);
-// console.log('schedules:', schedules); //TEMP
-
 module.exports = {
 	genScheds:function(courses){
 		var data = conflicts.buildConflictMatrix(courses);
