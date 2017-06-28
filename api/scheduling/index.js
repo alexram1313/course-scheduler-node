@@ -4,10 +4,17 @@ const router = app.Router({ mergeParams: true });
 var retrieval = require('../retrieval/retrieval');
 var schedule  = require('./algorithms-courseformat/courseMatrixUsage')
 
-// .../api/scheduling?courses=['course1','course2',...,'courseN']
+// .../api/scheduling?courses=["course1","course2",...,"courseN"]
+//         &prefs={"mornings":x,"evenings":x,"mondays":x,"fridays":x,"balanced":x,"gaps":x,"openings":x}
 router.get('/', function(req, res){
     if (!req.query.hasOwnProperty('courses')){
         res.status(400).json({message:"Make sure to include an courses GET parameter as JSON array"});
+    }
+
+    var prefs = {mornings:50,evenings:50,mondays:50,fridays:50,balanced:50,gaps:50,openings:50};
+
+    if (req.query.hasOwnProperty('prefs')){
+        prefs = JSON.parse(req.query.prefs);
     }
 
     var courseSelection = JSON.parse(req.query.courses);
@@ -26,7 +33,7 @@ router.get('/', function(req, res){
                 --coursesLen;
             }
             if (currLen == coursesLen){
-                var sched = schedule.genScheds(courses);
+                var sched = schedule.genScheds(courses, prefs);
                 res.status(200).json({data:sched});
             }
         });

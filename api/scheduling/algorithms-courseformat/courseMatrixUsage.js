@@ -105,7 +105,7 @@ function decode(scheduleBuf, section_list, dimension) {
 }
 
 module.exports = {
-	genScheds:function(courses){
+	genScheds:function(courses, prefs){
 		var data = conflicts.buildConflictMatrix(courses);
 		var schedules = test_schedules(data.matrix, data.list.length, data.roots, data.forest);
 		var decodedSchedules = [];
