@@ -113,6 +113,10 @@ function setScheduleView(calChoice, prevNext){
     } else{
         $(".fc-clear").html("<span style='color:red;'>No possible schedules.</span>");
     }
+    $('html,body').animate({
+                scrollTop: $("#schedules").offset().top
+            },
+                'slow');
 }
 
 function fetchSchedules(courseCodes, prefs, callback){
