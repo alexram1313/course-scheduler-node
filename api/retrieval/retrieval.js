@@ -79,18 +79,17 @@ function generateCourse($, courseXML, id, name, callback){
                 );
 
                 if (section.find('sec_final').length > 0){
-                    var finalTimes = courseTimes(section.find('sec_final_time').text() || "TBA");
-                    var year = id.split('-')[0];
-
                     var sec_final_date = section.find('sec_final_date').text();
+                    if (sec_final_date != "TBA"){
+                        var finalTimes = courseTimes(section.find('sec_final_time').text());
+                        var year = id.split('-')[0];
 
-                    if (sec_final_date != "TBA")
-                        var sec_final_date = moment(sec_final_date+ ' ' + year,
-                                            'MMM D YYYY').format();
+                        var sec_final_date = moment(sec_final_date+ ' ' + year + ' ' + finalTimes.start,
+                                            'MMM D YYYY H:mm').format();
+                    }
+                    else sec_final_date = "";
                     section_object.final = {
-                        date: sec_final_date,
-                        start: finalTimes.start,
-                        end: finalTimes.end
+                        date: sec_final_date
                     };
                 }
                 
