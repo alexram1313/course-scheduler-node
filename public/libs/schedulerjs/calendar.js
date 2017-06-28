@@ -54,61 +54,65 @@ function setScheduleView(calChoice, prevNext){
     $(btnPath + ' .fc-next-button').prop("disabled", true);
     clickable = false;
 
+    if (schedules.length > 0){
 
-    var events = [];
-    var codesString = "Schedule: ";
-    var listString = "<ul>";
+        var events = [];
+        var codesString = "Schedule: ";
+        var listString = "<ul>";
 
-    //Do magic here
-    const refDate = '2017-01-02 ';
-    format  = "YYYY-MM-DD H:m";
-    const refDays = ['M', 'Tu', 'W', 'Th', 'F']
-    const index   = (calChoice == 'right') ? selectedRight : selectedLeft;
+        //Do magic here
+        const refDate = '2017-01-02 ';
+        format  = "YYYY-MM-DD H:m";
+        const refDays = ['M', 'Tu', 'W', 'Th', 'F']
+        const index   = (calChoice == 'right') ? selectedRight : selectedLeft;
 
-    var createEvent = function(courseName, secType, code, start, end, day){
-        var name = "("+code+") "+courseName.substr(0, courseName.indexOf(":"))+" "+secType;
-        var start = moment(refDate+start, format);
-        start.add(refDays.indexOf(day), 'days');
-        var end = moment(refDate+end, format);
-        end.add(refDays.indexOf(day), 'days');
+        var createEvent = function(courseName, secType, code, start, end, day){
+            var name = "("+code+") "+courseName.substr(0, courseName.indexOf(":"))+" "+secType;
+            var start = moment(refDate+start, format);
+            start.add(refDays.indexOf(day), 'days');
+            var end = moment(refDate+end, format);
+            end.add(refDays.indexOf(day), 'days');
 
-        return [{
-            title: name,
-            start: start.format(),
-            end: end.format()
-        }, start.format("h:mm a"), end.format("h:mm a")]
-    }
-    for (var section of schedules[index]){
-        codesString += section.code + ',';
-        secDays = section.days.split(/(?=[A-Z])/);
-        listStr = '';
-        for (day of secDays){
-            event = createEvent(section.courseName, section.secType, section.code, section.startTime, section.endTime, day);
-            events.push(event[0]);
+            return [{
+                title: name,
+                start: start.format(),
+                end: end.format()
+            }, start.format("h:mm a"), end.format("h:mm a")]
+        }
+        for (var section of schedules[index]){
+            codesString += section.code + ',';
+            secDays = section.days.split(/(?=[A-Z])/);
+            listStr = '';
+            for (day of secDays){
+                event = createEvent(section.courseName, section.secType, section.code, section.startTime, section.endTime, day);
+                events.push(event[0]);
+                if (listStr === ''){
+                    listStr = "<li>"+section.code +": "+ section.courseName + 
+                            " " + section.secType +": "+ section.days+" "+
+                            event[1]+"-"+event[2]+"</li>";
+                }
+            }
             if (listStr === ''){
                 listStr = "<li>"+section.code +": "+ section.courseName + 
-                          " " + section.secType +": "+ section.days+" "+
-                           event[1]+"-"+event[2]+"</li>";
+                            " " + section.secType +": TBA</li>";
             }
+            listString+=listStr;
         }
-        if (listStr === ''){
-            listStr = "<li>"+section.code +": "+ section.courseName + 
-                        " " + section.secType +": TBA</li>";
-        }
-        listString+=listStr;
+
+        listString+="</ul>";
+        var outputString = codesString.substr(0, codesString.length-1)+"<br/>"+listString;
+
+
+        $(calDiv).fullCalendar('addEventSource', events);
+        $(txtDiv).html(outputString);
+        $(btnPath + ' .fc-prev-button').removeClass('fc-state-disabled');
+        $(btnPath + ' .fc-next-button').removeClass('fc-state-disabled');
+        $(btnPath + ' .fc-prev-button').prop("disabled", false);
+        $(btnPath + ' .fc-next-button').prop("disabled", false);
+        clickable = true;
+    } else{
+        $(".fc-clear").html("<span style='color:red;'>No possible schedules.</span>");
     }
-
-    listString+="</ul>";
-    var outputString = codesString.substr(0, codesString.length-1)+"<br/>"+listString;
-
-
-    $(calDiv).fullCalendar('addEventSource', events);
-    $(txtDiv).html(outputString);
-    $(btnPath + ' .fc-prev-button').removeClass('fc-state-disabled');
-    $(btnPath + ' .fc-next-button').removeClass('fc-state-disabled');
-    $(btnPath + ' .fc-prev-button').prop("disabled", false);
-    $(btnPath + ' .fc-next-button').prop("disabled", false);
-    clickable = true;
 }
 
 function fetchSchedules(courseCodes, prefs, callback){
