@@ -60,6 +60,14 @@ function generateCourse($, courseXML, id, name, callback){
             async.setImmediate(function (section, i, el, len) {
                 var type = section.find('sec_type').text();
                 var times = courseTimes(section.find('sec_time').text());
+                var getCoreqs = function() {
+                    var coreqs = [];
+                    var back = section.find('sec_group_backward_ptr').text();
+                    // var fwd  = section.find('sec_group_forward_ptr').text();
+                    if (back != '00000') coreqs.push(back);
+                    // if (fwd  != '00000') coreqs.push(fwd);
+                    return coreqs;
+                };
                 var section_object = sectionModel.createSection(
                     type, 
                     name,
@@ -67,8 +75,7 @@ function generateCourse($, courseXML, id, name, callback){
                     section.find('sec_days').text(),
                     times.start, 
                     times.end,
-                    ((section.find('sec_backward_ptr').text() != '00000') ? 
-                        [section.find('sec_backward_ptr').text()] : [])
+                    getCoreqs()
                 );
 
                 if (section.find('sec_final').length > 0){
