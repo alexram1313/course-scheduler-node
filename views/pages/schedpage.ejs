@@ -78,7 +78,7 @@
                         Mornings:
                     </td>
                     <td class="courses_2" >
-                        <input id="mornings" type="range" class="class_select pref_select" />
+                        <input ng-model="mornings" id="mornings" type="range" class="class_select pref_select" />
                     </td>
                 </tr>
                 <tr>
@@ -86,7 +86,7 @@
                             Evenings:
                     </td>
                     <td class="courses_2" >
-                        <input id="evenings" type="range" class="class_select pref_select" />
+                        <input ng-model="evenings" id="evenings" type="range" class="class_select pref_select" />
                     </td>
                 </tr>
                 <tr>
@@ -94,7 +94,7 @@
                         Mondays:
                     </td>
                     <td class="courses_2" >
-                        <input id="mondays" type="range" class="class_select pref_select" />
+                        <input ng-model="mondays" id="mondays" type="range" class="class_select pref_select" />
                     </td>
                 </tr>
                 <tr>
@@ -102,7 +102,7 @@
                         Fridays:
                     </td>
                     <td class="courses_2" >
-                        <input id="fridays" type="range" class="class_select pref_select" />
+                        <input ng-model="fridays" id="fridays" type="range" class="class_select pref_select" />
                     </td>
                 </tr>
                 <tr>
@@ -110,7 +110,7 @@
                         Balanced Days:
                     </td>
                     <td class="courses_2" >
-                        <input id="balance" type="range" class="class_select pref_select" />
+                        <input ng-model="balanced" id="balance" type="range" class="class_select pref_select" />
                     </td>
                 </tr>
                 <tr>
@@ -118,7 +118,7 @@
                             Gaps:
                     </td>
                     <td class="courses_2" >
-                        <input id="gaps" type="range" class="class_select pref_select" />
+                        <input ng-model="gaps" id="gaps" type="range" class="class_select pref_select" />
                     </td>
                 </tr>
                 <tr>
@@ -126,14 +126,14 @@
                             Openings:
                     </td>
                     <td class="courses_2" >
-                        <input id="openings" type="range" class="class_select pref_select" />
+                        <input ng-model="openings" id="openings" type="range" class="class_select pref_select" />
                     </td>
                 </tr>
                 <tr>
                     <td class="courses_1">
                     </td>
                     <td class="courses_2" style="text-align:right">
-                        <button id="genSched" ng-disabled="addedCourses.length == 0" type="button" onClick="generateSchedules();" >Schedule classes</button>
+                        <button id="genSched" ng-disabled="addedCourses.length == 0" type="button" ng-click="getSchedules();" >Schedule classes</button>
                     </td>
                 </tr>
             </table>
@@ -159,7 +159,6 @@
     <p style="text-align:center;"><a href="javascript:void(0)" onClick="window.open('http://webreg1.reg.uci.edu:8889/cgi-bin/wramia?page=startUp&call=', 'WebReg UCI', 'width=700,height=400,scrollbars=yes'); ">Like what you see? Click here to go to WebReg.</a></p>
     <div id="home-left" class="left box">
         <!—- Calendar —>
-        <script src='/public/libs/fullcalendar/lib/moment.min.js'></script>
         <script src='/public/libs/fullcalendar/fullcalendar.js'></script>
         
         <script type="text/javascript">
@@ -215,12 +214,7 @@
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
-                                                            $.when(
-                                                                getSchedText(0,-1),
-                                                                console.log("when")
-                                                                ).then(
-                                                                        getSchedule(0,0),console.log("then")
-                                                                        );
+                                                            setScheduleView(0,-1);
                                                             }
                                                             }
                                                             });
@@ -234,11 +228,7 @@
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
-                                                            $.when(getSchedText(0,1)
-                                                                ).then(
-                                                                        getSchedule(0,0)
-                                                                        );
-                                                            
+                                                            setScheduleView(0,1);
                                                             
                                                             }
                                                             }
@@ -307,12 +297,7 @@
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
-                                                            $.when(
-                                                                getSchedText(1,-1),
-                                                                console.log("when")
-                                                                ).then(
-                                                                        getSchedule(1,0),console.log("then")
-                                                                        );
+                                                            setScheduleView(1,-1);
                                                             }
                                                             }
                                                             });
@@ -326,11 +311,7 @@
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
-                                                            $.when(getSchedText(1,1)
-                                                                ).then(
-                                                                        getSchedule(1,0)
-                                                                        );
-                                                            
+                                                            setScheduleView(1,1);
                                                             
                                                             }
                                                             }

@@ -62,7 +62,7 @@ router.delete('/population/:index', function (req, res) {
         else
         {
             functions.listAddedCourses(cookies.addedCourses, function(result){
-                json(result.display);
+                res.cookie('addedCourses', result.valid).json(result.display);
             });
         }
     }

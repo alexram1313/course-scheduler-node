@@ -45,6 +45,7 @@ schedWeb.controller('mainController', function ($scope, $http){
     $http.get('/webapi/population')
         .then(function success (data) {
             $scope.addedCourses = data.data;
+            
         }, function error (data) {
             console.log('Error: ' + data);
         });
@@ -55,6 +56,7 @@ schedWeb.controller('mainController', function ($scope, $http){
         .then(function success(data){
             $scope.addedCourses = data.data;
             $scope.hideAddedMsg(false);
+            console.log($scope.addedCourses);
         }, function error (data){
             console.log('Error: ' + data);
         })
@@ -74,5 +76,26 @@ schedWeb.controller('mainController', function ($scope, $http){
         $scope.newAdded = status;
     };
 
+    $scope.getSchedules = function(){
+        console.log("DerpSchedules!");
+        var courses = []
+        for (var course of $scope.addedCourses){
+            courses.push(course.id);
+        }
 
+        fetchSchedules(courses, 
+            {
+                "mornings":$scope.mornings,
+                "evenings":$scope.evenings,
+                "mondays":$scope.mondays,
+                "fridays":$scope.fridays,
+                "balanced":$scope.balanced,
+                "gaps":$scope.gaps,
+                "openings":$scope.openings
+            }, 
+            function(data){
+
+            });
+
+    }
 });

@@ -1,19 +1,8 @@
+var schedules = [];
 var selectedSched = 0;
 var selectedSchedRight = 0;
 var schedMax = 0;
 var clickable = true;
-
-var keepSessionAlive = function () {
-    var time = 600000; //10 min delay
-    setInterval(
-        function () {
-            $.post('scheduler/ui/keep_alive.php');
-        }, time
-
-    );
-};
-
-keepSessionAlive();
 
 function getSchedText(calChoice, prevNext) {
     var div = "";
@@ -52,6 +41,10 @@ function getSchedText(calChoice, prevNext) {
         selectedSchedRight = 0;
     }
 
+    //process schedule text based on local data
+    var index = (calChoice == 1) ? selectedSchedRight : selectedSched;
+
+    
 
 
     return $.ajax({
@@ -68,7 +61,7 @@ function getSchedText(calChoice, prevNext) {
     });
 }
 
-function generateSchedules() {
+function generateSchedules(courses, prefs, callback) {
     jQuery(function ($) {
         $(document).ready(function () {
             $("#calendar").fullCalendar('removeEvents');
@@ -86,18 +79,18 @@ function generateSchedules() {
                 $.ajax({
                     type: "GET",
                     contentType: "application/json; charset=utf-8",
-                    url: "scheduler/ui/coursesretrieval.php",
+                    url: "api/scheduling",
                     dataType: "json",
-                    data: { _action: 'schedcount', _param: '-1' },
+                    data: { courses: courses, prefs: prefs },
                     success: function (data) {
-
+                        schedules = data.data;
                         console.log(data);
-                        schedMax = parseInt(data);
+                        schedMax = schedules.length;
                         $(".fc-prev-button").prop("disabled", false);
                         $(".fc-prev-button").removeClass('fc-state-disabled');
                         $(".fc-next-button").prop("disabled", false);
                         $(".fc-next-button").removeClass('fc-state-disabled');
-
+                        callback(data);
                     }
 
                 })
@@ -124,7 +117,6 @@ function generateSchedules() {
 }
 
 function getSchedule(calChoice, prevNext) {
-
 
     var div = "";
     var btnPath = "";
@@ -175,6 +167,8 @@ function getSchedule(calChoice, prevNext) {
         $(div).fullCalendar('removeEvents');
         $(div).fullCalendar('gotoDate', '2017-01-02');
     }
+
+    //process schedule to fullcalendar event here
 
     return $.ajax({
 
