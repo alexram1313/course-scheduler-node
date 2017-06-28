@@ -17,6 +17,7 @@ function resetScheduleViews(){
 }
 
 function setScheduleView(calChoice, prevNext){
+    console.log("choice:", calChoice);
     var calDiv = "";
     var txtDiv = "";
     var btnPath = "";
@@ -52,6 +53,8 @@ function setScheduleView(calChoice, prevNext){
     $(btnPath + ' .fc-next-button').addClass('fc-state-disabled');
     $(btnPath + ' .fc-prev-button').prop("disabled", true);
     $(btnPath + ' .fc-next-button').prop("disabled", true);
+    $(calDiv).fullCalendar('removeEvents');
+    $(calDiv).fullCalendar('gotoDate', '2017-01-02');
     clickable = false;
 
     if (schedules.length > 0){
@@ -137,7 +140,6 @@ function fetchSchedules(courseCodes, prefs, callback){
             data: { courses: JSON.stringify(courseCodes), prefs: JSON.stringify(prefs) },
             success: function (data) {
                 schedules = data.data;
-                console.log(data);
                 schedMax = schedules.length;
                 setScheduleView('left', 0);
                 setScheduleView('right', 1);

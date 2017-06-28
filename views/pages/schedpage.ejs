@@ -205,7 +205,7 @@
                                                             
                                                             });
                                 
-                                $('.fc-prev-button').click(function(){
+                                $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').click(function(){
                                                             console.log("Clickable", clickable);
                                                             if (schedMax >0){
                                                             if (clickable){
@@ -214,12 +214,12 @@
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
-                                                            setScheduleView(0,-1);
+                                                            setScheduleView('left',-1);
                                                             }
                                                             }
                                                             });
                                 
-                                $('.fc-next-button').click(function(){
+                                $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').click(function(){
                                                             console.log("Clickable", clickable);
                                                             if (schedMax > 0){
                                                             if (clickable){
@@ -228,7 +228,7 @@
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
                                                             $('#calendar div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
-                                                            setScheduleView(0,1);
+                                                            setScheduleView('left',1);
                                                             
                                                             }
                                                             }
@@ -288,7 +288,7 @@
                                                                 
                                                                 });
                                 
-                                $('.fc-prev-button').click(function(){
+                                $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').click(function(){
                                                             console.log("Clickable", clickable);
                                                             if (schedMax >0){
                                                             if (clickable){
@@ -297,12 +297,12 @@
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
-                                                            setScheduleView(1,-1);
+                                                            setScheduleView('right',-1);
                                                             }
                                                             }
                                                             });
                                 
-                                $('.fc-next-button').click(function(){
+                                $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').click(function(){
                                                             console.log("Clickable", clickable);
                                                             if (schedMax > 0){
                                                             if (clickable){
@@ -311,7 +311,7 @@
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').prop("disabled", true);
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-prev-button').addClass('fc-state-disabled');
                                                             $('#calendar-right div.fc-toolbar div.fc-right div.fc-button-group .fc-next-button').addClass('fc-state-disabled');
-                                                            setScheduleView(1,1);
+                                                            setScheduleView('right',1);
                                                             
                                                             }
                                                             }
