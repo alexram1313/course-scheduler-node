@@ -66,7 +66,7 @@ function setScheduleView(calChoice, prevNext){
     const index   = (calChoice == 'right') ? selectedRight : selectedLeft;
 
     var createEvent = function(courseName, secType, code, start, end, day){
-        var name = "("+code+") "+courseName+" "+secType;
+        var name = "("+code+") "+courseName.substr(0, courseName.indexOf(":"))+" "+secType;
         var start = moment(refDate+start, format);
         start.add(refDays.indexOf(day), 'days');
         var end = moment(refDate+end, format);
