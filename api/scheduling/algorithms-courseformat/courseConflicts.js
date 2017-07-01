@@ -10,21 +10,42 @@ function dayConflict(d1, d2){
 	return false;
 }
 
-function meetTimeConflict(s1Start, s1End, s2Start, s2End){
-	var ref = '2017-01-02 ';
-	format  = "YYYY-MM-DD H:m";
+function meetTimeConflict(s1Start, s1End, s2Start, s2End, final){
+	if (typeof(final)==='undefined') final = false;
+	
+	//Setup
+	var start1, start2, end2, end1;
 
-	var start1 = moment(ref+s1Start, format);
-	var start2 = moment(ref+s2Start, format);
-	var end2 = moment(ref+s2End, format);
-	var end1 = moment(ref+s1End, format);
+	if (final){
 
+		if ((s1Start == '') || (s2Start=='')) return false;
+
+		start1 = moment(s1Start);
+		start2 = moment(s2End);
+		end1   = moment(s1Start);
+			end1.add(2, 'hours');
+		end2   = moment(s2End);
+			end2.add(2, 'hours');
+
+	} else {
+		var ref = '2017-01-02 ';
+		format  = "YYYY-MM-DD H:m";
+
+		start1 = moment(ref+s1Start, format);
+		start2 = moment(ref+s2Start, format);
+		end2 = moment(ref+s2End, format);
+		end1 = moment(ref+s1End, format);
+	}
+
+	//Time conflict computation
 	return ((start1.diff(end2) < 0) && (start2.diff(end1) < 0));
 }
 
 function timeConflict(s1,s2) {
-	return dayConflict(s1.days, s2.days) &&
-		   meetTimeConflict(s1.startTime, s1.endTime, s2.startTime, s2.endTime);
+	return (dayConflict(s1.days, s2.days) &&
+		   meetTimeConflict(s1.startTime, s1.endTime, s2.startTime, s2.endTime)) ||
+		   ((s1.hasOwnProperty('final') && (s2.hasOwnProperty('final'))?
+				meetTimeConflict(s1.final.date, '', s2.final.date, '', true):false));
 }
 
 function buildConflictMatrix(courses) {
