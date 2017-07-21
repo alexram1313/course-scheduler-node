@@ -178,40 +178,6 @@ background-color:#1b3d6d;
 	padding:15px;
 }
 
-#home-left{
-	
-}
-
-.right{
-	float:right;
-/*	border:solid 1px #ccc;*/
-    width:49%;
-}
-
-#home-right, #home-left{
-	
-	padding:20px 0px 0px 0px;
-}
-
-#home-right h2{
-	padding-left:5px;
-	padding-right:5px;
-}
-
-.columns h2{
-	padding-left:5px;
-	padding-right:5px;
-}
-
-.columns{
-    margin-bottom:10px;
-}
-
-.columns:after{
-	content:"";
-	display: table;
-	clear: both;
-}
 
 @media all and (max-width: 480px) {
     .left, .right {
@@ -290,4 +256,10 @@ background-color:#1b3d6d;
 .row{
 	margin-left:0px;
 	margin-right:0px;
+}
+
+@media (min-width: 768px){
+	.navbar {
+		 border-radius: 0px; 
+	}
 }
