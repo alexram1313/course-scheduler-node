@@ -2,16 +2,16 @@
 
 
 <span>No need to fiddle around with WebSOC. Let us make your schedule for you.</span>
-<div class="columns box schedpage" ng-controller="mainController">
-    <div id="home-top-left" class="left">
-        <div class="box">
+<div class="row" ng-controller="mainController">
+    <div class="col-sm-6 box">
+        <div>
             <h2>Select your courses</h2>
             
-            <table class="course_choice">
+            <table class="course_choice form-group">
                 <tr>
                     <td class="courses_1">Term:</td>
                     <td class="courses_2">
-                        <select name="YearTerm" id="term" class="class_select"
+                        <select name="YearTerm" id="term" class="class_select form-control"
                                 ng-model="yearTerm" ng-change="populateCourses()"
                                 ng-options="yt.name for yt in yearTerms track by yt.id">
                             <option>
@@ -24,7 +24,7 @@
                 <tr>
                     <td class="courses_1">Department:</td>
                     <td class="courses_2">
-                        <select name="Dept" id="dept" class="class_select"
+                        <select name="Dept" id="dept" class="class_select form-control"
                                 ng-model="dept" ng-change="populateCourses()"
                                 ng-options="dept.name for dept in depts track by dept.id">
                             <option>
@@ -39,8 +39,8 @@
                         Course:
                     </td>
                     <td class="courses_2">
-                        <select name="Course" id="course" ng-change="hideAddedMsg(true)" class="class_select"
-                                ng-model="selectedCourse"
+                        <select name="Course" id="course" ng-change="hideAddedMsg(true)" 
+                                class="class_select form-control" ng-model="selectedCourse"
                                 ng-options="course.name for course in currentCourseList track by course.id">
                             <option>
                                 Loading...
@@ -54,16 +54,16 @@
                         <span ng-hide="newAdded">Added</span>
                     </td>
                     <td class="courses_2" style="text-align:right">
-                        <button type="button" ng-disabled="coursesLoading" ng-click="addCourse()">Select Course</button>
+                        <button type="button" class="btn btn-default" ng-disabled="coursesLoading" ng-click="addCourse()">Select Course</button>
                     </td>
                 </tr>
             </table>
-            
         </div>
-        <div class="box">
+        <hr/>
+        <div>
             <h2>Select your preferences</h2>
             
-            <table class="course_choice">
+            <table class="course_choice form-group">
                 <tr>
                     <td class="courses_1">
                         
@@ -78,7 +78,9 @@
                         Mornings:
                     </td>
                     <td class="courses_2" >
-                        <input ng-model="mornings" id="mornings" type="range" class="class_select pref_select" />
+                        <input ng-model="mornings" id="mornings" type="range" 
+                                class="class_select pref_select form-control"
+                                min="-50" max="50" />
                     </td>
                 </tr>
                 <tr>
@@ -86,7 +88,9 @@
                             Evenings:
                     </td>
                     <td class="courses_2" >
-                        <input ng-model="evenings" id="evenings" type="range" class="class_select pref_select" />
+                        <input ng-model="evenings" id="evenings" type="range" 
+                                class="class_select pref_select form-control"
+                                min="-50" max="50" />
                     </td>
                 </tr>
                 <tr>
@@ -94,7 +98,9 @@
                         Mondays:
                     </td>
                     <td class="courses_2" >
-                        <input ng-model="mondays" id="mondays" type="range" class="class_select pref_select" />
+                        <input ng-model="mondays" id="mondays" type="range" 
+                                class="class_select pref_select form-control"
+                                min="-50" max="50" />
                     </td>
                 </tr>
                 <tr>
@@ -102,7 +108,9 @@
                         Fridays:
                     </td>
                     <td class="courses_2" >
-                        <input ng-model="fridays" id="fridays" type="range" class="class_select pref_select" />
+                        <input ng-model="fridays" id="fridays" type="range" 
+                                class="class_select pref_select form-control"
+                                min="-50" max="50" />
                     </td>
                 </tr>
                 <tr>
@@ -110,7 +118,9 @@
                         Balanced Days:
                     </td>
                     <td class="courses_2" >
-                        <input ng-model="balanced" id="balance" type="range" class="class_select pref_select" />
+                        <input ng-model="balanced" id="balance" type="range" 
+                                class="class_select pref_select form-control"
+                                min="-50" max="50" />
                     </td>
                 </tr>
                 <tr>
@@ -118,7 +128,9 @@
                             Gaps:
                     </td>
                     <td class="courses_2" >
-                        <input ng-model="gaps" id="gaps" type="range" class="class_select pref_select" />
+                        <input ng-model="gaps" id="gaps" type="range" 
+                                class="class_select pref_select form-control"
+                                min="-50" max="50" />
                     </td>
                 </tr>
                 <tr>
@@ -126,23 +138,23 @@
                             Openings:
                     </td>
                     <td class="courses_2" >
-                        <input ng-model="openings" id="openings" type="range" class="class_select pref_select" />
+                        <input ng-model="openings" id="openings" type="range" 
+                                class="class_select pref_select form-control"
+                                min="-50" max="50" />
                     </td>
                 </tr>
                 <tr>
                     <td class="courses_1">
                     </td>
                     <td class="courses_2" style="text-align:right">
-                        <button id="genSched" ng-disabled="addedCourses.length == 0" type="button" ng-click="getSchedules();" >Schedule classes</button>
+                        <button id="genSched" class="btn btn-default" ng-disabled="addedCourses.length == 0" type="button" ng-click="getSchedules();" >Schedule classes</button>
                     </td>
                 </tr>
             </table>
-            
         </div>
-        
+            
     </div>
-    <div id="home-top-right" class="right">
-        <div class="box">
+    <div class="col-sm-6 box">
             <h2>Added Courses</h2>
             <ul id="addedCourses">
                 <span ng-hide="addedCourses.length">Select some courses first. Then they'll appear here.</span>
@@ -150,14 +162,14 @@
                     <span ng-bind="course.name"></span><a ng-click="delCourse($index)" href="javascript:void(0)" ng-bind="'[X]'"></a>
                 </li>
             </ul>
-        </div>
     </div>
     
 </div>
-<div class="columns box" id="schedules">
+<hr/>
+<div class="row" id="schedules">
     <h2>Compare possible schedules</h2>
     <p style="text-align:center;"><a href="javascript:void(0)" onClick="window.open('http://webreg1.reg.uci.edu:8889/cgi-bin/wramia?page=startUp&call=', 'WebReg UCI', 'width=700,height=400,scrollbars=yes'); ">Like what you see? Click here to go to WebReg.</a></p>
-    <div id="home-left" class="left box">
+    <div class="col-sm-6 box">
         <!—- Calendar —>
         <script src='/public/libs/fullcalendar/fullcalendar.js'></script>
         
@@ -176,7 +188,7 @@
                                                             timezone:"America/Los_Angeles",
                                                             allDaySlot:false,
                                                             height:700,
-                                                            contentHeight:800,
+                                                            contentHeight:700,
                                                             columnFormat:'ddd',
                                                             header: {
                                                             left:"title",
@@ -242,7 +254,7 @@
         <!—- End Calendar —>
         
     </div>
-    <div id="home-right" class="right box">
+    <div class="col-sm-6 box">
         <!—- Calendar —>
         <script type="text/javascript">
             $(document).ready(function() {
@@ -259,7 +271,7 @@
                                                                 timezone:"America/Los_Angeles",
                                                                 allDaySlot:false,
                                                                 height:700,
-                                                                contentHeight:800,
+                                                                contentHeight:700,
                                                                 columnFormat:'ddd',
                                                                 header: {
                                                                 left:"title",

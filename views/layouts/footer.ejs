@@ -1,14 +1,21 @@
         </div>
         <div id="footer">
-            <div id="copyright">
-                Copyright &copy; 2017 David Legg, Alex I. Ramirez.
-            </div>
-            <div id="foot-links">
-                <a href="https://github.com/alexram1313/course-scheduler-node" target="_blank">Github</a>
-                &nbsp;
-                <span style="color:white;">ALPHA</span>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="copyright" class="col-sm-8">
+                        Copyright &copy; <span id='year'></span> David Legg, Alex I. Ramirez
+                    </div>
+                    <div id="foot-links" class="col-sm-4">
+                        <a href="https://github.com/alexram1313/course-scheduler-node" target="_blank">GitHub</a>
+                        &nbsp;
+                        <span style="color:white;">ALPHA</span>
+                    </div>
+                </div>
             </div>
         </div>
+        <script type="text/javascript">
+            document.getElementById('year').innerHTML = new Date().getFullYear();
+        </script>
         <script type="text/javascript" id="cookieinfo"
             src="//cookieinfoscript.com/js/cookieinfo.min.js">
         </script>

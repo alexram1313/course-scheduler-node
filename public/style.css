@@ -1,7 +1,7 @@
 body {
 	margin:0;
 	font-family:"Trebuchet MS", Helvetica, Arial, sans-serif;
-	font-size: 100%;
+	/* font-size: 100%; */
 }
 
 a {
@@ -34,6 +34,35 @@ background-color:#1b3d6d;
 	border-bottom:solid 10px #ffd200;
 }
 
+.navbar-inverse {
+	background-color:#1b3d6d;
+	border-bottom:solid 10px #ffd200;
+	color:white;
+	font-size:150%;
+}
+
+.navbar-inverse .navbar-brand{
+	color:#ffd200;
+	font-weight:bold;
+	text-decoration: none;
+	vertical-align: middle; 
+	text-transform:uppercase;
+	font-family:"Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color:white;
+	
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color:#ffd200;
+}
+
+.navbar-inverse .navbar-nav>li>a:active {
+	color:#ffd200;
+}
+
 #head_container{
   	margin: 0 auto;
   	height: 70px;
@@ -59,9 +88,6 @@ background-color:#1b3d6d;
 #nav li {
   	list-style-type: none;
   	padding: 0px;
-  	height: 24px;
-  	margin-top: 4px;
-  	margin-bottom: 4px;
 	margin-right: 10px;
   	display: inline;
 	font-size: 1.75em;
@@ -80,43 +106,55 @@ background-color:#1b3d6d;
 }
 
 
-
-
-#content {
-	
-}
-
 #title {
 	font-family:"Montserrat", Helvetica, Arial, sans-serif;
-	font-size: 1.75em;
 	background-color:black;
 	color:white;
 	padding:25px;
 	text-transform:uppercase;
 	font-weight:bold;
+	margin-top:-20px;
+	margin-bottom:25px;
 }
 
+#title h3 {
+	font-family:"Montserrat", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size:2em;
+	margin:0;
+}
 
+.container-fluid {
+    padding-right: 25px;
+	padding-left: 25px;
+}
 
 #container{
-	padding:25px;
+	padding: 25px; 
+	padding-top: 0px;
 }
-
 
 #footer {
 	background-color:black;
 	color:#ccc;
-	padding:25px;
+	padding:25px 0px;
 	font-size:0.8em;
 	overflow:hidden;
+	margin-top:25px;
 }
-#copyright{
-	float:left;
+
+#footer .col-sm-8 {
+	padding:0px;
+}
+
+#footer .col-sm-4 {
+	padding:0px;
 }
 
 #foot-links{
-	float:right;
+    text-align:right;
 }
+
 #foot-links a{
 	color:#ddd;
 	text-decoration:none;
@@ -136,40 +174,10 @@ background-color:#1b3d6d;
 	border:solid 1px #ccc;
 }
 
-#home-left{
-	
+#schedules .box{
+	padding:15px;
 }
 
-.right{
-	float:right;
-/*	border:solid 1px #ccc;*/
-    width:49%;
-}
-
-#home-right, #home-left{
-	
-	padding:20px 0px 0px 0px;
-}
-
-#home-right h2{
-	padding-left:5px;
-	padding-right:5px;
-}
-
-.columns h2{
-	padding-left:5px;
-	padding-right:5px;
-}
-
-.columns{
-    margin-bottom:10px;
-}
-
-.columns:after{
-	content:"";
-	display: table;
-	clear: both;
-}
 
 @media all and (max-width: 480px) {
     .left, .right {
@@ -209,14 +217,14 @@ background-color:#1b3d6d;
 .fa {
   padding: 5px;
   font-size: 20px;
-  width: 20px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
 }
 
 .fa:hover {
-    opacity: 0.7;
+	opacity: 0.7;
+	text-decoration: none;
 }
 
 .fa-twitter {
@@ -243,4 +251,15 @@ background-color:#1b3d6d;
 
 .bio ul li{
 	list-style-type: none;
+}
+
+.row{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+@media (min-width: 768px){
+	.navbar {
+		 border-radius: 0px; 
+	}
 }

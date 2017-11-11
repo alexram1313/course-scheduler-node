@@ -9,6 +9,8 @@
     </title>
     <meta name="theme-color" content="#ffd200">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 
     <link rel="stylesheet" type="text/css" href="/public/style.css">
     <link rel="stylesheet" id="screenr-fonts-css" href="https://fonts.googleapis.com/css?family=Open%2BSans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic%7CMontserrat%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -19,6 +21,7 @@
     <script src='/public/libs/fullcalendar/lib/moment.min.js'></script>
     <script type="text/javascript" src='/public/libs/schedulerjs/core.js' > </script> 
     <script type="text/javascript" src='/public/libs/schedulerjs/calendar.js' > </script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,7 +29,7 @@
 </head>
 
 <body>
-    <header id="header">
+    <!-- <header id="header">
         <div id="head_container">
             <div id="home"><a href="/">ZotScheduler</a></div>
             <div id="nav_bar">
@@ -37,9 +40,32 @@
                 </ul>
             </div>
         </div>
+    </header> -->
 
-    </header>
-    <div id="content">
-        <% if (title) {%>
-            <div id="title"><%= title %></div>
-        <% } %>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#zsnav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand"  href="/">ZotScheduler</a> 
+            </div>
+            <div class="collapse navbar-collapse" id="zsnav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/help">Help</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <% if (title) {%>
+        <div class="jumbotron" id="title">
+            <h3><%= title %></h3>
+        </div>
+    <% } %>
+    <div class="container-fluid" >
+        

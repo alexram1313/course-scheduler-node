@@ -11,7 +11,7 @@ router.get('/', function(req, res){
         res.status(400).json({message:"Make sure to include an courses GET parameter as JSON array"});
     }
 
-    var prefs = {mornings:50,evenings:50,mondays:50,fridays:50,balanced:50,gaps:50,openings:50};
+    var prefs = {mornings:0,evenings:0,mondays:0,fridays:0,balanced:0,gaps:0,openings:0};
 
 
     if (req.query.hasOwnProperty('prefs')){
