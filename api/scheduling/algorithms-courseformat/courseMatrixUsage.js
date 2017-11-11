@@ -1,17 +1,5 @@
 var conflicts = require('./courseConflicts.js');
 
-function multiply(confMatrix, scheduleBuf, dimension) {
-	// I'm not sure if I can get away with just saying 0 here,
-	// or if I need to explicitly define the number of bytes I'm using.
-	// Also, if I extend to using multiple array slots to get enough bits,
-	// that might force my hand.
-	var conflicts = 0;
-	for (var i = 0; i < dimension; ++i) {
-		conflicts |= (!!(confMatrix[i] & scheduleBuf)) << i;
-	}
-	return conflicts;
-}
-
 /*
 Coreq Structure
 
@@ -29,29 +17,29 @@ Now, we have a simple algorithm to calculate all possible schedules:
 At each level, take exactly one option, recurring if necessary.
 */
 
-function test_schedules(conflictMatrix, dimension, roots, forest) {
+function test_schedules(conflictMatrix, roots, forest) {
 	function add_section(current, i) {
 		// Explanation: takes a current schedule and an (assumed consistent) additional section
 		// specified by index i, and adds i to current by incorporating all consistent
 		// options for taking all corequiring courses as well.
 		var reqsByType = forest[i];
-		current |= (1 << i);
+		current = current.copy().orBit(i, 1);
 
 		if (reqsByType.length == 0) {
 			return [current];
 		} else {
 			// Get all consistent options for each coreq individually
 			options = reqsByType.map(function(typeOptions){
-				return add_single_type(current, typeOptions);
+				return add_single_type(current.copy(), typeOptions);
 			});
 			// Combine those options into a flat list of consistent schedules
 			return blend_options(current, options);
 		}
 
 		function add_single_type(current, options) {
-			return options.reduce(function(acc,o){
-				if (consistent(current | (1 << o))) {
-					return acc.concat(add_section(current,o));
+			return options.reduce(function(acc,o) {
+				if (consistent(current.copy().orBit(o, 1))) {
+					return acc.concat(add_section(current, o));
 				} else {
 					return acc;
 				}
@@ -60,7 +48,7 @@ function test_schedules(conflictMatrix, dimension, roots, forest) {
 	}
 
 	function consistent(schedule) {
-		return !(multiply(conflictMatrix, schedule, dimension) & schedule);
+		return conflictMatrix.multiply(schedule).andRow(schedule).isZero();
 	}
 
 	function blend_options(current, root_schedules) {
@@ -73,9 +61,10 @@ function test_schedules(conflictMatrix, dimension, roots, forest) {
 		} else {
 			// reduce one root_schedule into the list of consistent schedules
 			return root_schedules[0].reduce(function(acc,root_schedule){
-				if (consistent(current | root_schedule)) {
+				var current_copy = current.copy().orRow(root_schedule);
+				if (consistent(current_copy)) {
 					// if current and root_schedule are compatible, add it in and continue recursively
-					return acc.concat(blend_options(current | root_schedule, root_schedules.slice(1)));
+					return acc.concat(blend_options(current_copy, root_schedules.slice(1)));
 				} else {
 					// otherwise, neglect this root_schedule.
 					return acc;
@@ -87,32 +76,28 @@ function test_schedules(conflictMatrix, dimension, roots, forest) {
 	var root_schedules = roots.map(function(root_course){
 		// generate all consistent schedules for each root_course
 		return root_course.reduce(function(acc,root_section){
-			return acc.concat(add_section(0,root_section));
+			return acc.concat(add_section(new conflictMatrix.Row(), root_section));
 		}, []);
 	});
-	console.log('root_schedules:', root_schedules); //TEMP
-	return blend_options(0,root_schedules);
+	return blend_options(new conflictMatrix.Row(),root_schedules);
 }
 
-function decode(scheduleBuf, section_list, dimension) {
-	schedule = [];
-	for (var i = 0; i < dimension; ++i) {
-		if (scheduleBuf & (1 << i)) {
-			schedule.push(section_list[i]);
+function decoder(section_list) {
+	return function(scheduleRow) {
+		var schedule = [];
+		for (var i = scheduleRow.size(); i >= 0; --i) {
+			if (scheduleRow.get(i)) {
+				schedule.push(section_list[i]);
+			}
 		}
+		return schedule;
 	}
-	return schedule;
 }
 
 module.exports = {
-	genScheds:function(courses, prefs){
+	genScheds: function(courses, prefs) {
 		var data = conflicts.buildConflictMatrix(courses);
-		var schedules = test_schedules(data.matrix, data.list.length, data.roots, data.forest);
-		var decodedSchedules = [];
-		schedules.forEach(function (sched){
-			var decoded = decode(sched, data.list, data.n);
-			decodedSchedules.push(decoded);
-		});
-		return decodedSchedules;
+		var scheduleRows = test_schedules(data.matrix, data.roots, data.forest);
+		return scheduleRows.map( decoder(data.list) );
 	}
 };

@@ -1,4 +1,5 @@
 var moment = require('moment');
+var BitMatrix = require('./BitMatrix.js').BitMatrix;
 
 function dayConflict(d1, d2){
 	//MTuWThF Check
@@ -49,13 +50,12 @@ function timeConflict(s1,s2) {
 }
 
 function buildConflictMatrix(courses) {
-	var i = 0;
+	var i      = 0;
 	var offset = 0;
-	var nSec = 0;
-	var ntypes = 0;
-	var codeLookup = {};
-	var typeLookup = {};
-	var typeIndex;
+	var nSec   = 0;
+	var codeLookup     = {};
+	var sectionsByType = {};
+	var sectionRow;
 
 	courses.forEach(function(c){
 		// useful for pre-allocating arrays to know how many sections we have
@@ -63,34 +63,38 @@ function buildConflictMatrix(courses) {
 		c.sections.forEach(function(s) {
 			// since coreqs might appear out-of-order, need to squirrel these away up front
 			codeLookup[s.code] = {'index': i++, 'section':s};
-			// while I'm at it, might as well pre-compute types and count them
-			if (!typeLookup.hasOwnProperty(s.secType)) {
-				typeLookup[s.secType] = ntypes++;
+			// while I'm at it, might as well pre-compute types
+			if (!sectionsByType.hasOwnProperty(s.secType)) {
+				sectionsByType[s.secType] = null;
 			}
 		});
 	});
 
-	var sectionList = new Array(nSec);
+	var A = new BitMatrix(nSec);
+
+	var sectionList     = new Array(nSec);
 	var coreqRootsTemp  = {};
 	var coreqRoots      = new Array();
 	var coreqForest     = new Array(nSec);
 	for (var i = 0; i < nSec; ++i) {
 		coreqForest[i] = {};
 	}
+	for (var type in sectionsByType) {
+		if (!sectionsByType.hasOwnProperty(type)) continue;
+		sectionsByType[type] = new A.Row();
+	}
 
-	// This sets up A with n 32-bit slots.
-	// This will work for up to 32 sections.
-	// For better implementations, look into the DataView object,
-	// which might allow for arbitrarily large bytelengths.
-	// Note that ArrayBuffer initializes memory to 0.
-	var A = new Uint32Array(new ArrayBuffer(nSec * 4));
-	var sectionsByType = new Uint32Array(new ArrayBuffer(ntypes * 4));
+	// var A = new Uint32Array(new ArrayBuffer(nSec * 4));
 
 	i = 0;
 	courses.forEach(function(c){
 		// reset sectionsByType and coreqRootsTemp, which are logically local to each course.
-		for (var j = 0; j < ntypes; ++j) {
-			sectionsByType[j] = 0;
+		// for (var j = 0; j < ntypes; ++j) {
+		// 	sectionsByType[j] = 0;
+		// }
+		for (var type in sectionsByType) {
+			if (!sectionsByType.hasOwnProperty(type)) continue;
+			sectionsByType[type].reset();
 		}
 		coreqRootsTemp = {};
 
@@ -99,18 +103,14 @@ function buildConflictMatrix(courses) {
 		offset = 0;
 		c.sections.forEach(function(s){
 			// a section conflicts with every other section of the same type for this course
-			typeIndex = typeLookup[s.secType];
-			A[i + offset] |= sectionsByType[typeIndex];
-			sectionsByType[typeIndex] |= (1 << (i + offset));
+			sectionRow = sectionsByType[s.secType];
+			A.orRow(i + offset, sectionRow);
+			sectionsByType[s.secType].orBit(i + offset, 1);
 			++offset;
 		});
 
 		// process each section
 		c.sections.forEach(function(s){
-			// typeIndex = typeLookup[s.secType];
-			// A[i] |= sectionsByType[typeIndex];
-			// sectionsByType[typeIndex] |= (1 << i);
-
 			// bookkeeping, for lookups later
 			// note: I can do this just-in-time because I only ever look up previous sections
 			sectionList[i] = s;
@@ -119,7 +119,11 @@ function buildConflictMatrix(courses) {
 				var jco = codeLookup[coreq];
 				// a section conflicts with all sections that are the same type
 				// as a co-required section, but aren't that section.
-				A[i] |= (sectionsByType[typeLookup[jco.section.secType]] & ~(1 << jco.index));
+				sectionRow = new A.Row()
+					.orBit(jco.index, 1)
+					.invert()
+					.andRow(sectionsByType[jco.section.secType]);
+				A.orRow(i, sectionRow);
 				// Additionally, we add s as a child of its coreq, designated by its type, in our forest:
 				if (!coreqForest[jco.index].hasOwnProperty(s.secType)) {
 					coreqForest[jco.index][s.secType] = new Array();
@@ -136,8 +140,8 @@ function buildConflictMatrix(courses) {
 
 			// finally, scan the row and fill in any time conflicts that arise
 			for (var k = 0; k < i; ++k) {
-				if (!(A[i] & (1 << k)) && timeConflict(s, sectionList[k])) {
-					A[i] |= (1 << k);
+				if (!A.get(i, k) && timeConflict(s, sectionList[k])) {
+					A.orBit(i, k, 1);
 				}
 			}
 
@@ -151,15 +155,8 @@ function buildConflictMatrix(courses) {
 		}
 	});
 
-	// Takes the lower-triangular matrix we just built and reflects
-	// it to be a symmetric matrix.
-	// Please don't ask me to explain it; it took an entire afternoon to figure this out.
-	for (var x = 0; x < nSec; ++x) {
-		for (var y = x; y < nSec; ++y) {
-			A[y] |= (A[x] & (1 << y)) >>> (y - x);
-			A[x] |= (A[y] & (1 << x)) <<  (y - x);
-		}
-	}
+	// reflect and "or", filling in the other half of the matrix
+	A.orSymmetric();
 
 	// Collect all the corequirements, and drop the different type names.
 	var coreqArr;
@@ -176,7 +173,6 @@ function buildConflictMatrix(courses) {
 	return {
 		'matrix': A,
 		'list'  : sectionList,
-		'n'     : nSec,
 		'roots' : coreqRoots,
 		'forest': coreqForest
 	};

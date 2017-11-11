@@ -13,6 +13,7 @@ router.get('/', function(req, res){
 
     var prefs = {mornings:50,evenings:50,mondays:50,fridays:50,balanced:50,gaps:50,openings:50};
 
+
     if (req.query.hasOwnProperty('prefs')){
         prefs = JSON.parse(req.query.prefs);
     }

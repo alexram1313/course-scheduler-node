@@ -18,6 +18,9 @@ To-do List
   - [x] Automatic access to schedule of classes
   - [x] GUI for adding courses
   - [x] GUI for displaying schedules
+- [ ] Regression Testing
+  - [ ] Build/choose regression testing framework
+  - [ ] Build tests for each module
 - [ ] Polish it and add any other features
   - [ ] Additional preference categories:
     - [ ] Geographic distance between classes
