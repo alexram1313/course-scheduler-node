@@ -12,18 +12,18 @@ module.exports = function(){
 
 		/// Private members
 
-		var slotsPerRow = Math.ceil(size / BitMatrix.bitsPerSlot);
+		var slotsPerRow = Math.ceil(size / bitsPerSlot);
 		var array       = makeArray(size * slotsPerRow);
 
 		/// Private helpers
 
 		// returns the index of array that row/column falls in
 		function slot(row, column) {
-			return (slotsPerRow * row) + Math.floor(column / bits);
+			return (slotsPerRow * row) + Math.floor(column / bitsPerSlot);
 		}
 		// returns the index of column within the slot
 		function offset(column) {
-			return column % bits;
+			return column % bitsPerSlot;
 		}
 
 		/// Public methods
@@ -36,9 +36,10 @@ module.exports = function(){
 
 		// "or's" an entire Row with a row in this BitMatrix
 		this.orRow = function(rowIndex, row) {
+			var rowStartSlot = slotsPerRow * rowIndex;
 			var rawRow = row._getRaw();
 			for (var slot = 0; slot < slotsPerRow; ++slot) {
-				array[ slot(row, slot) ] |= rawRow[ slot % slotsPerRow ];
+				array[ rowStartSlot + slot ] |= rawRow[ slot ];
 			}
 			return this;
 		}
@@ -67,10 +68,11 @@ module.exports = function(){
 			var temp   = 0;
 			for (var i = 0; i < size; ++i) {
 				temp = 0;
+				rowStartSlot = i * slotsPerRow;
 				for (var j = 0; j < slotsPerRow; ++j) {
-					temp |= (array[ slot(i, 0) + j ] & rawRow[j]);
+					temp |= (array[ rowStartSlot + j ] & rawRow[j]);
 				}
-				output.orBit(j, temp);
+				output.orBit(i, temp);
 			}
 			return output;
 		}
@@ -119,7 +121,7 @@ module.exports = function(){
 			}
 
 			this.size = function() {
-				return slotsPerRow;
+				return size;
 			}
 
 			this.isZero = function() {

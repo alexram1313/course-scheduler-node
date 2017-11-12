@@ -181,5 +181,3 @@ function buildConflictMatrix(courses) {
 module.exports = {
 	'buildConflictMatrix': buildConflictMatrix
 };
-
-// console.log(buildConflictMatrix(courses));

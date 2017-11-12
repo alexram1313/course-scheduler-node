@@ -9,7 +9,7 @@ To properly represent this, you need multiple starting places; that is to say, t
 
 Now, form a list of indices of courses that corequire no other courses, grouped within their course-type. Call this list roots. Formally,
   roots = [[i : si->type == typej && si->coreqs == {}] : typej in [course-types]]
-Next, form a 1-level representation of the forest as a list of lists of indices, as follows:
+Then, form a 1-level representation of the forest as a list of lists of indices, as follows:
   forest = [ci : for all i, ci = [j : si in sj->coreqs]]
 That is, the ith entry in forests is exactly those courses that corequire section si.
 
