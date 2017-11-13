@@ -12,7 +12,7 @@ new TestModule('Bit Row Operations')
 		var row = new bm.Row();
 		return bmu.rawRow(row, n);
 	})
-	.returns(bmu.oneAtRow([], 100))
+	.equals(bmu.oneAtRow([], 100))
 
 	.test('size', function() {
 		var n = 100;
@@ -20,7 +20,7 @@ new TestModule('Bit Row Operations')
 		var row = new bm.Row();
 		return row.size();
 	})
-	.returns(100)
+	.equals(100)
 
 	.test('orBit', function() {
 		var n = 100;
@@ -32,7 +32,7 @@ new TestModule('Bit Row Operations')
 		row.orBit(86, 0);
 		return bmu.rawRow(row, n);
 	})
-	.returns(bmu.oneAtRow([3,97], 100))
+	.equals(bmu.oneAtRow([3,97], 100))
 
 	.test('orRow', function() {
 		var n = 100;
@@ -47,7 +47,7 @@ new TestModule('Bit Row Operations')
 
 		return [bmu.rawRow(row1,n), bmu.rawRow(row2,n)];
 	})
-	.returns([bmu.oneAtRow([3,97,4], 100), bmu.oneAtRow([4,97], 100)])
+	.equals([bmu.oneAtRow([3,97,4], 100), bmu.oneAtRow([4,97], 100)])
 
 	.test('andRow', function() {
 		var n = 100;
@@ -62,7 +62,7 @@ new TestModule('Bit Row Operations')
 
 		return [bmu.rawRow(row1,n), bmu.rawRow(row2,n)];
 	})
-	.returns([bmu.oneAtRow([97], 100), bmu.oneAtRow([4,97], 100)])
+	.equals([bmu.oneAtRow([97], 100), bmu.oneAtRow([4,97], 100)])
 
 	.test('invert', function() {
 		var n   = 100;
@@ -73,7 +73,7 @@ new TestModule('Bit Row Operations')
 		row.invert();
 		return bmu.rawRow(row, n);
 	})
-	.returnsSameAs(function() {
+	.equals(function() {
 		var arr = [];
 		for (var i = 0; i < 100; i++) {
 			arr.push(1);
@@ -81,7 +81,7 @@ new TestModule('Bit Row Operations')
 		arr[3] = 0;
 		arr[93] = 0;
 		return arr;
-	})
+	}())
 
 	.test('isZero', function() {
 		var n   = 100;
@@ -93,7 +93,7 @@ new TestModule('Bit Row Operations')
 		var afterSetting = row.isZero();
 		return [beforeSetting, afterSetting];
 	})
-	.returns([1,0])
+	.equals([1,0])
 
 	.test('copy', function() {
 		var n   = 100;
@@ -105,7 +105,7 @@ new TestModule('Bit Row Operations')
 
 		return [bmu.rawRow(row, n), bmu.rawRow(row2, n)];
 	})
-	.returns([bmu.oneAtRow([3,93], 100), bmu.oneAtRow([3,93], 100)])
+	.equals([bmu.oneAtRow([3,93], 100), bmu.oneAtRow([3,93], 100)])
 
 	.test('reset', function() {
 		var n   = 100;
@@ -118,7 +118,7 @@ new TestModule('Bit Row Operations')
 		row.reset();
 		return bmu.rawRow(row, n);
 	})
-	.returns(bmu.oneAtRow([], 100))
+	.equals(bmu.oneAtRow([], 100))
 
 	.finish();
 
@@ -130,14 +130,14 @@ new TestModule('Bit Matrix Operations')
 		var bm = new BitMatrix(3);
 		return bmu.rawMatrix(bm, n);
 	})
-	.returns(bmu.oneAtMatrix([],3))
+	.equals(bmu.oneAtMatrix([],3))
 
 	.test('big init', function() {
 		var n = 300;
 		var bm = new BitMatrix(3);
 		return bmu.rawMatrix(bm, n);
 	})
-	.returns(bmu.oneAtMatrix([],300))
+	.equals(bmu.oneAtMatrix([],300))
 
 	.test('orBit', function() {
 		var n = 100;
@@ -148,7 +148,7 @@ new TestModule('Bit Matrix Operations')
 		bm.orBit(82, 76, 0);
 		return bmu.rawMatrix(bm, n);
 	})
-	.returns(bmu.oneAtMatrix([[3,4],[97,83]], 100))
+	.equals(bmu.oneAtMatrix([[3,4],[97,83]], 100))
 
 	.test('orRow', function() {
 		var n   = 100;
@@ -160,7 +160,7 @@ new TestModule('Bit Matrix Operations')
 		bm.orRow(84, row);
 		return bmu.rawMatrix(bm, n);
 	})
-	.returns(bmu.oneAtMatrix([[5,3],[5,97],[84,3],[84,97]], 100))
+	.equals(bmu.oneAtMatrix([[5,3],[5,97],[84,3],[84,97]], 100))
 
 	.test('orSymmetric', function() {
 		var n   = 100;
@@ -172,7 +172,7 @@ new TestModule('Bit Matrix Operations')
 		bm.orSymmetric();
 		return bmu.rawMatrix(bm, n);
 	})
-	.returns(bmu.oneAtMatrix([
+	.equals(bmu.oneAtMatrix([
 		[5,3],[5,97],[84,3],[84,97],
 		[3,5],[97,5],[3,84],[97,84]
 		], 100))
@@ -191,7 +191,7 @@ new TestModule('Bit Matrix Operations')
 
 		return bmu.rawRow(bm.multiply(row), n);
 	})
-	.returns(bmu.oneAtRow([5,84], 100))
+	.equals(bmu.oneAtRow([5,84], 100))
 
 	.finish();
 

@@ -1,81 +1,45 @@
 (function () {
 
 var buildConflictMatrix = require('../api/scheduling/algorithms-courseformat/courseConflicts.js').buildConflictMatrix;
-var createSection = require('../api/models/section.js').createSection;
-var createCourse = require('../api/models/course.js').createCourse;
 
 var TestModule = require('./test-utils.js').TestModule;
 var bmu = require('./bit-matrix-utils.js');
-
-var courseOne = 
-	createCourse(1, 'Course One', [
-		createSection('lec', 'Lecture One', 10001, 'MWF', '10:00:00', '10:50:00', [])
-	]);
-
-var courseTwo =
-	createCourse(2, 'Course Two', [
-		createSection('lec', 'Lecture 2.1', 20001, 'MWF', '10:00:00', '10:50:00', []),
-		createSection('lec', 'Lecture 2.2', 20002, 'MWF', '11:00:00', '11:50:00', []),
-		createSection('lec', 'Lecture 2.3', 20003, 'MWF', '12:00:00', '12:50:00', [])
-	]);
-
-var courseThree =
-	createCourse(3, 'Course Three', [
-		createSection('lec', 'Lecture 3.1', 30001, 'MWF', '10:00:00', '10:50:00', []),
-		createSection('dis', 'Discussion 3.1.1', 30101, 'TuTh', '10:00:00', '10:50:00', [30001])
-	]);
-
-var courseFour =
-	createCourse(4, 'Course Four', [
-		createSection('lec', 'Lecture 4.1', 40001, 'MWF', '10:00:00', '10:50:00', []),
-		createSection('lec', 'Lecture 4.2', 40002, 'MWF', '11:00:00', '11:50:00', []),
-		createSection('dis', 'Discussion 4.1.1', 40101, 'TuTh', '10:00:00', '10:50:00', [40001]),
-		createSection('dis', 'Discussion 4.2.1', 40202, 'TuTh', '11:00:00', '11:50:00', [40002]),
-		createSection('dis', 'Discussion 4.2.2', 40202, 'TuTh', '12:00:00', '12:50:00', [40002])
-	]);
-
-var courseFive = 
-	createCourse(5, 'Course Five', [
-		createSection('lec', 'Lecture 5.1', 50001, 'MWF', '10:00:00', '10:50:00', []),
-		createSection('dis', 'Discussion 5.1.1', 50101, 'Tu', '10:00:00', '10:50:00', [50001]),
-		createSection('lab', 'Lab 5.1.1', 50111, 'Th', '10:00:00', '10:50:00', [50101])
-	]);
-
+var testCourses = require('./test-courses.js');
 
 new TestModule('Build Conflict Matrix')
 	.test('minimal', function() {
-		var courses = [courseOne];
+		var courses = [testCourses.one];
 		var answer = buildConflictMatrix(courses);
 		answer.matrix = bmu.rawMatrix(answer.matrix, 1);
 		return answer;
 	})
-	.returns({
+	.equals({
 		'matrix': [[0]],
-		'list'  : courseOne.sections,
+		'list'  : testCourses.one.sections,
 		'roots' : [[0]],
 		'forest': [[]]
 	})
 
 	.test('multi-section', function() {
-		var courses = [courseTwo];
+		var courses = [testCourses.two];
 		var answer = buildConflictMatrix(courses);
 		answer.matrix = bmu.rawMatrix(answer.matrix, 3);
 		return answer;
 	})
-	.returns({
+	.equals({
 		'matrix': bmu.inverseIdentity(3),
-		'list'  : courseTwo.sections,
+		'list'  : testCourses.two.sections,
 		'roots' : [[0,1,2]],
 		'forest': [[],[],[]]
 	})
 
 	.test('basic time conflict', function() {
-		var courses = [courseOne, courseTwo];
+		var courses = [testCourses.one, testCourses.two];
 		var answer = buildConflictMatrix(courses);
 		answer.matrix = bmu.rawMatrix(answer.matrix, 4);
 		return answer;
 	})
-	.returns({
+	.equals({
 		'matrix': (
 			bmu.vconcat(
 				[[0,1,0,0]],
@@ -83,31 +47,31 @@ new TestModule('Build Conflict Matrix')
 					bmu.inverseIdentity(3))
 			)
 		),
-		'list'  : courseOne.sections.concat(courseTwo.sections),
+		'list'  : testCourses.one.sections.concat(testCourses.two.sections),
 		'roots' : [[0],[1,2,3]],
 		'forest': [[],[],[],[]]
 	})
 
 	.test('basic coreq', function() {
-		var courses = [courseThree];
+		var courses = [testCourses.three];
 		var answer = buildConflictMatrix(courses);
 		answer.matrix = bmu.rawMatrix(answer.matrix, 2);
 		return answer;
 	})
-	.returns({
+	.equals({
 		'matrix': [[0,0],[0,0]],
-		'list'  : courseThree.sections,
+		'list'  : testCourses.three.sections,
 		'roots' : [[0]],
 		'forest': [[[1]],[]]
 	})
 
 	.test('multiple coreq', function() {
-		var courses = [courseFour];
+		var courses = [testCourses.four];
 		var answer = buildConflictMatrix(courses);
 		answer.matrix = bmu.rawMatrix(answer.matrix, 5);
 		return answer;
 	})
-	.returns({
+	.equals({
 		'matrix': bmu.vconcat(
 			bmu.hconcat(
 				bmu.inverseIdentity(2),
@@ -118,31 +82,31 @@ new TestModule('Build Conflict Matrix')
 				bmu.inverseIdentity(3)
 			)
 		),
-		'list'  : courseFour.sections,
+		'list'  : testCourses.four.sections,
 		'roots' : [[0,1]],
 		'forest': [[[2]],[[3,4]],[],[],[]]
 	})
 
 	.test('deep coreq', function() {
-		var courses = [courseFive];
+		var courses = [testCourses.five];
 		var answer = buildConflictMatrix(courses);
 		answer.matrix = bmu.rawMatrix(answer.matrix, 3);
 		return answer;
 	})
-	.returns({
+	.equals({
 		'matrix': [[0,0,0],[0,0,0],[0,0,0]],
-		'list'  : courseFive.sections,
+		'list'  : testCourses.five.sections,
 		'roots' : [[0]],
 		'forest': [[[1]],[[2]],[]]
 	})
 
 	.test('all together', function() {
-		var courses = [courseTwo, courseFour, courseFive];
+		var courses = [testCourses.two, testCourses.four, testCourses.five];
 		var answer = buildConflictMatrix(courses);
 		answer.matrix = bmu.rawMatrix(answer.matrix, 11);
 		return answer;
 	})
-	.returns({
+	.equals({
 		'matrix': bmu.vconcat(
 			bmu.hconcat(
 				bmu.inverseIdentity(3),
@@ -166,7 +130,7 @@ new TestModule('Build Conflict Matrix')
 				bmu.zeros(3,5)
 			)
 		),
-		'list'  : courseTwo.sections.concat(courseFour.sections.concat(courseFive.sections)),
+		'list'  : testCourses.two.sections.concat(testCourses.four.sections.concat(testCourses.five.sections)),
 		'roots' : [[0,1,2],[3,4],[8]],
 		'forest': [[],[],[],[[5]],[[6,7]],[],[],[],[[9]],[[10]],[]]
 	})

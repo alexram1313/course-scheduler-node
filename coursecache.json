@@ -1,5 +1,5 @@
 {
-  "updatetime": "2017-11-12T09:08:19-08:00",
+  "updatetime": "2017-11-13T12:29:43-08:00",
   "depts": {
     "2018-03:AC ENG": [
       "20A-60-0",
@@ -13,6 +13,62 @@
       "28-60-0",
       "29-60-0",
       "139W-60-0"
+    ],
+    "2018-03:COMPSCI": [
+      "112-95-0",
+      "116-95-0",
+      "121-95-0",
+      "122A-95-0",
+      "122B-95-0",
+      "125-95-0",
+      "132-95-0",
+      "133-95-0",
+      "134-95-0",
+      "142A-95-0",
+      "143A-95-0",
+      "143B-95-0",
+      "145-95-0",
+      "145L-95-0",
+      "152-95-0",
+      "153-95-0",
+      "154-95-0",
+      "161-95-0",
+      "162-95-0",
+      "164-95-0",
+      "167-95-0",
+      "171-95-0",
+      "172B-95-0",
+      "175-95-0",
+      "178-95-0",
+      "H198-95-0",
+      "199-95-0",
+      "200S-95-0",
+      "211A-95-0",
+      "221-95-0",
+      "225-95-0",
+      "230-95-0",
+      "233-95-0",
+      "241-95-0",
+      "250A-95-0",
+      "252-95-0",
+      "259S-95-0",
+      "260-95-0",
+      "261-95-0",
+      "266-95-0",
+      "269S-95-0",
+      "273A-95-0",
+      "274A-95-0",
+      "274C-95-0",
+      "206P-95-0",
+      "211P-95-0",
+      "238P-95-0",
+      "260P-95-0",
+      "271P-95-0",
+      "290-95-0",
+      "295-95-0",
+      "295-95-1",
+      "298-95-0",
+      "299-95-0"
     ]
   },
   "courses": {
@@ -1486,6 +1542,5062 @@
           "days": "MWF",
           "startTime": "15:00",
           "endTime": "15:50",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:112-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:112-95-0",
+      "name": "COMPSCI 112: COMPUTER GRAPHICS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 112: COMPUTER GRAPHICS",
+          "code": "34110",
+          "days": "M",
+          "startTime": "18:30",
+          "endTime": "21:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-23T19:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 112: COMPUTER GRAPHICS",
+          "code": "34111",
+          "days": "F",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "34110"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 112: COMPUTER GRAPHICS",
+          "code": "34112",
+          "days": "MW",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "34110"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 112: COMPUTER GRAPHICS",
+          "code": "34113",
+          "days": "MW",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "34110"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 112: COMPUTER GRAPHICS",
+          "code": "34114",
+          "days": "TuTh",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "34110"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 112: COMPUTER GRAPHICS",
+          "code": "34115",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [
+            "34110"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 112: COMPUTER GRAPHICS",
+          "code": "34116",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "34110"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 112: COMPUTER GRAPHICS",
+          "code": "34117",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "34110"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:116-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:116-95-0",
+      "name": "COMPSCI 116: COMP PHOTO & VISION",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 116: COMP PHOTO & VISION",
+          "code": "34120",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T16:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:121-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:121-95-0",
+      "name": "COMPSCI 121: INFRMTION RETRIEVAL",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 121: INFRMTION RETRIEVAL",
+          "code": "34130",
+          "days": "TuTh",
+          "startTime": "18:30",
+          "endTime": "19:50",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 121: INFRMTION RETRIEVAL",
+          "code": "34131",
+          "days": "Tu",
+          "startTime": "20:00",
+          "endTime": "20:50",
+          "coreqs": [
+            "34130"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:122A-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:122A-95-0",
+      "name": "COMPSCI 122A: INTRO TO DATA MGMT",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 122A: INTRO TO DATA MGMT",
+          "code": "34140",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T16:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 122A: INTRO TO DATA MGMT",
+          "code": "34141",
+          "days": "M",
+          "startTime": "18:00",
+          "endTime": "18:50",
+          "coreqs": [
+            "34140"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 122A: INTRO TO DATA MGMT",
+          "code": "34142",
+          "days": "M",
+          "startTime": "19:00",
+          "endTime": "19:50",
+          "coreqs": [
+            "34140"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 122A: INTRO TO DATA MGMT",
+          "code": "34143",
+          "days": "M",
+          "startTime": "20:00",
+          "endTime": "20:50",
+          "coreqs": [
+            "34140"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 122A: INTRO TO DATA MGMT",
+          "code": "34144",
+          "days": "W",
+          "startTime": "18:00",
+          "endTime": "18:50",
+          "coreqs": [
+            "34140"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 122A: INTRO TO DATA MGMT",
+          "code": "34145",
+          "days": "W",
+          "startTime": "19:00",
+          "endTime": "19:50",
+          "coreqs": [
+            "34140"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 122A: INTRO TO DATA MGMT",
+          "code": "34146",
+          "days": "W",
+          "startTime": "20:00",
+          "endTime": "20:50",
+          "coreqs": [
+            "34140"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:122B-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:122B-95-0",
+      "name": "COMPSCI 122B: PROJ DATA&WEB APPS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 122B: PROJ DATA&WEB APPS",
+          "code": "34150",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T13:30:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:125-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:125-95-0",
+      "name": "COMPSCI 125: NXT GEN SRCH SYSTMS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 125: NXT GEN SRCH SYSTMS",
+          "code": "34155",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-20T16:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:132-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:132-95-0",
+      "name": "COMPSCI 132: COMPUTER NETWORKS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 132: COMPUTER NETWORKS",
+          "code": "34160",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-20T16:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 132: COMPUTER NETWORKS",
+          "code": "34161",
+          "days": "Tu",
+          "startTime": "18:00",
+          "endTime": "18:50",
+          "coreqs": [
+            "34160"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 132: COMPUTER NETWORKS",
+          "code": "34162",
+          "days": "Tu",
+          "startTime": "19:00",
+          "endTime": "19:50",
+          "coreqs": [
+            "34160"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 132: COMPUTER NETWORKS",
+          "code": "34163",
+          "days": "Th",
+          "startTime": "18:00",
+          "endTime": "18:50",
+          "coreqs": [
+            "34160"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 132: COMPUTER NETWORKS",
+          "code": "34164",
+          "days": "Th",
+          "startTime": "19:00",
+          "endTime": "19:50",
+          "coreqs": [
+            "34160"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 132: COMPUTER NETWORKS",
+          "code": "34165",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "34160"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:133-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:133-95-0",
+      "name": "COMPSCI 133: ADV COMPUTER NETWKS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 133: ADV COMPUTER NETWKS",
+          "code": "34170",
+          "days": "W",
+          "startTime": "18:30",
+          "endTime": "21:20",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:134-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:134-95-0",
+      "name": "COMPSCI 134: COMP&NETWRK SECURTY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 134: COMP&NETWRK SECURTY",
+          "code": "34175",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T08:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:142A-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:142A-95-0",
+      "name": "COMPSCI 142A: COMPILERS&INTPRETER",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 142A: COMPILERS&INTPRETER",
+          "code": "34190",
+          "days": "TuTh",
+          "startTime": "8:00",
+          "endTime": "9:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-20T08:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 142A: COMPILERS&INTPRETER",
+          "code": "34191",
+          "days": "M",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "34190"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 142A: COMPILERS&INTPRETER",
+          "code": "34192",
+          "days": "F",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "34190"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 142A: COMPILERS&INTPRETER",
+          "code": "34193",
+          "days": "F",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "34190"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 142A: COMPILERS&INTPRETER",
+          "code": "34194",
+          "days": "F",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [
+            "34190"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 142A: COMPILERS&INTPRETER",
+          "code": "34196",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "34190"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 142A: COMPILERS&INTPRETER",
+          "code": "34197",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [
+            "34190"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:143A-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:143A-95-0",
+      "name": "COMPSCI 143A: PRNCPLS OPERTNG SYS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 143A: PRNCPLS OPERTNG SYS",
+          "code": "34200",
+          "days": "MWF",
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-23T13:30:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 143A: PRNCPLS OPERTNG SYS",
+          "code": "34201",
+          "days": "F",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "34200"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 143A: PRNCPLS OPERTNG SYS",
+          "code": "34202",
+          "days": "F",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "34200"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:143B-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:143B-95-0",
+      "name": "COMPSCI 143B: PROJ IN OPERTNG SYS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 143B: PROJ IN OPERTNG SYS",
+          "code": "34210",
+          "days": "MWF",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-19T16:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:145-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:145-95-0",
+      "name": "COMPSCI 145: EMBEDDED SOFTWARE",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 145: EMBEDDED SOFTWARE",
+          "code": "34220",
+          "days": "TuTh",
+          "startTime": "8:00",
+          "endTime": "9:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-20T08:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:145L-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:145L-95-0",
+      "name": "COMPSCI 145L: EMBEDD SOFTWARE LAB",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 145L: EMBEDD SOFTWARE LAB",
+          "code": "34222",
+          "days": "MWF",
+          "startTime": "8:00",
+          "endTime": "8:50",
+          "coreqs": [
+            "34220"
+          ],
+          "final": {
+            "date": "2018-03-19T08:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 145L: EMBEDD SOFTWARE LAB",
+          "code": "34223",
+          "days": "MWF",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "34220"
+          ],
+          "final": {
+            "date": "2018-03-19T10:30:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 145L: EMBEDD SOFTWARE LAB",
+          "code": "34224",
+          "days": "MWF",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "34220"
+          ],
+          "final": {
+            "date": "2018-03-19T13:30:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 145L: EMBEDD SOFTWARE LAB",
+          "code": "34225",
+          "days": "MWF",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "34220"
+          ],
+          "final": {
+            "date": "2018-03-21T13:30:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 145L: EMBEDD SOFTWARE LAB",
+          "code": "34226",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "34220"
+          ],
+          "final": {
+            "date": "2018-03-21T16:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 145L: EMBEDD SOFTWARE LAB",
+          "code": "34227",
+          "days": "MWF",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "34220"
+          ],
+          "final": {
+            "date": "2018-03-21T10:30:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 145L: EMBEDD SOFTWARE LAB",
+          "code": "34228",
+          "days": "MWF",
+          "startTime": "20:00",
+          "endTime": "20:50",
+          "coreqs": [
+            "34220"
+          ],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 145L: EMBEDD SOFTWARE LAB",
+          "code": "34229",
+          "days": "TuTh",
+          "startTime": "20:00",
+          "endTime": "21:20",
+          "coreqs": [
+            "34220"
+          ],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:152-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:152-95-0",
+      "name": "COMPSCI 152: COMPUTR SYST ARCHIT",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 152: COMPUTR SYST ARCHIT",
+          "code": "34240",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T13:30:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 152: COMPUTR SYST ARCHIT",
+          "code": "34241",
+          "days": "M",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "34240"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:153-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:153-95-0",
+      "name": "COMPSCI 153: LOGIC DESIGN LAB",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 153: LOGIC DESIGN LAB",
+          "code": "34250",
+          "days": "MWF",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-21T16:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 153: LOGIC DESIGN LAB",
+          "code": "34251",
+          "days": "F",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "34250"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:154-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:154-95-0",
+      "name": "COMPSCI 154: COMPUTER DESIGN LAB",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 154: COMPUTER DESIGN LAB",
+          "code": "34260",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T16:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 154: COMPUTER DESIGN LAB",
+          "code": "34261",
+          "days": "W",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "34260"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 154: COMPUTER DESIGN LAB",
+          "code": "34262",
+          "days": "W",
+          "startTime": "10:00",
+          "endTime": "10:50",
+          "coreqs": [
+            "34260"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:161-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:161-95-0",
+      "name": "COMPSCI 161: DES&ANALYS OF ALGOR",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 161: DES&ANALYS OF ALGOR",
+          "code": "34270",
+          "days": "MWF",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-23T08:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 161: DES&ANALYS OF ALGOR",
+          "code": "34271",
+          "days": "MW",
+          "startTime": "19:00",
+          "endTime": "19:50",
+          "coreqs": [
+            "34270"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 161: DES&ANALYS OF ALGOR",
+          "code": "34272",
+          "days": "MW",
+          "startTime": "20:00",
+          "endTime": "20:50",
+          "coreqs": [
+            "34270"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:162-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:162-95-0",
+      "name": "COMPSCI 162: FORMAL LANG & AUTM",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 162: FORMAL LANG & AUTM",
+          "code": "34280",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-23T10:30:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 162: FORMAL LANG & AUTM",
+          "code": "34281",
+          "days": "F",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "34280"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:164-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:164-95-0",
+      "name": "COMPSCI 164: COMPUTATIONAL GEO",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 164: COMPUTATIONAL GEO",
+          "code": "34290",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T08:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:167-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:167-95-0",
+      "name": "COMPSCI 167: APPLIED CRYPTO",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 167: APPLIED CRYPTO",
+          "code": "34300",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-20T10:30:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:171-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:171-95-0",
+      "name": "COMPSCI 171: INTRO ARTIFCL INTEL",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 171: INTRO ARTIFCL INTEL",
+          "code": "34310",
+          "days": "TuTh",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-20T10:30:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 171: INTRO ARTIFCL INTEL",
+          "code": "34311",
+          "days": "F",
+          "startTime": "8:00",
+          "endTime": "8:50",
+          "coreqs": [
+            "34310"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 171: INTRO ARTIFCL INTEL",
+          "code": "34312",
+          "days": "F",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "34310"
+          ]
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 171: INTRO ARTIFCL INTEL",
+          "code": "34313",
+          "days": "F",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [
+            "34310"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:172B-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:172B-95-0",
+      "name": "COMPSCI 172B: NRL NTWKS&DEEP LRNG",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 172B: NRL NTWKS&DEEP LRNG",
+          "code": "34320",
+          "days": "MW",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-21T08:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:175-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:175-95-0",
+      "name": "COMPSCI 175: PROJECT IN AI",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 175: PROJECT IN AI",
+          "code": "34330",
+          "days": "MW",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-21T10:30:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 175: PROJECT IN AI",
+          "code": "34331",
+          "days": "W",
+          "startTime": "12:00",
+          "endTime": "12:50",
+          "coreqs": [
+            "34330"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:178-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:178-95-0",
+      "name": "COMPSCI 178: MACHINE/DATA MINING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 178: MACHINE/DATA MINING",
+          "code": "34340",
+          "days": "MWF",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-21T08:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 178: MACHINE/DATA MINING",
+          "code": "34341",
+          "days": "F",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [
+            "34340"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:H198-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:H198-95-0",
+      "name": "COMPSCI H198: HONORS RESEARCH",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34401",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34402",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34403",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34404",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34405",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34406",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34407",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34408",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34409",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34410",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34411",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34412",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34413",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34414",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34415",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34416",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34417",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34418",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34419",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34420",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34421",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34422",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34423",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34424",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34425",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34426",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34427",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34428",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34429",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34430",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34431",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34432",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34433",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34434",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34435",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34436",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34437",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34438",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34439",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34440",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34441",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34442",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34443",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34444",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34445",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34446",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34447",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34448",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34449",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34450",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34451",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34452",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34453",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34454",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI H198: HONORS RESEARCH",
+          "code": "34455",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:199-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:199-95-0",
+      "name": "COMPSCI 199: INDIVIDUAL STUDY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34501",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34502",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34503",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34504",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34505",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34506",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34507",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34508",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34509",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34510",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34511",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34512",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34513",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34514",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34515",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34516",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34517",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34518",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34519",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34520",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34521",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34522",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34523",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34524",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34525",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34526",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34527",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34528",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34529",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34530",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34531",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34532",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34533",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34534",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34535",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34536",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34537",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34538",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34539",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34540",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34541",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34542",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34543",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34544",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34545",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34546",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34547",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34548",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34549",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34550",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34551",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34552",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34553",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34554",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 199: INDIVIDUAL STUDY",
+          "code": "34555",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:200S-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:200S-95-0",
+      "name": "COMPSCI 200S: SEM IN COMPSCI RSCH",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 200S: SEM IN COMPSCI RSCH",
+          "code": "34600",
+          "days": "F",
+          "startTime": "11:00",
+          "endTime": "11:50",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:211A-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:211A-95-0",
+      "name": "COMPSCI 211A: VISUAL COMPUTING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 211A: VISUAL COMPUTING",
+          "code": "34620",
+          "days": "MW",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-21T08:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:221-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:221-95-0",
+      "name": "COMPSCI 221: INFO RETRIEVAL",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 221: INFO RETRIEVAL",
+          "code": "34630",
+          "days": "TuTh",
+          "startTime": "18:30",
+          "endTime": "19:50",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:225-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:225-95-0",
+      "name": "COMPSCI 225: NXT GEN SRCH SYSTMS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 225: NXT GEN SRCH SYSTMS",
+          "code": "34640",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-20T16:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:230-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:230-95-0",
+      "name": "COMPSCI 230: DIST COMPUTER SYS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 230: DIST COMPUTER SYS",
+          "code": "34650",
+          "days": "W",
+          "startTime": "9:00",
+          "endTime": "11:50",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 230: DIST COMPUTER SYS",
+          "code": "34651",
+          "days": "F",
+          "startTime": "9:00",
+          "endTime": "9:50",
+          "coreqs": [
+            "34650"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:233-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:233-95-0",
+      "name": "COMPSCI 233: NETWORKING LAB",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 233: NETWORKING LAB",
+          "code": "34660",
+          "days": "M",
+          "startTime": "18:30",
+          "endTime": "21:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-23T19:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:241-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:241-95-0",
+      "name": "COMPSCI 241: ADV COMPILER CONSTR",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 241: ADV COMPILER CONSTR",
+          "code": "34670",
+          "days": "MW",
+          "startTime": "17:00",
+          "endTime": "19:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-21T10:30:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:250A-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:250A-95-0",
+      "name": "COMPSCI 250A: CMPTR SYS ARCHITECT",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 250A: CMPTR SYS ARCHITECT",
+          "code": "34680",
+          "days": "MW",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-19T16:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:252-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:252-95-0",
+      "name": "COMPSCI 252: INTRO TO CMPTR DSGN",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 252: INTRO TO CMPTR DSGN",
+          "code": "34690",
+          "days": "MW",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-21T10:30:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:259S-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:259S-95-0",
+      "name": "COMPSCI 259S: SEM DESIGN SCIENCE",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 259S: SEM DESIGN SCIENCE",
+          "code": "34700",
+          "days": "Tu",
+          "startTime": "10:00",
+          "endTime": "11:50",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:260-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:260-95-0",
+      "name": "COMPSCI 260: FUND ALGORITHMS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 260: FUND ALGORITHMS",
+          "code": "34710",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-20T16:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 260: FUND ALGORITHMS",
+          "code": "34711",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "34710"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:261-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:261-95-0",
+      "name": "COMPSCI 261: DATA STRUCTURES",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 261: DATA STRUCTURES",
+          "code": "34720",
+          "days": "MWF",
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-19T16:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:266-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:266-95-0",
+      "name": "COMPSCI 266: COMPTNL GEOMETRY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 266: COMPTNL GEOMETRY",
+          "code": "34740",
+          "days": "TuTh",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T08:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:269S-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:269S-95-0",
+      "name": "COMPSCI 269S: SEM THEORY OF A&DS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 269S: SEM THEORY OF A&DS",
+          "code": "34750",
+          "days": "F",
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:273A-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:273A-95-0",
+      "name": "COMPSCI 273A: MACHINE LEARNING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 273A: MACHINE LEARNING",
+          "code": "34760",
+          "days": "TuTh",
+          "startTime": "12:30",
+          "endTime": "13:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-23T10:30:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:274A-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:274A-95-0",
+      "name": "COMPSCI 274A: PROB LEARNING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 274A: PROB LEARNING",
+          "code": "34770",
+          "days": "MW",
+          "startTime": "11:00",
+          "endTime": "12:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-23T08:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:274C-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:274C-95-0",
+      "name": "COMPSCI 274C: NRL NTWKS&DEEP LRNG",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 274C: NRL NTWKS&DEEP LRNG",
+          "code": "34780",
+          "days": "MW",
+          "startTime": "9:30",
+          "endTime": "10:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-21T08:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:206P-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:206P-95-0",
+      "name": "COMPSCI 206P: SCIENTIFIC COMPUTNG",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 206P: SCIENTIFIC COMPUTNG",
+          "code": "34800",
+          "days": "MW",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-21T10:30:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:211P-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:211P-95-0",
+      "name": "COMPSCI 211P: VISUAL COMPUTING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 211P: VISUAL COMPUTING",
+          "code": "34810",
+          "days": "MW",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-19T16:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 211P: VISUAL COMPUTING",
+          "code": "34811",
+          "days": "W",
+          "startTime": "19:00",
+          "endTime": "19:50",
+          "coreqs": [
+            "34810"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:238P-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:238P-95-0",
+      "name": "COMPSCI 238P: OPERATING SYSTEMS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 238P: OPERATING SYSTEMS",
+          "code": "34820",
+          "days": "TuTh",
+          "startTime": "15:30",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-20T16:00:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:260P-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:260P-95-0",
+      "name": "COMPSCI 260P: FUND OF ALGORITHMS",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 260P: FUND OF ALGORITHMS",
+          "code": "34830",
+          "days": "TuTh",
+          "startTime": "17:00",
+          "endTime": "18:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T16:00:00-07:00"
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Lab",
+          "courseName": "COMPSCI 260P: FUND OF ALGORITHMS",
+          "code": "34831",
+          "days": "F",
+          "startTime": "17:00",
+          "endTime": "17:50",
+          "coreqs": [
+            "34830"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:271P-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:271P-95-0",
+      "name": "COMPSCI 271P: INTRO ARTIFCL INTEL",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 271P: INTRO ARTIFCL INTEL",
+          "code": "34840",
+          "days": "TuTh",
+          "startTime": "18:30",
+          "endTime": "19:50",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Dis",
+          "courseName": "COMPSCI 271P: INTRO ARTIFCL INTEL",
+          "code": "34841",
+          "days": "F",
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "coreqs": [
+            "34840"
+          ]
+        }
+      ]
+    },
+    "2018-03:COMPSCI:290-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:290-95-0",
+      "name": "COMPSCI 290: RESEARCH SEMINAR",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34901",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34902",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34903",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34904",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34905",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34906",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34907",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34908",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34909",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34910",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34911",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34912",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34913",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34914",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34915",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34916",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34917",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34918",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34919",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34920",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34921",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34922",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34923",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34924",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34925",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34926",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34927",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34928",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34929",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34930",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34931",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34932",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34933",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34934",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34935",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34936",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34937",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34938",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34939",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34940",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34941",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34942",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34943",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34944",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34945",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34946",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34947",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34948",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34949",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Sem",
+          "courseName": "COMPSCI 290: RESEARCH SEMINAR",
+          "code": "34950",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:295-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:295-95-0",
+      "name": "COMPSCI 295: STATISTICAL NLP",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 295: STATISTICAL NLP",
+          "code": "35000",
+          "days": "TuTh",
+          "startTime": "14:00",
+          "endTime": "15:20",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-22T13:30:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:295-95-1": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:295-95-1",
+      "name": "COMPSCI 295: REINFORCMT LEARNING",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Lec",
+          "courseName": "COMPSCI 295: REINFORCMT LEARNING",
+          "code": "35005",
+          "days": "M",
+          "startTime": "14:00",
+          "endTime": "16:50",
+          "coreqs": [],
+          "final": {
+            "date": "2018-03-23T13:30:00-07:00"
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:298-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:298-95-0",
+      "name": "COMPSCI 298: THESIS SUPERVISION",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35101",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35102",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35103",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35104",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35105",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35106",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35107",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35108",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35109",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35110",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35111",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35112",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35113",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35114",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35115",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35116",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35117",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35118",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35119",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35120",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35121",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35122",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35123",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35124",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35125",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35126",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35127",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35128",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35129",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35130",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35131",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35132",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35133",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35134",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35135",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35136",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35137",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35138",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35139",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35140",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35141",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35142",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35143",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35144",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35145",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35146",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35147",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35148",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35149",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35150",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Res",
+          "courseName": "COMPSCI 298: THESIS SUPERVISION",
+          "code": "35151",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        }
+      ]
+    },
+    "2018-03:COMPSCI:299-95-0": {
+      "type": "course",
+      "code": "2018-03:COMPSCI:299-95-0",
+      "name": "COMPSCI 299: INDIVIDUAL STUDY",
+      "sections": [
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35201",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35202",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35203",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35204",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35205",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35206",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35207",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35208",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35209",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35210",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35211",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35212",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35213",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35214",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35215",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35216",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35217",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35218",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35219",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35220",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35221",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35222",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35223",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35224",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35225",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35226",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35227",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35228",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35229",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35230",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35231",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35232",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35233",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35234",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35235",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35236",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35237",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35238",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35239",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35240",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35241",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35242",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35243",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35244",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35245",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35246",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35247",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35248",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35249",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35250",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
+          "coreqs": [],
+          "final": {
+            "date": ""
+          }
+        },
+        {
+          "type": "section",
+          "secType": "Tut",
+          "courseName": "COMPSCI 299: INDIVIDUAL STUDY",
+          "code": "35251",
+          "days": "",
+          "startTime": "",
+          "endTime": "",
           "coreqs": [],
           "final": {
             "date": ""

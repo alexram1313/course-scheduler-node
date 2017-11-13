@@ -89,28 +89,44 @@ module.exports = function() {
 
 	new TestModule('Bit Matrix utilities')
 
-		.test('zeros', zeros(2,4))
+		.test('zeros', function(){
+			return zeros(2,4);
+		})
 		.equals([[0,0,0,0],[0,0,0,0]])
 
-		.test('oneAtRow blank', oneAtRow([], 5))
+		.test('oneAtRow blank', function(){
+			return oneAtRow([], 5);
+		})
 		.equals([0,0,0,0,0])
 
-		.test('oneAtRow non-blank', oneAtRow([1,3], 5))
+		.test('oneAtRow non-blank', function(){
+			return oneAtRow([1,3], 5);
+		})
 		.equals([0,1,0,1,0])
 
-		.test('oneAtMatrix blank', oneAtMatrix([], 3))
+		.test('oneAtMatrix blank', function(){
+			return oneAtMatrix([], 3);
+		})
 		.equals([[0,0,0],[0,0,0],[0,0,0]])
 
-		.test('oneAtMatrix non-blank', oneAtMatrix([[0,1],[1,2],[2,0]], 3))
+		.test('oneAtMatrix non-blank', function(){
+			return oneAtMatrix([[0,1],[1,2],[2,0]], 3);
+		})
 		.equals([[0,1,0],[0,0,1],[1,0,0]])
 
-		.test('inverseIdentity', inverseIdentity(4))
+		.test('inverseIdentity', function(){
+			return inverseIdentity(4);
+		})
 		.equals([[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]])
 
-		.test('hconcat', hconcat([[1],[2],[3]], [[10,11],[20,21],[30,31]]))
+		.test('hconcat', function(){
+			return hconcat([[1],[2],[3]], [[10,11],[20,21],[30,31]]);
+		})
 		.equals([[1,10,11],[2,20,21],[3,30,31]])
 
-		.test('vconcat', vconcat([[1,10,11]],[[2,20,21],[3,30,31]]))
+		.test('vconcat', function(){
+			return vconcat([[1,10,11]],[[2,20,21],[3,30,31]]);
+		})
 		.equals([[1,10,11],[2,20,21],[3,30,31]])
 
 		.finish();
