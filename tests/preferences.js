@@ -246,6 +246,106 @@
 		})
 		.approximates(0)
 
+
+		// Normalization values all within 5% of the standard (morning)
+		// implies that no two values are different by more than 10%
+		.test('normalization: mornings vs. evenings', function() {
+			var a = preferences.scoreSchedule(
+				testSchedules.mondayMorning.concat(
+					testSchedules.tuesdayMorning.concat(
+						testSchedules.wednesdayMorning.concat(
+							testSchedules.thursdayMorning.concat(
+								testSchedules.fridayMorning)))),
+				{'mornings': 1});
+			var b = preferences.scoreSchedule(
+				testSchedules.mondayEvening.concat(
+					testSchedules.tuesdayEvening.concat(
+						testSchedules.wednesdayEvening.concat(
+							testSchedules.thursdayEvening.concat(
+								testSchedules.fridayEvening)))),
+				{'evenings': 1});
+
+			return (a - b) / a;
+		})
+		.approximates(0, 0.05)
+
+		.test('normalization: mornings vs. mondays', function() {
+			var a = preferences.scoreSchedule(
+				testSchedules.mondayMorning.concat(
+					testSchedules.tuesdayMorning.concat(
+						testSchedules.wednesdayMorning.concat(
+							testSchedules.thursdayMorning.concat(
+								testSchedules.fridayMorning)))),
+				{'mornings': 1});
+			var b = preferences.scoreSchedule(
+				testCourses.monday.sections,
+				{'mondays': 1});
+
+			return (a - b) / a;
+		})
+		.approximates(0, 0.05)
+
+		.test('normalization: mornings vs. fridays', function() {
+			var a = preferences.scoreSchedule(
+				testSchedules.mondayMorning.concat(
+					testSchedules.tuesdayMorning.concat(
+						testSchedules.wednesdayMorning.concat(
+							testSchedules.thursdayMorning.concat(
+								testSchedules.fridayMorning)))),
+				{'mornings': 1});
+			var b = preferences.scoreSchedule(
+				testCourses.friday.sections,
+				{'fridays': 1});
+
+			return (a - b) / a;
+		})
+		.approximates(0, 0.05)
+
+		.test('normalization: mornings vs. balance', function() {
+			var a = preferences.scoreSchedule(
+				testSchedules.mondayMorning.concat(
+					testSchedules.tuesdayMorning.concat(
+						testSchedules.wednesdayMorning.concat(
+							testSchedules.thursdayMorning.concat(
+								testSchedules.fridayMorning)))),
+				{'mornings': 1});
+			var b = preferences.scoreSchedule(
+				testCourses.monday.sections.concat(
+					testCourses.tuesday.sections),
+				{'balance': -1});
+
+			return (a - b) / a;
+		})
+		.approximates(0, 0.05)
+
+		.test('normalization: mornings vs. gaps', function() {
+			var a = preferences.scoreSchedule(
+				testSchedules.mondayMorning.concat(
+					testSchedules.tuesdayMorning.concat(
+						testSchedules.wednesdayMorning.concat(
+							testSchedules.thursdayMorning.concat(
+								testSchedules.fridayMorning)))),
+				{'mornings': 1});
+			var b = preferences.scoreSchedule([
+				testCourses.monday.sections[0],
+				testCourses.monday.sections[6],
+				testCourses.tuesday.sections[0],
+				testCourses.tuesday.sections[6],
+				testCourses.wednesday.sections[0],
+				testCourses.wednesday.sections[6],
+				testCourses.thursday.sections[0],
+				testCourses.thursday.sections[6],
+				testCourses.friday.sections[0],
+				testCourses.friday.sections[6]
+				],
+				{'gaps': 1});
+
+			return (a - b) / a;
+		})
+		.approximates(0, 0.05)
+
+		.testStub('normalization: mornings vs. openings')
+
 		.finish()
 
 	new TestModule('Preferences Sorting')

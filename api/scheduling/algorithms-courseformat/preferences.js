@@ -161,14 +161,25 @@ module.exports = function(){
 		'openings': openings
 	};
 
+	var normalization = {
+		'mornings': 1,
+		'evenings': 0.85,
+		'mondays' : 1.1,
+		'fridays' : 1.1,
+		'balance' : 1,
+		'gaps'    : 0.115,
+		'openings': 1
+	};
+
 	// Should be given a list of sections, and a dictionary
 	// of features to numerical scores. Returns a number.
 	function scoreSchedule(schedule, prefs) {
 		var score = 0;
 		for (var feature in prefs) {
 			if (!prefs.hasOwnProperty(feature)) continue;
+			if (prefs[feature] === 0) continue; // short-circuit irrelevant features
 			if (!scoreFns.hasOwnProperty(feature)) continue;
-			score += prefs[feature] * scoreFns[feature](schedule);
+			score += prefs[feature] * normalization[feature] * scoreFns[feature](schedule);
 		}
 		return score;
 	}
