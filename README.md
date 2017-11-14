@@ -3,6 +3,8 @@ Course Scheduler
 
 Course Scheduler is a web app to help students of UC Irvine schedule their classes.
 
+PHP version: https://github.com/DavidLegg/course-scheduler
+
 To-do List
 ----------
 - [x] Test the premise. (Develop scheduling algorithm)
