@@ -7,33 +7,7 @@ PHP version: https://github.com/DavidLegg/course-scheduler
 
 To-do List
 ----------
-- [x] Test the premise. (Develop scheduling algorithm)
-- [ ] Establish the basis. (Get basic functionality using algorithm)
-  - [x] Basic scheduling algorithm
-  - [ ] Basic preferences and schedule sorting
-  - [x] Automatic access to schedule of classes
-  - [x] GUI for adding courses
-  - [x] GUI for displaying schedules
-- [ ] Debugging the basis.
-  - [x] Basic scheduling algorithm
-  - [ ] Basic preferences and schedule sorting
-  - [x] Automatic access to schedule of classes
-  - [x] GUI for adding courses
-  - [x] GUI for displaying schedules
-- [ ] Regression Testing
-  - [x] Build/choose regression testing framework
-  - [ ] Build tests for each module
-    - [ ] Scheduling algorithm
-    - [ ] Front end, as appropriate
-  - [ ] Make an npm target for regression testing?
-- [ ] Polish it and add any other features
-  - [ ] Additional preference categories:
-    - [ ] Geographic distance between classes
-    - [ ] RateMyProfessor scores
-  - [ ] Additional restrictions categories:
-    - [ ] Blocked time slots
-  - [ ] Saving schedules, user log-in
-- [ ] Monetization
+See the Trello Board: https://trello.com/b/NdWLVlNI/software-development
 
 Motivation
 ----------
