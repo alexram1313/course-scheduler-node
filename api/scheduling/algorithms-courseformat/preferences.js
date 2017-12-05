@@ -167,7 +167,7 @@ module.exports = function(){
 		'mondays' : 1.1,
 		'fridays' : 1.1,
 		'balance' : 1,
-		'gaps'    : 0.115,
+		'gaps'    : 0.3,
 		'openings': 1
 	};
 
