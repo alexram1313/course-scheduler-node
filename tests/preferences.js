@@ -184,8 +184,6 @@
 		})
 		.approximates(0, 1)
 
-		.testStub('openings')
-
 		.test('multiple categories', function() {
 			return (
 				preferences.scoreSchedule(
@@ -326,25 +324,21 @@
 							testSchedules.thursdayMorning.concat(
 								testSchedules.fridayMorning)))),
 				{'mornings': 1});
+			// You can get much more out of the gaps score, so this is
+			// a "bad but not impossibly bad" standard to test against
 			var b = preferences.scoreSchedule([
 				testCourses.monday.sections[0],
-				testCourses.monday.sections[6],
-				testCourses.tuesday.sections[0],
-				testCourses.tuesday.sections[6],
+				testCourses.monday.sections[4],
 				testCourses.wednesday.sections[0],
-				testCourses.wednesday.sections[6],
-				testCourses.thursday.sections[0],
-				testCourses.thursday.sections[6],
+				testCourses.wednesday.sections[4],
 				testCourses.friday.sections[0],
-				testCourses.friday.sections[6]
+				testCourses.friday.sections[4]
 				],
 				{'gaps': 1});
 
 			return (a - b) / a;
 		})
 		.approximates(0, 0.05)
-
-		.testStub('normalization: mornings vs. openings')
 
 		.finish()
 
