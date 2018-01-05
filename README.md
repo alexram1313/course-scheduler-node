@@ -12,4 +12,4 @@ See the Trello Board: https://trello.com/b/NdWLVlNI/software-development
 Motivation
 ----------
 
-I'm a double-major at UCI. Every quarter, I spend hours trying to move classes around, and I'm never satisfied that I've found the best arrangement. So, I figure I can get a computer to do this better than I ever could.
+"I'm a double-major at UCI. Every quarter, I spend hours trying to move classes around, and I'm never satisfied that I've found the best arrangement. So, I figure I can get a computer to do this better than I ever could." ~David
