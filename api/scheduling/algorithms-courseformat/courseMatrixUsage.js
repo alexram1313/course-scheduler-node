@@ -83,7 +83,7 @@ module.exports = function() {
 		var data = conflicts.buildConflictMatrix(courses);
 		var scheduleRows = testSchedules(data.matrix, data.roots, data.forest);
 		var schedules = scheduleRows.map( decoder(data.list) );
-		return preferences.sortSchedules(schedules);
+		return preferences.sortSchedules(schedules, prefs);
 	}
 
 	return {
