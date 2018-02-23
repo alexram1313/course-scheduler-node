@@ -16,7 +16,8 @@ function resetScheduleViews(){
     $("#calendar-right").fullCalendar('gotoDate', '2017-01-02');
 }
 
-function setScheduleView(calChoice, prevNext){
+function setScheduleView(calChoice, prevNext, goToSchedules){
+    if (goToSchedules === undefined) goToSchedules = false;
     console.log("choice:", calChoice);
     var calDiv = "";
     var txtDiv = "";
@@ -116,10 +117,12 @@ function setScheduleView(calChoice, prevNext){
     } else{
         $(".fc-clear").html("<span style='color:red;'>No possible schedules.</span>");
     }
-    $('html,body').animate({
-                scrollTop: $("#schedules").offset().top
-            },
-                'slow');
+    if (goToSchedules) {
+        $('html,body').animate({
+                    scrollTop: $("#schedules").offset().top
+                },
+                    'slow');
+    }
 }
 
 function fetchSchedules(courseCodes, prefs, callback){
@@ -141,7 +144,7 @@ function fetchSchedules(courseCodes, prefs, callback){
             success: function (data) {
                 schedules = data.data;
                 schedMax = schedules.length;
-                setScheduleView('left', 0);
+                setScheduleView('left', 0, true);
                 setScheduleView('right', 1);
                 $(".fc-prev-button").prop("disabled", false);
                 $(".fc-prev-button").removeClass('fc-state-disabled');
