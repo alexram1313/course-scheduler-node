@@ -65,75 +65,18 @@
             
             <table class="course_choice form-group">
                 <tr>
-                    <td class="courses_1">
-                        
-                    </td>
-                    <td class="courses_2" >
+                    <td class="courses_1"></td>
+                    <td class="courses_2">
                         <span style="font-size:0.8em;">Less</span>
                         <span style="font-size:0.8em; float:right;">More</span>
                     </td>
                 </tr>
-
-                <tr>
-                    <td class="courses_1" title="For early birds and coffee addicts">
-                        Mornings:
-                    </td>
-                    <td class="courses_2" >
-                        <input ng-model="mornings" id="mornings" type="range" 
-                                class="class_select pref_select form-control"
-                                min="-50" max="50" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="courses_1" title="For night owls and procrastinators">
-                            Evenings:
-                    </td>
-                    <td class="courses_2" >
-                        <input ng-model="evenings" id="evenings" type="range" 
-                                class="class_select pref_select form-control"
-                                min="-50" max="50" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="courses_1" title="For *those* people">
-                        Mondays:
-                    </td>
-                    <td class="courses_2" >
-                        <input ng-model="mondays" id="mondays" type="range" 
-                                class="class_select pref_select form-control"
-                                min="-50" max="50" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="courses_1" title="For CS majors with no life">
-                        Fridays:
-                    </td>
-                    <td class="courses_2" >
-                        <input ng-model="fridays" id="fridays" type="range" 
-                                class="class_select pref_select form-control"
-                                min="-50" max="50" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="courses_1" title="For having similar amounts of time in class each day">
-                        Balanced Days:
-                    </td>
-                    <td class="courses_2" >
-                        <input ng-model="balanced" id="balance" type="range" 
-                                class="class_select pref_select form-control"
-                                min="-50" max="50" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="courses_1" title="For time between classes">
-                            Gaps:
-                    </td>
-                    <td class="courses_2" >
-                        <input ng-model="gaps" id="gaps" type="range" 
-                                class="class_select pref_select form-control"
-                                min="-50" max="50" />
-                    </td>
-                </tr>
+                <tr preference-slider name="Mornings" id="mornings" tooltip="For early birds and coffee addicts"></preference-slider>
+                <tr preference-slider name="Evenings" id="evenings" tooltip="For night owls and procrastinators"></preference-slider>
+                <tr preference-slider name="Mondays" id="mondays" tooltip="For *those* people"></preference-slider>
+                <tr preference-slider name="Fridays" id="fridays" tooltip="For CS majors with no life"></preference-slider>
+                <tr preference-slider name="Balance" id="balanced" tooltip="For having similar amounts of time in class each day"></preference-slider>
+                <tr preference-slider name="Gaps" id="gaps" tooltip="For time between classes"></preference-slider>
                 <tr>
                     <td class="courses_1">
                     </td>

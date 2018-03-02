@@ -77,7 +77,7 @@ schedWeb.controller('mainController', function ($scope, $http){
     };
 
     $scope.getSchedules = function(){
-        console.log("DerpSchedules!");
+        // console.log("DerpSchedules!");
         var courses = []
         for (var course of $scope.addedCourses){
             courses.push(course.id);
@@ -98,4 +98,17 @@ schedWeb.controller('mainController', function ($scope, $http){
             });
 
     }
-});
+})
+.directive('preferenceSlider', function() {
+    return {
+        restrict: 'A',
+        replace: true,
+        scope: {
+            name: '@',
+            id: '@',
+            tooltip: '@'
+        },
+        templateUrl: 'public/directives/preferenceSlider.html'
+    };
+})
+;
