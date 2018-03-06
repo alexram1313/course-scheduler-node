@@ -1,27 +1,22 @@
-        </div>
-        <div id="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="copyright" class="col-sm-8">
-                        Copyright &copy; <span id='year'></span> David Legg, Alex I. Ramirez
-                    </div>
-                    <div id="foot-links" class="col-sm-4">
-                        <a href="https://github.com/alexram1313/course-scheduler-node" target="_blank">GitHub</a>
-                        &nbsp;
-                        <span style="color:white;">ALPHA</span>
-                        &nbsp;
-                        <a href="mailto:ZotSchedulerFeedback@gmail.com" target="_blank">Send Feedback</a>
-                    </div>
-                </div>
+<div id="footer" ng-controller="mainController">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="copyright" class="col-sm-8">
+                Copyright &copy; <span id='year'></span> David Legg, Alex I. Ramirez
+            </div>
+            <div id="foot-links" class="col-sm-4">
+                <a href="https://github.com/alexram1313/course-scheduler-node" target="_blank">GitHub</a>
+                &nbsp;
+                <span style="color:white;">ALPHA</span>
+                &nbsp;
+                <a ng-click="openFeedbackModal()">Send Feedback</a>
             </div>
         </div>
-        <script type="text/javascript">
-            document.getElementById('year').innerHTML = new Date().getFullYear();
-        </script>
-        <script type="text/javascript" id="cookieinfo"
-            src="//cookieinfoscript.com/js/cookieinfo.min.js">
-        </script>
-
-    </body>
-
-</html>
+    </div>
+</div>
+<script type="text/javascript">
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+</script>
+<script type="text/javascript" id="cookieinfo"
+    src="//cookieinfoscript.com/js/cookieinfo.min.js">
+</script>

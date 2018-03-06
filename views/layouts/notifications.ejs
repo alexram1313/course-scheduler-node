@@ -1,0 +1,11 @@
+<div ng-controller="cornerNotificationController">
+    <div class="corner-notification" ng-repeat="nn in notifications">
+        <div uib-alert class="alert-info" ng-click="nn.accept()">
+            {{ nn.text }}
+            &nbsp;
+            <button type="button" class="close" ng-click="nn.cancel()">
+                <span class="glyphicon glyphicon-remove-circle"></span>
+            </button>
+        </div>
+    </div>
+</div>

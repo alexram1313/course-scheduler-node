@@ -18,7 +18,6 @@ function resetScheduleViews(){
 
 function setScheduleView(calChoice, prevNext, goToSchedules){
     if (goToSchedules === undefined) goToSchedules = false;
-    console.log("choice:", calChoice);
     var calDiv = "";
     var txtDiv = "";
     var btnPath = "";
