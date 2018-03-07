@@ -10,6 +10,12 @@
     <p><span uib-rating ng-model="preferenceMatch" max="ratingMax"></span></p>
     <p>Will you use ZotScheduler again?</p>
     <p><span uib-rating ng-model="useAgain" max="ratingMax"></span></p>
+    <p>What did you find useful?</p>
+    <p><input type="text" ng-model="useful" class="form-control"></p>
+    <p>What did you find annoying?</p>
+    <p><input type="text" ng-model="annoying" class="form-control"></p>
+    <p>Anything else you'd like to add?</p>
+    <p><input type="text" ng-model="misc" class="form-control"></p>
 </div>
 <div class="modal-footer">
     <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>

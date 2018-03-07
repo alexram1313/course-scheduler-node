@@ -3,25 +3,9 @@ const router = app.Router({ mergeParams: true });
 
 var nodemailer = require('nodemailer');
 
+var feedback = require('./feedback');
+
 router.post('/sendFeedback', function(req, res) {
-    var format = function(data) {
-        var output = '';
-
-        Object.keys(data).sort().forEach(function(prop){
-            if (!data.hasOwnProperty(prop)) return;
-
-            var elem = data[prop];
-            if (elem.type === 'rating') {
-                output += elem.name + ': ' + (elem.data * 100).toFixed(0) + '%'
-            } else {
-                output += elem.name + '(' + elem.type + '): ' + elem.data;
-            }
-            output += '\n';
-        });
-
-        return output;
-    }
-
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
@@ -33,8 +17,8 @@ router.post('/sendFeedback', function(req, res) {
     var mailOptions = {
         from:    'ZotSchedulerFeedback@gmail.com',
         to:      'ZotSchedulerFeedback@gmail.com',
-        subject: 'Test 2',
-        text:    format(req.body)
+        subject: 'User Feedback',
+        text:    feedback.format(req.body)
     };
 
     transporter.sendMail(mailOptions, function(error, info) {
