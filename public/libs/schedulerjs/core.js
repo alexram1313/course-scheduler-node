@@ -99,7 +99,6 @@ schedWeb.controller('mainController', function ($scope, $http, $uibModal, $timeo
         $timeout(function() {
             $rootScope.$broadcast('openCornerNotification', {
                 text: "Looks like you're interested! So, what do you think?",
-                autoClose: true,
                 acceptFn: function() {
                     $scope.openFeedbackModal();
                 }
@@ -115,9 +114,34 @@ schedWeb.controller('mainController', function ($scope, $http, $uibModal, $timeo
             controllerAs: '$ctrl',
             resolve: {}
         }).result.then(function(responses) {
-            console.log(responses);
+            $scope.sendFeedback(responses);
         }, function() {});
     };
+
+    $scope.sendFeedback = function(data) {
+        console.log('data:', data); //DEBUG
+        $.ajax({
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            url: "api/feedback/sendFeedback",
+            dataType: "json",
+            data: JSON.stringify(data),
+            success: function (response) {
+                console.log("--- Success ---"); //DEBUG
+                console.log('response:', response); //DEBUG
+                $rootScope.$broadcast('openCornerNotification', {
+                    text: "Thanks for your feedback!"
+                });
+            },
+            error: function (response) {
+                console.log("--- Error ---"); //DEBUG
+                console.log('response:', response); //DEBUG
+                $rootScope.$broadcast('openCornerNotification', {
+                    text: "Hmm, something went wrong. Please try again later."
+                });
+            }
+        });
+    }
 })
 .controller('cornerNotificationController', function($scope, $timeout) {
     var $ctrl = this;
@@ -150,15 +174,24 @@ schedWeb.controller('mainController', function ($scope, $http, $uibModal, $timeo
             }
         };
 
-        $scope.notifications.push(notification);
-
-        if (data.autoClose) {
-            $timeout(notification.cancel, 10000);
-        }
+        $timeout(function(){
+            $scope.notifications.push(notification);
+            if (data.autoClose) {
+                $timeout(notification.cancel, 10000);
+            }
+        });
     });
 })
 .controller('feedbackModalController', function($uibModalInstance, $scope) {
     var $ctrl = this;
+
+    var ratingFormat = function(name, score) {
+        return {
+            name: name,
+            type: 'rating',
+            data: score / $scope.ratingMax
+        };
+    }
 
     $scope.ratingMax = 5;
 
@@ -169,10 +202,10 @@ schedWeb.controller('mainController', function ($scope, $http, $uibModal, $timeo
 
     $ctrl.ok = function() {
         $uibModalInstance.close({
-            ease:            $scope.ease,
-            timeSaved:       $scope.timeSaved,
-            preferenceMatch: $scope.preferenceMatch,
-            useAgain:        $scope.useAgain
+            ease:            ratingFormat("Ease of use", $scope.ease),
+            timeSaved:       ratingFormat("Time savings", $scope.timeSaved),
+            preferenceMatch: ratingFormat("Matching preferences", $scope.preferenceMatch),
+            useAgain:        ratingFormat("Likelihood of reuse", $scope.useAgain),
         });
     };
 
@@ -180,18 +213,6 @@ schedWeb.controller('mainController', function ($scope, $http, $uibModal, $timeo
         $uibModalInstance.dismiss('cancel');
     };
 })
-// .directive('cnotification', function() {
-//     return {
-//         restrict: 'E',
-//         replace: true,
-//         scope: {
-//             text: '=',
-//             accept: '&',
-//             cancel: '&'
-//         },
-//         templateUrl: 'public/directives/cornerNotification.html'
-//     };
-// })
 .directive('preferenceSlider', function() {
     return {
         restrict: 'A',

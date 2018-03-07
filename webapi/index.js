@@ -22,10 +22,8 @@ router.get('/population', function(req, res){
 
 
 router.post('/population/:code', function (req, res) {
-    // console.log(req.cookies);
     var cookies = req.cookies;
     if (Object.prototype.hasOwnProperty.call(cookies, 'addedCourses')) {
-        // console.log(cookies.addedCourses);
         if (cookies.addedCourses.indexOf(req.params.code) === -1)
             cookies.addedCourses.push(req.params.code);
 
@@ -44,7 +42,6 @@ router.post('/population/:code', function (req, res) {
 });
 
 router.delete('/population/:index', function (req, res) {
-    // console.log(req.cookies);
     var cookies = req.cookies;
     if (Object.prototype.hasOwnProperty.call(cookies, 'addedCourses')) {
        

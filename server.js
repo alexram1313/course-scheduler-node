@@ -3,6 +3,7 @@ var engine = require('ejs-locals');
 var app = express();
 var fs = require('fs');
 var moment = require('moment');
+var bodyParser = require('body-parser');
 
 var cookieParser = require('cookie-parser');
 
@@ -16,6 +17,7 @@ app.set('view engine', 'ejs');
 app.set('view options', { layout:'views/layouts/layout.ejs' });
 
 app.use(cookieParser());
+app.use(bodyParser.json());
 app.use('/public', express.static('public'));
 
 process.on('uncaughtException', function (err) {
