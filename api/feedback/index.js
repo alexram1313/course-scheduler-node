@@ -2,8 +2,6 @@ var app = require('express');
 const router = app.Router({ mergeParams: true });
 
 const sgMail = require('@sendgrid/mail');
-console.log('process.env:', process.env); //DEBUG
-console.log('process.env.SENDGRID_API_KEY:', process.env.SENDGRID_API_KEY); //DEBUG
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 var feedback = require('./feedback');
@@ -32,14 +30,25 @@ router.post('/sendFeedback', function(req, res) {
     //     }
     // });
 
+    // TODO: build a nicer format for this email, possibly with html.
+    var text = feedback.format(req.body);
+    console.log('text:', text); //DEBUG
+
     var msg = {
-        to: 'ZotSchedulerFeedback@gmail.com',
-        from: 'ZotSchedulerFeedback@gmail.com',
+        to:      'ZotSchedulerFeedback@gmail.com',
+        from:    'ZotSchedulerFeedback@gmail.com',
         subject: 'User Feedback',
-        text: feedback.format(req.body)
+        html:    text
     };
 
-    sgMail.send(msg);
+    //TODO: figure out hot to properly handle this promise.
+    sgMail.send(msg)
+        .then(function() {
+            res.status(200).json({success: 'Email successfully sent.'});
+        })
+        .catch(function(error) {
+            res.status(500).json({error: 'Email could not be sent.'});
+        });
 });
 
 module.exports = router;

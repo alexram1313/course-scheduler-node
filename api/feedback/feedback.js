@@ -9,27 +9,37 @@ function formatFeedback(data) {
         'misc'
     ];
 
+    var bold = function(text) {
+        return '<strong>' + text + '</strong>';
+    }
+
+    var par = function(text) {
+        return '<p>' + text + '</p>';
+    }
+
     var formatElement = function(elem) {
+        var body = '';
+        var boldName = bold(elem.name + ':');
         if (elem.type === 'rating') {
-            return elem.name + ': ' + (elem.data * 100).toFixed(0) + '%'
+            body = boldName + ' ' + (elem.data * 100).toFixed(0) + '%'
 
         } else if (elem.type === 'free response') {
-            return elem.name + ':\n' + (elem.data ? elem.data : 'No response') + '\n';
+            body = boldName + '<br/>' + (elem.data ? elem.data : 'No response');
 
         } else if (elem.data) {
-            if (elem.type) {
-                return (elem.name ? elem.name + ' ' : '') + '(' + elem.type + '): ' + elem.data;
-            } else {
-                return (elem.name ? elem.name + ': ' : '') + elem.data;
-            }
+            body = (elem.name ? boldName + ' ' : '') +
+                   (elem.type ? '(' + elem.type + ') ' : '') +
+                    elem.data;
+
         } else {
             return '';
         }
+        return par(body);
     }
 
     var output = keyOrder.map(function(k){ return formatElement(data[k]); })
                          .filter(function(x){return !(x === undefined || x === '');})
-                         .join('\n');
+                         .join('');
 
     Object.keys(data).sort().forEach(function(prop){
         if (!data.hasOwnProperty(prop)) return;
