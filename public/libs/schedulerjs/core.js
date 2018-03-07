@@ -1,6 +1,6 @@
 var schedWeb = angular.module('schedWeb', ['ui.bootstrap']);
 
-schedWeb.controller('mainController', function ($scope, $http, $uibModal, $timeout, $rootScope){
+schedWeb.controller('mainController', function ($scope, $http, $uibModal, $timeout, $rootScope, $window){
 
     $scope.coursesLoading = true;
     $scope.newAdded       = true;
@@ -132,7 +132,10 @@ schedWeb.controller('mainController', function ($scope, $http, $uibModal, $timeo
             },
             error: function (response) {
                 $rootScope.$broadcast('openCornerNotification', {
-                    text: "Hmm, something went wrong. Please try again later."
+                    text: "Hmm, something went wrong. Click here to tell us about it.",
+                    acceptFn: function() {
+                        $window.open("mailto:ZotSchedulerFeedback@gmail.com?subject=User Feedback Issue");
+                    }
                 });
             }
         });
