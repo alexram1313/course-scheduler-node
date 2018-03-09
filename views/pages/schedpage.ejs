@@ -92,9 +92,16 @@
             <h2>Added Courses</h2>
             <ul id="addedCourses">
                 <span ng-hide="addedCourses.length">Select some courses first. Then they'll appear here.</span>
-                <li style="color:#0039ad;" ng-repeat="course in addedCourses" >
-                    <span ng-bind="course.name"></span><a ng-click="delCourse($index)" href="javascript:void(0)" ng-bind="'[X]'"></a>
-                </li>
+                <!-- <li style="color:#0039ad;" ng-repeat="course in addedCourses" > -->
+                    <!-- <span ng-bind="course.name"></span><a ng-click="delCourse($index)" href="javascript:void(0)" ng-bind="'[X]'"></a> -->
+                <!-- </li> -->
+                <div style="color:#0039ad; padding-top:5px; padding-bottom:5px;" ng-repeat="course in addedCourses">
+                    {{ course.name }}
+                    &nbsp;
+                    <button type="button" class="close" style="position:absolute;" ng-click="delCourse($index)">
+                        <span class="glyphicon glyphicon-remove-circle"></span>
+                    </button>
+                </div>
             </ul>
     </div>
 </div>
