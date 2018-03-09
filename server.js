@@ -49,14 +49,14 @@ app.get('/about', function (req, res) {
   });
 });
 
-app.get('/help', function (req, res) {
-  var title = "Help";
-  var content = "<p>Instructions to come.</p>";
-  res.render('pages/stdpage', {
-    "title": title,
-    "content": content
-  });
-});
+// app.get('/help', function (req, res) {
+//   var title = "Help";
+//   var content = "<p>Instructions to come.</p>";
+//   res.render('pages/stdpage', {
+//     "title": title,
+//     "content": content
+//   });
+// });
 
 
 //Web API Controller Commands
