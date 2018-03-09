@@ -1,9 +1,10 @@
-var express = require('express');
-var engine = require('ejs-locals');
-var app = express();
-var fs = require('fs');
-var moment = require('moment');
-var bodyParser = require('body-parser');
+var express        = require('express');
+var engine         = require('ejs-locals');
+var app            = express();
+var fs             = require('fs');
+var moment         = require('moment');
+var bodyParser     = require('body-parser');
+var sassMiddleware = require('node-sass-middleware');
 
 var cookieParser = require('cookie-parser');
 
@@ -19,6 +20,13 @@ app.set('view options', { layout:'views/layouts/layout.ejs' });
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use('/public', express.static('public'));
+app.use(
+  sassMiddleware({
+         src: __dirname + '/sass', //where the sass files are 
+         dest: __dirname, //where css should go
+         debug: false
+     })
+  );
 
 process.on('uncaughtException', function (err) {
   console.log("Error: " + err);

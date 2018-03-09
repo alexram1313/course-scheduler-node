@@ -9,7 +9,7 @@
             
             <table class="course_choice form-group">
                 <tr>
-                    <td class="courses_1">Term:</td>
+                    <td class="courses_1">Term:&nbsp;</td>
                     <td class="courses_2">
                         <select name="YearTerm" id="term" class="class_select form-control"
                                 ng-model="yearTerm" ng-change="populateCourses()"
@@ -22,7 +22,7 @@
                 </tr>
                 
                 <tr>
-                    <td class="courses_1">Department:</td>
+                    <td class="courses_1">Department:&nbsp;</td>
                     <td class="courses_2">
                         <select name="Dept" id="dept" class="class_select form-control"
                                 ng-model="dept" ng-change="populateCourses()"
@@ -35,9 +35,7 @@
                 </tr>
                 
                 <tr>
-                    <td class="courses_1">
-                        Course:
-                    </td>
+                    <td class="courses_1">Course:&nbsp;</td>
                     <td class="courses_2">
                         <select name="Course" id="course" ng-change="hideAddedMsg(true)" 
                                 class="class_select form-control" ng-model="selectedCourse"
@@ -71,12 +69,12 @@
                         <span style="font-size:0.8em; float:right;">More</span>
                     </td>
                 </tr>
-                <tr preference-slider name="Mornings" id="mornings" tooltip="For early birds and coffee addicts"></preference-slider>
-                <tr preference-slider name="Evenings" id="evenings" tooltip="For night owls and procrastinators"></preference-slider>
-                <tr preference-slider name="Mondays" id="mondays" tooltip="For *those* people"></preference-slider>
-                <tr preference-slider name="Fridays" id="fridays" tooltip="For CS majors with no life"></preference-slider>
-                <tr preference-slider name="Balance" id="balanced" tooltip="For having similar amounts of time in class each day"></preference-slider>
-                <tr preference-slider name="Gaps" id="gaps" tooltip="For time between classes"></preference-slider>
+                <tr preference-slider name="Mornings" id="mornings"></preference-slider>
+                <tr preference-slider name="Evenings" id="evenings"></preference-slider>
+                <tr preference-slider name="Mondays" id="mondays"></preference-slider>
+                <tr preference-slider name="Fridays" id="fridays"></preference-slider>
+                <tr preference-slider name="Balance" id="balanced" tooltip="Like if you want similar hours in class each day. Dislike if you want to have days off."></preference-slider>
+                <tr preference-slider name="Gaps" id="gaps" tooltip="Like if you want a break between classes. Dislike if you want classes back-to-back."></preference-slider>
                 <tr>
                     <td class="courses_1">
                     </td>
@@ -95,11 +93,11 @@
                 <!-- <li style="color:#0039ad;" ng-repeat="course in addedCourses" > -->
                     <!-- <span ng-bind="course.name"></span><a ng-click="delCourse($index)" href="javascript:void(0)" ng-bind="'[X]'"></a> -->
                 <!-- </li> -->
-                <div style="color:#0039ad; padding-top:5px; padding-bottom:5px;" ng-repeat="course in addedCourses">
+                <div style="padding-top:5px; padding-bottom:5px;" class="info-dark-color" ng-repeat="course in addedCourses">
                     {{ course.name }}
                     &nbsp;
                     <button type="button" class="close" style="position:absolute;" ng-click="delCourse($index)">
-                        <span class="glyphicon glyphicon-remove-circle"></span>
+                        <span class="glyphicon glyphicon-remove"></span>
                     </button>
                 </div>
             </ul>
